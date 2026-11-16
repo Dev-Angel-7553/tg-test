@@ -1,0 +1,710 @@
+{
+  "_": "ResaleStarGifts",
+  "attributes": [],
+  "attributes_hash": null,
+  "count": 23,
+  "counters": [
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdModel",
+        "document_id": 4976632245721759745
+      },
+      "count": 4
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdModel",
+        "document_id": 4976676217596936193
+      },
+      "count": 8
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdModel",
+        "document_id": 4976728337025073153
+      },
+      "count": 3
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdModel",
+        "document_id": 4976783338376265729
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdModel",
+        "document_id": 4976905513015967745
+      },
+      "count": 7
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdPattern",
+        "document_id": 5129803153297899521
+      },
+      "count": 9
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdPattern",
+        "document_id": 5130158656330924033
+      },
+      "count": 3
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdPattern",
+        "document_id": 5131861967346073601
+      },
+      "count": 3
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdPattern",
+        "document_id": 5131971562026565633
+      },
+      "count": 4
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdPattern",
+        "document_id": 5132006132218331137
+      },
+      "count": 4
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 0
+      },
+      "count": 2
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 6
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 13
+      },
+      "count": 2
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 24
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 31
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 32
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 34
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 35
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 38
+      },
+      "count": 3
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 39
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 44
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 45
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 49
+      },
+      "count": 2
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 50
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 53
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 54
+      },
+      "count": 1
+    },
+    {
+      "_": "StarGiftAttributeCounter",
+      "attribute": {
+        "_": "StarGiftAttributeIdBackdrop",
+        "backdrop_id": 59
+      },
+      "count": 2
+    }
+  ],
+  "gifts": [
+    {
+      "_": "StarGiftUnique",
+      "attributes": [
+        {
+          "_": "StarGiftAttributeModel",
+          "crafted": false,
+          "document": {
+            "_": "Document",
+            "attributes": [
+              {
+                "_": "DocumentAttributeImageSize",
+                "h": 512,
+                "w": 512
+              },
+              {
+                "_": "DocumentAttributeCustomEmoji",
+                "alt": "🐈‍⬛",
+                "free": false,
+                "stickerset": {
+                  "_": "InputStickerSetID",
+                  "id": 2964141614563353
+                },
+                "text_color": false
+              },
+              {
+                "_": "DocumentAttributeFilename",
+                "file_name": "AnimatedSticker.tgs"
+              }
+            ],
+            "dc_id": 1,
+            "id": 4976676217596936193,
+            "mime_type": "application/x-tgsticker",
+            "size": 24943,
+            "thumbs": [
+              {
+                "_": "PhotoPathSize",
+                "bytes": "2903b209dc618150574e64824d435d4569818042554354498b46b84f8703478e698d6e43434b854f86598355514d02654e0548455f9f62a552a7488d035b8f0545864f845584518061465b5b81448748874b8351437449460981414184418541894192429b429b82bc5fbc47804f81554343434749474d804b874e885684524472484608804357435a43654847035848077d495648718147028346884b895184524f6e44470783478a579556a483b4b68905b382808f6391679e75880548018e054803bb428b06a38d098809868f8b9d8fad81848190828ca064784c035152028a4fa263b5559b9448b545870785afa688049c8d0547a36db5738605448a448c03488f00459e428705688705",
+                "type": "j"
+              },
+              {
+                "_": "PhotoSize",
+                "h": 128,
+                "size": 5058,
+                "type": "m",
+                "w": 128
+              }
+            ],
+            "video_thumbs": []
+          },
+          "name": "Creeper",
+          "rarity": {
+            "_": "StarGiftAttributeRarity",
+            "permille": 150
+          }
+        },
+        {
+          "_": "StarGiftAttributePattern",
+          "document": {
+            "_": "Document",
+            "attributes": [
+              {
+                "_": "DocumentAttributeImageSize",
+                "h": 512,
+                "w": 512
+              },
+              {
+                "_": "DocumentAttributeCustomEmoji",
+                "alt": "🦞",
+                "free": false,
+                "stickerset": {
+                  "_": "InputStickerSetID",
+                  "id": 2964141614563348
+                },
+                "text_color": true
+              },
+              {
+                "_": "DocumentAttributeFilename",
+                "file_name": "AnimatedSticker.tgs"
+              }
+            ],
+            "dc_id": 1,
+            "id": 5131861967346073601,
+            "mime_type": "application/x-tgsticker",
+            "size": 1972,
+            "thumbs": [
+              {
+                "_": "PhotoPathSize",
+                "bytes": "0b04af00dc704d4647049448098180474d474d584f6db146099a6665870475b6470753576f5b7a7b495a867082470144585d615747008874880149048d0046099188528701578804448caa56bc4c8d8883a643b04d9968aa4607ad4a8257816142438148464a4347908c87089e8701874394619c68a55f8905668e01609b84bb8e8801a0858599a79ca88381904c924e8c4e94678c79424447824b834a8356846182584371527e66484c566d4777914b860498bc8c4d65774805844900b3448b00a88a048905429456a258b242938aa785bc4bac4806870873880992858608a3acba57967770470255428346864487938c860786079e880866955047067d796d934706a74c099a52456d5d7e5a65874db16abb",
+                "type": "j"
+              },
+              {
+                "_": "PhotoSize",
+                "h": 128,
+                "size": 1856,
+                "type": "m",
+                "w": 128
+              }
+            ],
+            "video_thumbs": []
+          },
+          "name": "Crab",
+          "rarity": {
+            "_": "StarGiftAttributeRarity",
+            "permille": 400
+          }
+        },
+        {
+          "_": "StarGiftAttributeBackdrop",
+          "backdrop_id": 31,
+          "center_color": 11632037,
+          "edge_color": 9197434,
+          "name": "Dark Lilac",
+          "pattern_color": 6629458,
+          "rarity": {
+            "_": "StarGiftAttributeRarity",
+            "permille": 17
+          },
+          "text_color": 15779042
+        }
+      ],
+      "availability_issued": 5172,
+      "availability_total": 9968,
+      "burned": false,
+      "craft_chance_permille": null,
+      "crafted": false,
+      "gift_address": null,
+      "gift_id": 5265149461264334849,
+      "id": 5267032881733042177,
+      "num": 620,
+      "offer_min_stars": null,
+      "owner_visibility": {
+        "blockchain_address": false,
+        "display_name": true,
+        "peer": false
+      },
+      "peer_color": null,
+      "released_by": {
+        "_": "PeerChannel",
+        "channel_id": 10929622
+      },
+      "require_premium": false,
+      "resale_ton_only": true,
+      "resell_amount": [
+        {
+          "_": "StarsAmount",
+          "amount": 70343,
+          "nanos": 0
+        },
+        {
+          "_": "StarsTonAmount",
+          "amount": 1000000000000
+        }
+      ],
+      "slug": "Cat-620",
+      "theme_available": false,
+      "theme_peer": null,
+      "title": "Cat",
+      "value_amount": 17100,
+      "value_currency": "RUB",
+      "value_usd_amount": 195
+    },
+    {
+      "_": "StarGiftUnique",
+      "attributes": [
+        {
+          "_": "StarGiftAttributeModel",
+          "crafted": false,
+          "document": {
+            "_": "Document",
+            "attributes": [
+              {
+                "_": "DocumentAttributeImageSize",
+                "h": 512,
+                "w": 512
+              },
+              {
+                "_": "DocumentAttributeCustomEmoji",
+                "alt": "🐈‍⬛",
+                "free": false,
+                "stickerset": {
+                  "_": "InputStickerSetID",
+                  "id": 2964141614563353
+                },
+                "text_color": false
+              },
+              {
+                "_": "DocumentAttributeFilename",
+                "file_name": "AnimatedSticker.tgs"
+              }
+            ],
+            "dc_id": 1,
+            "id": 4976905513015967745,
+            "mime_type": "application/x-tgsticker",
+            "size": 20604,
+            "thumbs": [
+              {
+                "_": "PhotoPathSize",
+                "bytes": "2903b209dc618150574e64824d435d4569818042554354498b46b84f8703478e698d6e43434b854f86598355514d02654e0548455f9f62a552a7488d035b8f0545864f845584518061465b5b81448748874b8351437449460981414184418541894192429b429b82bc5fbc47804f81554343434749474d804b874e885684524472484608804357435a43654847035848077d495648718147028346884b895184524f6e44470783478a579556a483b4b68905b382808f6391679e75880548018e054803bb428b06a38d098809868f8b9d8fad81848190828ca064784c035152028a4fa263b5559b9448b545870785afa688049c8d0547a36db5738605448a448c03488f00459e428705688705",
+                "type": "j"
+              },
+              {
+                "_": "PhotoSize",
+                "h": 128,
+                "size": 5410,
+                "type": "m",
+                "w": 128
+              }
+            ],
+            "video_thumbs": []
+          },
+          "name": "Chili Whisk",
+          "rarity": {
+            "_": "StarGiftAttributeRarity",
+            "permille": 150
+          }
+        },
+        {
+          "_": "StarGiftAttributePattern",
+          "document": {
+            "_": "Document",
+            "attributes": [
+              {
+                "_": "DocumentAttributeImageSize",
+                "h": 512,
+                "w": 512
+              },
+              {
+                "_": "DocumentAttributeCustomEmoji",
+                "alt": "🐹",
+                "free": false,
+                "stickerset": {
+                  "_": "InputStickerSetID",
+                  "id": 2964141614563348
+                },
+                "text_color": true
+              },
+              {
+                "_": "DocumentAttributeFilename",
+                "file_name": "AnimatedSticker.tgs"
+              }
+            ],
+            "dc_id": 1,
+            "id": 5132006132218331137,
+            "mime_type": "application/x-tgsticker",
+            "size": 2323,
+            "thumbs": [
+              {
+                "_": "PhotoPathSize",
+                "bytes": "0f00ac00dc588270444609507f6348014e01425100a24c8a02a78c04438b56837d5846065143638b6f9580814e8c4e8b84508d5f976d83438a468a4b814a676057470183488a4d9250a950ad9f8604b4828298469b469743ab828604868180885189528c58a97686085b9f9f51870651880081888a8b8e91838496a792a74682655d6f5f634974a96586069cad8a01608f04958e8e96a096b4808e819b44a956ba480988064e0687014d43594d66504a425e886a884d805d49694752826391460492",
+                "type": "j"
+              },
+              {
+                "_": "PhotoSize",
+                "h": 128,
+                "size": 1524,
+                "type": "m",
+                "w": 128
+              }
+            ],
+            "video_thumbs": []
+          },
+          "name": "Hamster",
+          "rarity": {
+            "_": "StarGiftAttributeRarity",
+            "permille": 50
+          }
+        },
+        {
+          "_": "StarGiftAttributeBackdrop",
+          "backdrop_id": 38,
+          "center_color": 11771778,
+          "edge_color": 8287067,
+          "name": "Desert Sand",
+          "pattern_color": 5260329,
+          "rarity": {
+            "_": "StarGiftAttributeRarity",
+            "permille": 17
+          },
+          "text_color": 15918541
+        }
+      ],
+      "availability_issued": 5172,
+      "availability_total": 9968,
+      "burned": false,
+      "craft_chance_permille": null,
+      "crafted": false,
+      "gift_address": null,
+      "gift_id": 5265149461264334849,
+      "id": 5271482527981240321,
+      "num": 827,
+      "offer_min_stars": null,
+      "owner_visibility": {
+        "blockchain_address": false,
+        "display_name": true,
+        "peer": false
+      },
+      "peer_color": null,
+      "released_by": {
+        "_": "PeerChannel",
+        "channel_id": 10929622
+      },
+      "require_premium": false,
+      "resale_ton_only": true,
+      "resell_amount": [
+        {
+          "_": "StarsAmount",
+          "amount": 6331,
+          "nanos": 0
+        },
+        {
+          "_": "StarsTonAmount",
+          "amount": 90000000000
+        }
+      ],
+      "slug": "Cat-827",
+      "theme_available": false,
+      "theme_peer": null,
+      "title": "Cat",
+      "value_amount": 13159100,
+      "value_currency": "RUB",
+      "value_usd_amount": 150000
+    },
+    {
+      "_": "StarGiftUnique",
+      "attributes": [
+        {
+          "_": "StarGiftAttributeModel",
+          "crafted": false,
+          "document": {
+            "_": "Document",
+            "attributes": [
+              {
+                "_": "DocumentAttributeImageSize",
+                "h": 512,
+                "w": 512
+              },
+              {
+                "_": "DocumentAttributeCustomEmoji",
+                "alt": "🐈‍⬛",
+                "free": false,
+                "stickerset": {
+                  "_": "InputStickerSetID",
+                  "id": 2964141614563353
+                },
+                "text_color": false
+              },
+              {
+                "_": "DocumentAttributeFilename",
+                "file_name": "AnimatedSticker.tgs"
+              }
+            ],
+            "dc_id": 1,
+            "id": 4976905513015967745,
+            "mime_type": "application/x-tgsticker",
+            "size": 20604,
+            "thumbs": [
+              {
+                "_": "PhotoPathSize",
+                "bytes": "2903b209dc618150574e64824d435d4569818042554354498b46b84f8703478e698d6e43434b854f86598355514d02654e0548455f9f62a552a7488d035b8f0545864f845584518061465b5b81448748874b8351437449460981414184418541894192429b429b82bc5fbc47804f81554343434749474d804b874e885684524472484608804357435a43654847035848077d495648718147028346884b895184524f6e44470783478a579556a483b4b68905b382808f6391679e75880548018e054803bb428b06a38d098809868f8b9d8fad81848190828ca064784c035152028a4fa263b5559b9448b545870785afa688049c8d0547a36db5738605448a448c03488f00459e428705688705",
+                "type": "j"
+              },
+              {
+                "_": "PhotoSize",
+                "h": 128,
+                "size": 5410,
+                "type": "m",
+                "w": 128
+              }
+            ],
+            "video_thumbs": []
+          },
+          "name": "Chili Whisk",
+          "rarity": {
+            "_": "StarGiftAttributeRarity",
+            "permille": 150
+          }
+        },
+        {
+          "_": "StarGiftAttributePattern",
+          "document": {
+            "_": "Document",
+            "attributes": [
+              {
+                "_": "DocumentAttributeImageSize",
+                "h": 512,
+                "w": 512
+              },
+              {
+                "_": "DocumentAttributeCustomEmoji",
+                "alt": "🐷",
+                "free": false,
+                "stickerset": {
+                  "_": "InputStickerSetID",
+                  "id": 2964141614563348
+                },
+                "text_color": true
+              },
+              {
+                "_": "DocumentAttributeFilename",
+                "file_name": "AnimatedSticker.tgs"
+              }
+            ],
+            "dc_id": 1,
+            "id": 5129803153297899521,
+            "mime_type": "application/x-tgsticker",
+            "size": 2243,
+            "thumbs": [
+              {
+                "_": "PhotoPathSize",
+                "bytes": "1903ab03dc77814b054b4f067364627d4b015f4f078080958597859383ae85bd4a9b5a9549089b4a0492578b054f8e014786828d82928785868387059589089095ad93860890828095459544b38d084702940953039407f3cc1a01a309dc0f819d44aa4c86086f4f4a0647034900480097678a069f8a02f3cc0b059502dc4d815a4166444b0859aa4e0186064c07978e968c085c8d01f3cc28049502dc5c84654f6b674556514707884902984e9105890587058c054d845a856886",
+                "type": "j"
+              },
+              {
+                "_": "PhotoSize",
+                "h": 128,
+                "size": 1620,
+                "type": "m",
+                "w": 128
+              }
+            ],
+            "video_thumbs": []
+          },
+          "name": "Pig",
+          "rarity": {
+            "_": "StarGiftAttributeRarity",
+            "permille": 300
+          }
+        },
+        {
+          "_": "StarGiftAttributeBackdrop",
+          "backdrop_id": 49,
+          "center_color": 5067348,
+          "edge_color": 3225144,
+          "name": "Onyx Black",
+          "pattern_color": 0,
+          "rarity": {
+            "_": "StarGiftAttributeRarity",
+            "permille": 18
+          },
+          "text_color": 11119533
+        }
+      ],
+      "availability_issued": 5172,
+      "availability_total": 9968,
+      "burned": false,
+      "craft_chance_permille": null,
+      "crafted": false,
+      "gift_address": null,
+      "gift_id": 5265149461264334849,
+      "id": 5265200025914310657,
+      "num": 53,
+      "offer_min_stars": null,
+      "owner_visibility": {
+        "blockchain_address": false,
+        "display_name": true,
+        "peer": false
+      },
+      "peer_color": null,
+      "released_by": {
+        "_": "PeerChannel",
+        "channel_id": 10929622
+      },
+      "require_premium": false,
+      "resale_ton_only": true,
+      "resell_amount": [
+        {
+          "_": "StarsAmount",
+          "amount": 7034222,
+          "nanos": 0
+        },
+        {
+          "_": "StarsTonAmount",
+          "amount": 99999000000000
+        }
+      ],
+      "slug": "Cat-53",
+      "theme_available": false,
+      "theme_peer": null,
+      "title": "Cat",
+      "value_amount": 17100,
+      "value_currency": "RUB",
+      "value_usd_amount": 195
+    }
+  ],
+  "next_offset": "6701322539114418013_3"
+}

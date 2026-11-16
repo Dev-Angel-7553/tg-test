@@ -1,0 +1,161 @@
+{
+  "_": "UniqueStarGift",
+  "gift": {
+    "_": "StarGiftUnique",
+    "attributes": [
+      {
+        "_": "StarGiftAttributeModel",
+        "crafted": false,
+        "document": {
+          "_": "Document",
+          "attributes": [
+            {
+              "_": "DocumentAttributeImageSize",
+              "h": 512,
+              "w": 512
+            },
+            {
+              "_": "DocumentAttributeCustomEmoji",
+              "alt": "🥉",
+              "free": false,
+              "stickerset": {
+                "_": "InputStickerSetID",
+                "id": 2964141614563362
+              },
+              "text_color": false
+            },
+            {
+              "_": "DocumentAttributeFilename",
+              "file_name": "AnimatedSticker.tgs"
+            }
+          ],
+          "dc_id": 1,
+          "id": 4969752339473760257,
+          "mime_type": "application/x-tgsticker",
+          "size": 26296,
+          "thumbs": [
+            {
+              "_": "PhotoPathSize",
+              "bytes": "1908ae04dc7d834b07644d084903567a424c02ad50028b49aa51b1598081845a835b434a4d52515b4a565d47055e49088046928093808e80b644b8428386848e86948387815286558080bc8486078481808e458f44878442944499499851b15b8702458b58935a9d8183848685898187418d8093818487828b838c8386819287988bac9dbbb4bd89024a95064b079509",
+              "type": "j"
+            },
+            {
+              "_": "PhotoSize",
+              "h": 128,
+              "size": 3842,
+              "type": "m",
+              "w": 128
+            }
+          ],
+          "video_thumbs": []
+        },
+        "name": "Third",
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 500
+        }
+      },
+      {
+        "_": "StarGiftAttributePattern",
+        "document": {
+          "_": "Document",
+          "attributes": [
+            {
+              "_": "DocumentAttributeImageSize",
+              "h": 512,
+              "w": 512
+            },
+            {
+              "_": "DocumentAttributeCustomEmoji",
+              "alt": "🦤",
+              "free": false,
+              "stickerset": {
+                "_": "InputStickerSetID",
+                "id": 2964141614563348
+              },
+              "text_color": true
+            },
+            {
+              "_": "DocumentAttributeFilename",
+              "file_name": "AnimatedSticker.tgs"
+            }
+          ],
+          "dc_id": 1,
+          "id": 5130158656330924033,
+          "mime_type": "application/x-tgsticker",
+          "size": 1966,
+          "thumbs": [
+            {
+              "_": "PhotoPathSize",
+              "bytes": "1e06ae01dc5f8347034947046e8154876d907e874e915a915a5e4a4705634a065d6f894f8a094801b17d77470050028b5406a7568a02468f025aa74f8b05480890007d84838888878d81854c8b478d998888099f88018608418649874d86438147434841818489908b9588928ba888bc46b26d880847008c096686044889034a048908f3cc20089e07dc2282bb5187066ca67f444f0248024e055d83789548039f548768867b8b4682848c8692858d859a85a7809246a24db280808f8498869386a68db8949788ae8e87008e",
+              "type": "j"
+            },
+            {
+              "_": "PhotoSize",
+              "h": 128,
+              "size": 1400,
+              "type": "m",
+              "w": 128
+            }
+          ],
+          "video_thumbs": []
+        },
+        "name": "Turkey",
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 263
+        }
+      },
+      {
+        "_": "StarGiftAttributeBackdrop",
+        "backdrop_id": 52,
+        "center_color": 10319041,
+        "edge_color": 7949728,
+        "name": "Grape",
+        "pattern_color": 4065899,
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 10
+        },
+        "text_color": 14728702
+      }
+    ],
+    "availability_issued": 219,
+    "availability_total": 5000,
+    "burned": false,
+    "craft_chance_permille": null,
+    "crafted": false,
+    "gift_address": null,
+    "gift_id": 5258006934946054145,
+    "id": 5260764681907208193,
+    "num": 1526,
+    "offer_min_stars": null,
+    "owner_visibility": {
+      "blockchain_address": false,
+      "display_name": true,
+      "peer": false
+    },
+    "peer_color": null,
+    "released_by": null,
+    "require_premium": false,
+    "resale_ton_only": false,
+    "resell_amount": [
+      {
+        "_": "StarsAmount",
+        "amount": 5712,
+        "nanos": 0
+      },
+      {
+        "_": "StarsTonAmount",
+        "amount": 81210000000
+      }
+    ],
+    "slug": "Medal-1526",
+    "theme_available": false,
+    "theme_peer": null,
+    "title": "Medal",
+    "value_amount": 38300,
+    "value_currency": "RUB",
+    "value_usd_amount": 437
+  }
+}

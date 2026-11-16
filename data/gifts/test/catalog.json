@@ -1,0 +1,4231 @@
+{
+  "_": "StarGifts",
+  "gifts": [
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 2125,
+      "first_sale_date": "2024-10-13T10:15:11+00:00",
+      "gifts_per_round": null,
+      "id": 5168139000589844481,
+      "last_sale_date": "2024-10-13T10:15:11+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 2500,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "☺️",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751951
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 1258816259752389,
+        "mime_type": "application/x-tgsticker",
+        "size": 10684,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1b09af02dc508a47076147096180804f9451955d944608444703644351806289708447934d8e5255566a6470460941498252815a8042464246454357a876a17e41425d80618154444807584606799a6a8a066e8e096e8e809d86aa868380a649a74a854b815691599846959ea999b74d8d0763920984a89f6186087a87044281578357858183848e8591838b819a86a480828b8a8c8b8d8d949c97ae839086b04cb8438147464a444481498b4c8e44844d854c89858b9093949e8ca14787096f88004c8056465e4e454545514b504981559a5ba0498852805c80428042844884",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 90,
+            "size": 3752,
+            "type": "s",
+            "w": 90
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 10,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": "2024-10-07T18:44:44+00:00",
+      "gifts_per_round": null,
+      "id": 5197455433740058625,
+      "last_sale_date": "2026-11-16T17:31:36+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "💩",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751960
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5098324350143037441,
+        "mime_type": "application/x-tgsticker",
+        "size": 5973,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1003a509dc60806d685b7f86489049965082424255415a84529452995c874b415a88678648964c9655804b8e588d6181444a5081519443b395bea4888b86988ba48181918694898a8a8492899e82859689999a81854399419c838388828b84918b99a48cb559a34c01904f0990528064857585",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 1844,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Zombie",
+      "auction_start_date": "2025-11-04T09:08:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-04T10:08:01+00:00",
+      "gifts_per_round": 4,
+      "id": 5211096653599080450,
+      "last_sale_date": "2025-11-12T02:13:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🧟‍♀️",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4920326023335116801,
+        "mime_type": "application/x-tgsticker",
+        "size": 63239,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1a06ae06dc70464909884e07425644605c6e634b456444575f864d95449a4b85475e5d4b6d9a559f9daf958342485b496045558d648a7b804348414844425a897791470881434b80424e854888528b5b81428546834644814e844c80865196569d63824346444547874d9d4ba850974a9d52a26782488e898e8a81828a438c448b449543a042898088029f8902a786854d84468d888a92929a9b85874a864a87808389888a8b818345854387898f959797a9818446864589848d859d86aa80864983488592a086b387b68181a1459b91448e579959a74392a55fb3428a9453985aa14688a28b90a8488c4f8859854a434e9a619c6a854807804c0981",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5222,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Zombie",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Moon",
+      "auction_start_date": "2025-11-12T07:34:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1200,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-12T08:34:01+00:00",
+      "gifts_per_round": 3,
+      "id": 5235553387088445444,
+      "last_sale_date": "2025-11-13T18:24:01+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🌕",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4945103938773843969,
+        "mime_type": "application/x-tgsticker",
+        "size": 34391,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1a01ad01dc78824a08584e077f4c004b094d61028f0060049782b286870191920389068d04a4044704a500",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4216,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Moon",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Bouquet",
+      "auction_start_date": "2025-11-13T08:34:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 128,
+      "first_sale_date": "2025-11-13T09:34:01+00:00",
+      "gifts_per_round": 4,
+      "id": 5237699187109265411,
+      "last_sale_date": "2025-11-14T06:54:01+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 150,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "💐",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4949997585856200705,
+        "mime_type": "application/x-tgsticker",
+        "size": 48487,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "2907af02dc51585b46047848026a5a4709a44b09a947818e5587535d8a769b4807975142be74815648844803a34704958b509a60a86cac6849065348097e824d9252955c834b445d826c844b67864b559252a351b759834189838983494d4701717c7a8847a5809f495764475f976e8b46835e9a5890838b9a97a28482474d464e8447904897458882a9a5afad95994c860842870984849d480193490644475a4c535885498e47974888814553815994558a01548b09428e8e4aa14ab1808e909b94a98184418e828b8e4a9166a17189468fb88d86054799994e968244904ca152b04ca07b8805708c028eb28a01860789038709498d79566f4a8e90ad9896ad4c8a686f61618a93999c86aa",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 6862,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Bouquet",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Peacock",
+      "auction_start_date": "2025-11-13T19:24:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1500,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2444922,
+        "edge_color": 993865,
+        "text_color": 10928607
+      },
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": "2025-11-13T20:24:00+00:00",
+      "gifts_per_round": 5,
+      "id": 5240227329413742595,
+      "last_sale_date": "2025-11-14T21:19:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🦚",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4949521879573463041,
+        "mime_type": "application/x-tgsticker",
+        "size": 38009,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1809af01dc45445544524e82458d429047864a8047015346065c898086594743424909834b05804c438b658766524559876c4c46479156915b824b524c58564a51a255a55784434648494d4a52854385518044625b54658745b44eb44e8081585c536b885c870395bb8b534d565e4c7482459c81a184858488968d918b4f876195728f539e9ea59e8280894c8d4a81808b8b8c8882469a66a45c88888eb296b18180a666ad54848b899d83a74486528b4b908281b36cb74e828e54aa53ac8187ba46b58f438d59bf5886048483ad89a49846895e8c599683859894919b7bb959595fb0818b4803434b049347854f4d53487e8901b59f698806",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 7898,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Peacock",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Lime",
+      "auction_start_date": "2025-11-13T19:24:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1200,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2970410,
+        "edge_color": 927256,
+        "text_color": 11915159
+      },
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-13T20:24:00+00:00",
+      "gifts_per_round": 3,
+      "id": 5240468393043165189,
+      "last_sale_date": "2025-11-15T05:39:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🍋‍🟩",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4949752819964968961,
+        "mime_type": "application/x-tgsticker",
+        "size": 65171,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1b05ad06dc70424906524d04714900470247095306655d02864e984604ad7d8b82bab38700beb7b18b01890790088e038c8aac9baeab8b870348088f074f088f04",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3526,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Lime",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Bow",
+      "auction_start_date": "2025-11-14T15:54:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 500,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 5912093,
+        "edge_color": 1969931,
+        "text_color": 14263176
+      },
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-14T16:54:00+00:00",
+      "gifts_per_round": 50,
+      "id": 5242243696300130310,
+      "last_sale_date": "2025-11-14T17:39:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🏹",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4951959874809364481,
+        "mime_type": "application/x-tgsticker",
+        "size": 38426,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "2902af01dc4949524b5f4e714854026554046345864b92539446814553484e4284848b8190509e5d87628448464c9554924f448977804605464679977e834451aa78b2470389524d4803504a0344566752005f5204808098afadacbb488b096f9106469590a9a9b7bc8383839c8a9a8641af68b06f814a4f574d6684578801768906608f944188055989054e85654b6a494a846ba56fb042848f8490848e859f98aca38607b69d8c0291930146a5b0adabb3488b66846f85f3cc2704ac08dc4853486d444608944b0848480747054d05454448565253788f4e0791004b059205ba9b8e099a9502a5f3cc1006a001dc2665870747048b044b01844447004a0148044a046e4648098f4d0486428085a98b8708948d02518a0789038d01",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5108,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Bow",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Baguette",
+      "auction_start_date": "2025-11-14T15:28:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 3500,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2444922,
+        "edge_color": 993865,
+        "text_color": 10928607
+      },
+      "birthday": false,
+      "convert_stars": 213,
+      "first_sale_date": "2025-11-14T16:28:00+00:00",
+      "gifts_per_round": 7,
+      "id": 5242556451523657730,
+      "last_sale_date": "2025-11-18T13:23:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 250,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🥖",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4951879919698182145,
+        "mime_type": "application/x-tgsticker",
+        "size": 15360,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "0b03af07dc460843490147077e4c09996e860648028a024b089f5fbe7d89034901a05f860546088a074806b4588c078c8c0387064486054b008f034f03930570ae4e008f0455008f03",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3538,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Baguette",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Fox",
+      "auction_start_date": "2025-11-14T18:39:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2185824,
+        "edge_color": 466469,
+        "text_color": 10408921
+      },
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-14T19:39:00+00:00",
+      "gifts_per_round": 5,
+      "id": 5242595003150106628,
+      "last_sale_date": "2025-11-19T20:49:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🦊",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4951899315770490881,
+        "mime_type": "application/x-tgsticker",
+        "size": 36847,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906ad06dc5e80795748035f5f484900454b01624242864584474547504956514547914f95538948588751449a67af4700bb4b06834c495d4d69475d4a7b4b48088044436c816c9f838607918904a189859796a19889839c46a7469280a788b88787809c56a35a984eb25687075d85418c47914383828099419c42a24486094c8a03438a4f9950a242a0978702a78906878a9092969c848854835383a79c958b80a4428286848586488d5c936a975886728847048f5b87719d48009d",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4650,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Fox",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Facepalm",
+      "auction_start_date": "2025-11-19T18:15:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": 1,
+      "availability_total": 100,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 6238564,
+        "edge_color": 2299700,
+        "text_color": 15314151
+      },
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-19T18:20:00+00:00",
+      "gifts_per_round": 20,
+      "id": 5255973117607542786,
+      "last_sale_date": "2025-11-19T18:40:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": 492401,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🤦",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4967644756071940097,
+        "mime_type": "application/x-tgsticker",
+        "size": 64016,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1809af03dc5b8075804709804e805b8068804d805b8068804b805c84664454508d779b46049a50ba59880663818098479848804649474d4a46464a4e5152428149864e85434141474248494351874d49814348844b814545875f8567414a4d564f63424d8358836342634f7345480985539069a07485438e4392458544884f8f54aa5e8b0855900185b39e87028808bf8e054187468e4794818783918299428e49984ca5438c89a184ab42854b804e8080808288828942884b804f80818081874288438152475043848b8d9b94a4969a8608908900bd84888a95879e438b5f89668978804b0280500880",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4754,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Facepalm",
+      "upgrade_stars": null,
+      "upgrade_variants": 800
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Monkey",
+      "auction_start_date": "2025-11-19T22:51:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 100,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2970410,
+        "edge_color": 927256,
+        "text_color": 11915159
+      },
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-19T22:56:00+00:00",
+      "gifts_per_round": 20,
+      "id": 5256049568025411585,
+      "last_sale_date": "2025-11-19T23:16:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": {
+        "_": "PeerUser",
+        "user_id": 429000
+      },
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🐵",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4968004292079255553,
+        "mime_type": "application/x-tgsticker",
+        "size": 15573,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1908ae04dc6e4f4a08594e05795a576a786a490080468658835d43474a4b4f515259597c514900895da27486057786808d82938086429e61a867ab5d8a04638f03519588a794b7a482828c929094868393809a819984af98b7b08b9d86bd498807458950905499428483b4438609598703470986074d06890250875a906d90",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4318,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Monkey",
+      "upgrade_stars": null,
+      "upgrade_variants": 1200
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Medal",
+      "auction_start_date": "2025-11-20T08:00:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": 5,
+      "availability_total": 5000,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 3684410,
+        "edge_color": 1513498,
+        "text_color": 12830153
+      },
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-20T08:05:00+00:00",
+      "gifts_per_round": 10,
+      "id": 5258006934946054145,
+      "last_sale_date": "2025-11-22T01:40:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": 5000,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🏅",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4967768257856536577,
+        "mime_type": "application/x-tgsticker",
+        "size": 37492,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1a00af07dc7f834c03734c034b0580668d4703ab49088947a04da65583458056815c804483468449814558615c674e5c547f5d490341444e6449668080b182b8828680a545a643868887978aa18283825e886184428c8392838e808807448809438784538608578708468f4a9f51ae4a955f9e6db041818489848b81874392809981839388968a8705ab87098f03899402548e6a95460696",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4004,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Medal",
+      "upgrade_stars": null,
+      "upgrade_variants": 1200
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "DivingMask",
+      "auction_start_date": "2025-11-20T17:49:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 500,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2444922,
+        "edge_color": 993865,
+        "text_color": 10928607
+      },
+      "birthday": false,
+      "convert_stars": 75,
+      "first_sale_date": "2025-11-20T17:54:00+00:00",
+      "gifts_per_round": 10,
+      "id": 5258436135322910724,
+      "last_sale_date": "2025-11-20T19:32:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 88,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🤿",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4970074174258151425,
+        "mime_type": "application/x-tgsticker",
+        "size": 62291,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1702ae06dc6c874e5f5b74484c725c5a73904fa986bc838b41964ba2488d8390918d9c8080458943898609568b05678d084901854b465300465508804a4774897687004aa98a02aa8d018091808e02818e0482868d898a91458c50a951b68184518554864381428b438d48864d445b8d44844e4452444e81618c6f915c8a4901ab4b03abf3cc1609a209dc55416156755b544567857b816d496670727744434a804f8043814575437983478c498f4f8246455a466044618047009a4903aa648a02498f0050ab468905658d0643a59ea68905988d07438b8d8f9197858a81aa81b6808550815383488548a967b45b8a754548008451865a996c99",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5906,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Diving Mask",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Rhino",
+      "auction_start_date": "2025-11-20T14:39:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 100,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 6169908,
+        "edge_color": 2558996,
+        "text_color": 15442355
+      },
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": "2025-11-20T14:44:00+00:00",
+      "gifts_per_round": 20,
+      "id": 5258469206571089921,
+      "last_sale_date": "2025-11-20T15:04:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🦏",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4972506508727156737,
+        "mime_type": "application/x-tgsticker",
+        "size": 65520,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1b09ac08dc5c8a604d634e4b4466886b48465399518d7646545d5e6473434a82598161434644514a5243817f817f81448146874a87478046474a4a424144854784584c496752734b4e50614e728044916d95628489448607958606888043728a678383919e99938c4e4964897087458a8f8c9284868a558b568444908693898e8fa186b48e88838d8c948f878393819b818d83988da493a8938809588c0796999e9988079f8c038186819e4a9d4a424568456e804642554350449246ab80bc8691419a41aa80a190b86bac69488464857282574c5c566e4a54858f8793838848b659b949827785675284468c49904f8a534c655c637d869a8809678900",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3410,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Rhino",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Scissors",
+      "auction_start_date": "2025-11-22T16:45:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 3684410,
+        "edge_color": 1513498,
+        "text_color": 12830153
+      },
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-22T16:50:00+00:00",
+      "gifts_per_round": 10,
+      "id": 5264749372175810563,
+      "last_sale_date": "2025-11-23T01:05:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "✂️",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4976731072919240705,
+        "mime_type": "application/x-tgsticker",
+        "size": 22987,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "2702af01dc6c7548034b054c0351024546494d4d53424151975ca65ba675870648008b04438559ab60a67c68a04f08bb53028b4ea862ae6f84475150555065444605884a004c755e46054a064d4e03af608a084d8d00a68a9886b18c8703828890a79aa692429c639e728563854608a24904ac698c04528d08aa9287057a8b044c018a094b416f45708f80849d9ba6a4a6aa8c048f0386069404",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5454,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Scissors",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Brush",
+      "auction_start_date": "2025-11-22T16:50:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 3684410,
+        "edge_color": 1513498,
+        "text_color": 12830153
+      },
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-22T16:55:00+00:00",
+      "gifts_per_round": 10,
+      "id": 5264982434281160705,
+      "last_sale_date": "2025-11-23T01:10:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🪥",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4976753234950488065,
+        "mime_type": "application/x-tgsticker",
+        "size": 36142,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "0706ad07dc7a5888064f028a01500591509d65b0739d5686045c8901778a4a9d57a265844c4a6f80788848954c9d53894892539c5b854488828c82828082448445864287828b8491868b8e8e9f82898a9681a15ba34700b54a018804599a6bbc470188034c8a5c9069997ea848008d0850008f03",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 2630,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Brush",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 4673,
+      "availability_resale": 23,
+      "availability_total": 10000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 425,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5265149461264334849,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": {
+        "_": "PeerChannel",
+        "channel_id": 10929622
+      },
+      "require_premium": false,
+      "resell_min_stars": 3517,
+      "sold_out": false,
+      "stars": 500,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🐈‍⬛",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4976684820416430081,
+        "mime_type": "application/x-tgsticker",
+        "size": 21216,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "2903b209dc618150574e64824d435d4569818042554354498b46b84f8703478e698d6e43434b854f86598355514d02654e0548455f9f62a552a7488d035b8f0545864f845584518061465b5b81448748874b8351437449460981414184418541894192429b429b82bc5fbc47804f81554343434749474d804b874e885684524472484608804357435a43654847035848077d495648718147028346884b895184524f6e44470783478a579556a483b4b68905b382808f6391679e75880548018e054803bb428b06a38d098809868f8b9d8fad81848190828ca064784c035152028a4fa263b5559b9448b545870785afa688049c8d0547a36db5738605448a448c03488f00459e428705688705",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4780,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Cat",
+      "upgrade_stars": 100,
+      "upgrade_variants": 1500
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Squirrel",
+      "auction_start_date": "2025-11-23T09:30:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 5000,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2185824,
+        "edge_color": 466469,
+        "text_color": 10408921
+      },
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-11-23T09:35:00+00:00",
+      "gifts_per_round": 10,
+      "id": 5267131352448237569,
+      "last_sale_date": "2025-11-25T03:10:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🐿",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4978886729890004993,
+        "mime_type": "application/x-tgsticker",
+        "size": 43327,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1205ae07dc5584604c5b60834c984f97515a684e7d504a03804368486b4880804c99569b6487645a746744434844494a414a8956905b8845425191528780848788888b839541a087888642968e908843b45baa675d654902844c00684f57aa4802bd490384439d4b9e4e834b845f94608f81909097998487998da0958d8f92a39fb2a7ac8b00a28d078b038a9f8bbf838905438c55ad49a6af5d9e4b008c4f02464f505d566d4753466c437f866c89094b028b066b89a34987054a8b01428608a28d014993054b9157a169ab578e73944708934b815c46674343814388498963844703804a0881",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5686,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Squirrel",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "BadmintonSet",
+      "auction_start_date": "2025-11-25T13:45:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 100000,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2444922,
+        "edge_color": 993865,
+        "text_color": 10928607
+      },
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": "2025-11-25T13:50:00+00:00",
+      "gifts_per_round": 5,
+      "id": 5271563333495947265,
+      "last_sale_date": "2026-02-03T00:25:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🏸",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4985551771809087489,
+        "mime_type": "application/x-tgsticker",
+        "size": 12541,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1b04ad06dc4c8651545555438143854588438448884d8a4d86484b4d4f474658875e8044458c5e8f63874e9d6a9f76855e4a4808b047048b82938c9696859143a841b38394b48700ad880942864d414f43424142474445438248824a85428483954694504156555753468b48925495f3cc0901ac09dc49814f45554b46464d4e4b57844eb84606860947068c499b4ca6579352bb7786094706834548534a5847544a6d444605a74c069b074c0696069d55bf47058a014e0189015042604c704d4d4163a16aa9498a55955da04b8e50a556ac4a8c7d870447048704",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5144,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Badminton Set",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Boat",
+      "auction_start_date": "2025-11-28T14:56:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 100,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2444922,
+        "edge_color": 993865,
+        "text_color": 10928607
+      },
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": "2025-11-28T15:01:00+00:00",
+      "gifts_per_round": 10,
+      "id": 5282876474922106881,
+      "last_sale_date": "2025-11-28T15:19:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "⛵️",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 4994597136143220737,
+        "mime_type": "application/x-tgsticker",
+        "size": 17711,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1904af05dc5f424a08854d02504a4953525c5b4443665e5b61a64b88044d8c044f8a819f83a841844281708276824708854f06875703804d477a8b7b8c818f919599b1860588068d078b029504889a94b7978802819149058f4a078e4c415844634745414d484e434186438e809481829b819e8193808c03448d02838b8997999fa484865aa45ea849884d098d50008df3cc0f08a603dc4680470344460751a0460487074c048b0552058447956a9e66828141b642bc42af818c04499007438e788d46078d",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3716,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Boat",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Vampire",
+      "auction_start_date": "2025-12-01T10:34:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 100,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2444922,
+        "edge_color": 993865,
+        "text_color": 10928607
+      },
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": "2025-12-01T10:39:00+00:00",
+      "gifts_per_round": 10,
+      "id": 5291867426315567105,
+      "last_sale_date": "2025-12-01T10:57:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🧛‍♀️",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5001641346365128705,
+        "mime_type": "application/x-tgsticker",
+        "size": 43069,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1909af00dc57424f00874f074a4246825083558a65a37086077e80805352636360617b470347014b094656564d07944d038980819e84a3848aa594ae97818086579168905bad6a87056fa6468804428b05988d8b979b9dab8081859486948943aa4dae558448425a4162814b9e8e9f95828b819981a480bd4e8b017290004b8e579c64a84f8f5d995c9aa28dbb9b860986058183858f8393458d4d038a4f038a",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4812,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Vampire",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Mouse",
+      "auction_start_date": "2025-12-01T17:46:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 100,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 3684410,
+        "edge_color": 1513498,
+        "text_color": 12830153
+      },
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": "2025-12-01T17:57:42+00:00",
+      "gifts_per_round": 10,
+      "id": 5292032709542019073,
+      "last_sale_date": "2025-12-01T18:15:42+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🐁",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5003527073231273985,
+        "mime_type": "application/x-tgsticker",
+        "size": 55715,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "2205ae06dc7c834b035b50096a47426e436b50834cb642bf81ad889503860597004c81445f8461845f84779a4808916249915e935f8141448045804a8054815d814f805e816c81438048424a444243824e804b4f9b54ac7a9d4442414c464d484253865c844b4357484e55864b924399488b498676834606424a4b564f60464e4960546b41424b434e45564f4703777548088547bd5a87015b898198859f8388428d4f97518a41908597868e819647a3838f8b92a28fb381834486438981828481864185818b4291438f42a042b041b08289079f8c0287019fb0998a05908f074291419e4bad579f4607a84a04a8",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3966,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Mouse",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Otter",
+      "auction_start_date": "2025-12-01T19:42:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 5000,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 3686002,
+        "edge_color": 2236478,
+        "text_color": 13090547
+      },
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": "2025-12-01T19:57:42+00:00",
+      "gifts_per_round": 5,
+      "id": 5292144194008121345,
+      "last_sale_date": "2025-12-05T07:12:42+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🦦",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5003663739090632705,
+        "mime_type": "application/x-tgsticker",
+        "size": 46134,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "2207ab07dc46804d8052434946425047564242530845550849524351585d5f428146874a8549444674497e53719349095146044a89946e8f7d424455454f508448964c9e5185444343444742448b478d4987434448824a8c46b251ba5981814349424b83459a8a9f8a82809a4c9742448a8085898589809daaa5b386879286998b8b88448f489481818aab8db882894b54514b468880a18f9a8e489164ad50948e87a08eb18183958499849685a290b59a82814246804882438e4d935781418686898586448d49914e80808b8e8d8f918a824c929582838a43898081915988026788064a8246054b4609814595449e5f9e",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5444,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Otter",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Flower",
+      "auction_start_date": "2025-12-04T19:00:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": 1,
+      "availability_total": 10000,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2444922,
+        "edge_color": 993865,
+        "text_color": 10928607
+      },
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": "2025-12-04T19:05:00+00:00",
+      "gifts_per_round": 5,
+      "id": 5294168536648777729,
+      "last_sale_date": "2025-12-11T17:40:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": {
+        "_": "PeerUser",
+        "user_id": 429000
+      },
+      "require_premium": false,
+      "resell_min_stars": 351715,
+      "sold_out": true,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🌼",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5003548389153964033,
+        "mime_type": "application/x-tgsticker",
+        "size": 59501,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1701af06dc4b8056455c4f4b55446f454609804445864789498d539d62a45a8c5f4c705648445146584c655fa44805a249028080460588470557444d82558261805e4f729d7b8481a780a8428041625e656e45598c5f9c6b904b9064ab5d9084aeabb3ab8080806a806d8076a060ba648a4190469b44ad869187069b880382818343854587488e4f96579a5aab49bc8d878894899b929ba35cb860870680808c809a819282aa86af9c838a4393459d44948aa34ab34d8b6588748845804f474f42809088038702a18a0146834f8454884f8d5ca372954d4856545e6043444750474b44968a87005887074d835746634348814d845584",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5958,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Flower",
+      "upgrade_stars": null,
+      "upgrade_variants": 3200
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Bone",
+      "auction_start_date": "2025-12-04T22:30:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 100,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2185824,
+        "edge_color": 466469,
+        "text_color": 10408921
+      },
+      "birthday": false,
+      "convert_stars": 17,
+      "first_sale_date": "2025-12-04T22:37:50+00:00",
+      "gifts_per_round": 20,
+      "id": 5300796281071861761,
+      "last_sale_date": "2025-12-04T22:45:50+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 20,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🦴",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5012536759272079361,
+        "mime_type": "application/x-tgsticker",
+        "size": 9632,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "0e01aa07dc6a885c6f68764d48594b6357555b8a4604a14705974bae4486094b9a488a0546068d024805944e86490987064906af8298a1a4b5858b9b92a39c949c44be5f870255876c817f875d894701ad4907bf4a876291699c44874294449d49a061860447008604",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 2000,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Bone",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 975,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 11,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5305764660585168897,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": true,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": 10,
+      "released_by": null,
+      "require_premium": true,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 13,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "😇",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5019407976801239041,
+        "mime_type": "application/x-tgsticker",
+        "size": 56447,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1908ae05dc61457b6f4801470046054701510652094b025d028f58a86a86096fa6478705898a02a4838390979497818082428344894c9458a161a55c8905618d02428b0089065498054809a0004f8f78860747078609",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 2698,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 966,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 10,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5307585537740111875,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": true,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": 10,
+      "released_by": null,
+      "require_premium": true,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 12,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🙊",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5017304894525145089,
+        "mime_type": "application/x-tgsticker",
+        "size": 15816,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1603ae00dc7a814e008c5105705362474706474b028048444e42578148864e8755876b524e038951048d4f9266ad5e958687998ea581848b848e8a899244b042860880848c888c9183b0868905958e02838986978f9d958d88076e8b07428e96a08807808a0451897182460883",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 2428,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 960,
+      "availability_resale": null,
+      "availability_total": 997,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 14,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5307587187007553538,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": true,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": 10,
+      "released_by": null,
+      "require_premium": true,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 16,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "😆",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5019756096785481729,
+        "mime_type": "application/x-tgsticker",
+        "size": 56546,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1908ae05dc61457b6f4801470046054701510652094b025d028f58a86a86096fa6478705898a02a4838390979497818082428344894c9458a161a55c8905618d02428b0089065498054809a0004f8f78860747078609",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3142,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 4966,
+      "availability_resale": null,
+      "availability_total": 5000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5310212322558476289,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🍭",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5022064216505319425,
+        "mime_type": "application/x-tgsticker",
+        "size": 58063,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "2c01ad04dc60474c024c094e014d0444816a98789c798e4b07454f066f4b014c00995f019105590087029e8b028a0989039205438c48994fa543864d8b4c92859b93038e028b029003",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3902,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 2946,
+      "availability_resale": null,
+      "availability_total": 3000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 128,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5310214491516960769,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 150,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🍄",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5021709065659613185,
+        "mime_type": "application/x-tgsticker",
+        "size": 25004,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1706b300dc52826244704e6c61844804904c01808151534a6682459562926642436343694471484e066c4a024a09894d9958a7608a46954b9f51934ba45ab06d9663974704870048059143a481b38b9d97a6b9bb88059399b0a88605860499a3478706648904538c69947e9a44815b855a8782938ea392b585974d94509f428a829881a141ad5a890547058909",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3900,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": 1000,
+      "upgrade_variants": 2000
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Mask",
+      "auction_start_date": "2025-12-10T15:28:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 100,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2444922,
+        "edge_color": 993865,
+        "text_color": 10928607
+      },
+      "birthday": false,
+      "convert_stars": 17,
+      "first_sale_date": "2025-12-10T15:32:52+00:00",
+      "gifts_per_round": 20,
+      "id": 5318941925191974914,
+      "last_sale_date": "2025-12-10T15:36:52+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 20,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎭",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5030906196958117889,
+        "mime_type": "application/x-tgsticker",
+        "size": 22363,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "2007ae09dc7e824808470049014c01804e8372807546444c8a528d4e865e886c855b456f5846056b454547554f52818042860942870681af908708a58b08868b6153624e428b92b14b917846054f50055d5709434d4f555261434b874b8c5184434a74804607864888054b8a05528d44870062870760a38aab8801ac8b01818c45a381ae8182854287418e849b8fa9959689b19087049182808477847c80774e4701614b098041968ea19083804862445eaa9eac8905aa8e02808445b242b385818b42908091878da98bb64886077c91054d079108",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5690,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Mask",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 13996,
+      "availability_resale": null,
+      "availability_total": 14000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 113,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5337278137011011586,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 133,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "sticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5051193071253848065,
+        "mime_type": "application/x-bad-tgsticker",
+        "size": 26268,
+        "thumbs": [],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 13998,
+      "availability_resale": null,
+      "availability_total": 14000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 113,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5339031523049865219,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 133,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "sticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5051193071253848065,
+        "mime_type": "application/x-bad-tgsticker",
+        "size": 26268,
+        "thumbs": [],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 13321,
+      "availability_resale": null,
+      "availability_total": 13330,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 113,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5339119926361718785,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 133,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "sticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5051265656201150465,
+        "mime_type": "application/x-bad-tgsticker",
+        "size": 4369,
+        "thumbs": [],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 12984,
+      "availability_resale": null,
+      "availability_total": 13000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 105,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5339140151362715649,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 123,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "sticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5051293105337139201,
+        "mime_type": "application/x-bad-tgsticker",
+        "size": 31135,
+        "thumbs": [],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": 849,
+      "upgrade_variants": 40
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 13996,
+      "availability_resale": null,
+      "availability_total": 14000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 113,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5339250729590718466,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 133,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "sticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5051193071253848065,
+        "mime_type": "application/x-bad-tgsticker",
+        "size": 26268,
+        "thumbs": [],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 12995,
+      "availability_resale": null,
+      "availability_total": 13000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 105,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5339481476708696065,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 123,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "sticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5051293105337139201,
+        "mime_type": "application/x-bad-tgsticker",
+        "size": 31135,
+        "thumbs": [],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 4984,
+      "availability_resale": null,
+      "availability_total": 5000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 510,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5350795167890669569,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 600,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "sticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5062372810995793921,
+        "mime_type": "application/x-bad-tgsticker",
+        "size": 31200,
+        "thumbs": [],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": 813,
+      "upgrade_variants": 100
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Microphone",
+      "auction_start_date": "2025-12-25T16:52:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 100000,
+      "background": {
+        "_": "StarGiftBackground",
+        "center_color": 2185824,
+        "edge_color": 466469,
+        "text_color": 10408921
+      },
+      "birthday": false,
+      "convert_stars": 21,
+      "first_sale_date": "2025-12-25T16:57:00+00:00",
+      "gifts_per_round": 5,
+      "id": 5364316081420763138,
+      "last_sale_date": "2026-03-05T03:32:00+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 25,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎙",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5075598346740039681,
+        "mime_type": "application/x-tgsticker",
+        "size": 26916,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1a08af05dc52804d06804d094a5370bd4ca66465655848085c4d04414f5b575f6e4357906d906e8042474d4852424b8353825c424d4951475f856c860446088a014708924588034e8909458985968b9c92898c87998ba5848a8a8b8e9584898292839a81908d9990a7838b8093839d828b89938b9e8187818f8195808e889589a2828981b9458605498e6d9a7ba748874d92559943834c834b88828988065287059e42894a05894b078a",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5238,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Microphone",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 99879,
+      "availability_resale": 2,
+      "availability_total": 100000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 170,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5368524994752020482,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": true,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": 5,
+      "released_by": null,
+      "require_premium": true,
+      "resell_min_stars": 351715,
+      "sold_out": false,
+      "stars": 200,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎁",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5080499497130262530,
+        "mime_type": "application/x-tgsticker",
+        "size": 14432,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1e00b302dc5f8a775947075d4c425a8266816045460651490263685a4a00470848034d0385509c5b9d69814c4a5d4b694566884b05b14d009247a180b38182818a438f4384818346854986488c5093568847a05ea7638c489d47a8508242834686488180b685bb87a58dbfae88008800858b838588928284418b838c848089838b838e829b45aa81958a9d9ea6b29c8605908f015795004d945da771b446835486588a62a264ba4907b9",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 8688,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Shard Test",
+      "upgrade_stars": 25,
+      "upgrade_variants": 1600
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 9980,
+      "availability_resale": null,
+      "availability_total": 10000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 850,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5368539692130107394,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 1000,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "sticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5080320147885916161,
+        "mime_type": "application/x-bad-tgsticker",
+        "size": 56205,
+        "thumbs": [],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 9944,
+      "availability_resale": null,
+      "availability_total": 10000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 9,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5368615038741381122,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 10,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "💀",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5080365545690234881,
+        "mime_type": "application/x-tgsticker",
+        "size": 30452,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1009b005dc60896d62746542814284448545874b8d538f628a7d54460773584b08835b008b086102a35487085c8b085ba7818707868b02998802ac8b098f048a0198034bb3708708490988034d8276464604814484479e4aa44d9a6fad47049942425256525641804d9650994787518b5a8b",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4102,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 10,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 8500,
+      "first_sale_date": "2025-06-17T07:25:10+00:00",
+      "gifts_per_round": null,
+      "id": 5370937340443230210,
+      "last_sale_date": "2025-07-21T09:36:16+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 10000,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "💀",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5082549450660904961,
+        "mime_type": "application/x-tgsticker",
+        "size": 30850,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1009b005dc60896d62746542814284448545874b8d538f628a7d54460773584b08835b008b086102a35487085c8b085ba7818707868b02998802ac8b098f048a0198034bb3708708490988034d8276464604814484479e4aa44d9a6fad47049942425256525641804d9650994787518b5a8b",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4370,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 4040,
+      "availability_resale": 2,
+      "availability_total": 5000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 213,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5415586798250229762,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": true,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": 99999,
+      "sold_out": false,
+      "stars": 250,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🔮",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5129989645072859137,
+        "mime_type": "application/x-tgsticker",
+        "size": 31490,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1a07b300dc618050034251036a44528c60916f86528463897181448747854b454d5b5d636a5c6d624908574e09a95404a2025401a6058789ad818904558d04499062a467b242848487858b83898091819a839593a498b78fb84c05b84f06b9",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 8008,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Crystal Ball",
+      "upgrade_stars": 25,
+      "upgrade_variants": 2400
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2024-10-13T11:06:24+00:00",
+      "gifts_per_round": null,
+      "id": 5415686299757576193,
+      "last_sale_date": "2024-10-13T11:06:24+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "🐊",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751963
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5114387789823082497,
+        "mime_type": "application/x-tgsticker",
+        "size": 52576,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "0d06a908dc6a4d86084a0087054e0484595606bb5108488141958f9f8e8d428f015a8e0272465047027648054607490349016b4b045c4808848550874e8d899d8a078d008e018d07bd8c48034e024b4d08888090888e91438c5b54558389a5a48707b78a07818193459445ae4c4b749746058643898b8b8f8484844c87518346828e879281808b498b43418d4b9980a69a9db77688085f8c8864a855a68781b164b35e828647938093868095489243458b4e9b4ea8808291818c8b44875a8457928593a7b58c9246499248924981444d494a4e81419e6ba1558494938903838a0953934606a04903a54e825f806d82478147924f926882634c0048034c005480918c05888d026ba45e4d02604d02624447068b084a078e01",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5546,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": [
+          {
+            "_": "VideoSize",
+            "h": 512,
+            "size": 42922,
+            "type": "f",
+            "video_start_ts": null,
+            "w": 512
+          }
+        ]
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": null,
+      "availability_resale": null,
+      "availability_total": null,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 21,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5415904913592942593,
+      "last_sale_date": null,
+      "limited": false,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 25,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "🎉",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751960
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5098332124033843201,
+        "mime_type": "application/x-tgsticker",
+        "size": 11726,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1006a604dc4d80614f5e5d8353b95006860751048c4ca38ca24643574c515460434682528a4fa38e91b49a86048183b5aeb8b0898387075888004785996f927f96478295a188ac4d8b4f04880550088805",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3446,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 716,
+      "availability_resale": 9,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 383,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5418168777969762305,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": 104670,
+      "sold_out": false,
+      "stars": 450,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🍬",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5127550331281997825,
+        "mime_type": "application/x-tgsticker",
+        "size": 53729,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "0c03b006dc4d038387035502860857018081644566465647665674684547727c717d864a9e84a34385456263425c86828d849387828284828784ab9baa8805890989058681685a517a9c67b48b86074e84474f425743564176464608594446474f4555834d9155985e8c50856a9774a7578701b78801880182858a4d965d935daa7787097abb448b04860889008c0544894f8f58906f856a4b03490170488a509855a441839c43b28098838a0199870486044a8c5b8f639c509853bf79a74f4b5b5c656b45484e604d588abf5ea96cb542829d969f97ac978a06928c05870482858892859745895a4b5f454c8d48a158ad4786506053654f587254470164504b5c5c636d80804551465056a34a0493094d079400",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 6274,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Candy Cane",
+      "upgrade_stars": 121,
+      "upgrade_variants": 3200
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 600000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 9,
+      "first_sale_date": "2024-12-23T21:11:20+00:00",
+      "gifts_per_round": null,
+      "id": 5424873531156463617,
+      "last_sale_date": "2024-12-26T09:40:15+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 10,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeVideo",
+            "duration": 3.0,
+            "h": 100,
+            "nosound": false,
+            "preload_prefix_size": null,
+            "round_message": false,
+            "supports_streaming": true,
+            "video_codec": "vp9",
+            "video_start_ts": null,
+            "w": 100
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🤣",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563338
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "sticker.webm"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5064362218372464641,
+        "mime_type": "video/webm",
+        "size": 24062,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "348905dc48806544674a43474756475e8070a07787006a838187418b8286858087818c81848588878d879a52b66bb7",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 100,
+            "size": 3478,
+            "type": "m",
+            "w": 100
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": 5,
+      "upgrade_variants": 1500
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 136772,
+      "availability_resale": 3177,
+      "availability_total": 1000000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 17,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5431380290645786625,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": 71,
+      "sold_out": false,
+      "stars": 20,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5143342354798739457,
+        "mime_type": "application/x-tgsticker",
+        "size": 16899,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc50436c8579474342464a454e8081854e854f694c53044853034706806c86046d870178864a4d4804434b038c64be5e8608678a514c76444708895cb659b95f8b546c6e454702944eaa8fac8dac67a582b38482808e5497559444a68ea2a34289569656974286438d8091888db544baad829051b3478605878ab7858606a48a99498a04418b06898c8901938609870058b54e00b55208be8080858f85918086448c4a8f4f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5722,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Cake",
+      "upgrade_stars": 5,
+      "upgrade_variants": 2400
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 4873,
+      "availability_resale": 13,
+      "availability_total": 10000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 43,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5440883382529556482,
+      "last_sale_date": null,
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": 1000,
+      "sold_out": false,
+      "stars": 50,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🍷",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5152120481972748289,
+        "mime_type": "application/x-tgsticker",
+        "size": 27394,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1908b001dc5d854c0655490446069259b355be5f87475052535744478150425544454b47504b65615f4a01684e05434e4d614c6f80468a518954424c54544c618f5a9f86a6908181914490464244516a496ca14786bbaea786434d788a78888084b58ab685808a808f8085808b848f818444436a426aa6499097999c83818344844685478a4c9150a6558805888805b2809448b35abe44824e82508544834388448d80809e4aae81948e91ad8e8606459e5087057288035885644c7b844382478248854386828d429443855a9054978989ad8686049ea3ad7b860648058607",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5536,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Drink",
+      "upgrade_stars": 5,
+      "upgrade_variants": 1500
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 21,
+      "first_sale_date": "2024-10-13T11:16:21+00:00",
+      "gifts_per_round": null,
+      "id": 5451720684528992257,
+      "last_sale_date": "2024-10-13T11:16:21+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 25,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "😁",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751960
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5100328807085113345,
+        "mime_type": "application/x-tgsticker",
+        "size": 3800,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1a01a504dc6a834803534a067646044908aa56088f0151088b04b5880096066d9702",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 2182,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 500,
+      "background": null,
+      "birthday": true,
+      "convert_stars": 21,
+      "first_sale_date": "2024-10-13T10:58:34+00:00",
+      "gifts_per_round": null,
+      "id": 5452109194385686529,
+      "last_sale_date": "2024-10-13T10:58:34+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 25,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "🤩",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751960
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5098578367393824769,
+        "mime_type": "application/x-tgsticker",
+        "size": 4319,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1909a504dc60817e4b48046160606346085f4a0981485e48535986499947a24b8e488165906b8b448c89938986808a468f499d4cbf4c8902808281908a918a87428c5196478a8981a28ea88984a583a4938089568e56918687045a8e004a098e02",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 2360,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 21,
+      "first_sale_date": "2024-10-13T11:12:57+00:00",
+      "gifts_per_round": null,
+      "id": 5453909073445519361,
+      "last_sale_date": "2024-10-13T11:12:57+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 25,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "🍑",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751963
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5114065053095559169,
+        "mime_type": "application/x-tgsticker",
+        "size": 25450,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "0d07a804dc4c805749634a48805e8f65864344474d4752804386468449484c5a546262586a474a009c4d00a86187044f89055d85449143924a82538569977587459194949882828542874387448f4796499545ae4686074290834f9b52a18081828183818a8493879b8c978daca2b1bd938a024b038f0453029009478146464b47494155855d88",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3178,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": [
+          {
+            "_": "VideoSize",
+            "h": 512,
+            "size": 64143,
+            "type": "f",
+            "video_start_ts": null,
+            "w": 512
+          }
+        ]
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": null,
+      "availability_resale": null,
+      "availability_total": null,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 21,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5453972608896729089,
+      "last_sale_date": null,
+      "limited": false,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 25,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "❤️",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751960
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5098479222368763905,
+        "mime_type": "application/x-tgsticker",
+        "size": 1861,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906a505dc614d7e7848044804636c7c4e089a4e07a280a394baa1858387488c4c8c4c9b55ad5590809f86aa91aaab868a04588e014d9179870347068703",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 1428,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 21,
+      "first_sale_date": "2024-10-13T10:43:53+00:00",
+      "gifts_per_round": null,
+      "id": 5454061037978386433,
+      "last_sale_date": "2024-10-13T10:43:53+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 25,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "🦆",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751963
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5114089762042413057,
+        "mime_type": "application/x-tgsticker",
+        "size": 5416,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1808ac06dc63444a01854c045d4c5398769146054b514a014607764702894294829d808642454c46524552466543778f470489014d0490084b09b18a8900ad8a09890188918aa38bb68082418580868783a858aa80828e6d86056488058993afb99e88025aa54e02a95203a9",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 3856,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": [
+          {
+            "_": "VideoSize",
+            "h": 512,
+            "size": 27042,
+            "type": "f",
+            "video_start_ts": null,
+            "w": 512
+          }
+        ]
+      },
+      "title": null,
+      "upgrade_stars": 5,
+      "upgrade_variants": 1500
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": null,
+      "availability_resale": null,
+      "availability_total": null,
+      "background": null,
+      "birthday": true,
+      "convert_stars": 21,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5454079300179329025,
+      "last_sale_date": null,
+      "limited": false,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 25,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "🤡",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751960
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5118466621479845889,
+        "mime_type": "application/x-tgsticker",
+        "size": 5798,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1a00a504dc668247035049076d585d557a5849038043454446478142824882494b56444441578043454a434f82498a478d4c834541508952864292479847848087838a838781894791468380848486849542a74cbe498b819587a089848088448e438381868688868a809f41a7868584838b859081838c868d8c8186448b438f808384848586838a49994aa04190829f42af4eb47b88094b038901",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 2846,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": false,
+      "auction_slug": null,
+      "auction_start_date": null,
+      "availability_remains": null,
+      "availability_resale": null,
+      "availability_total": null,
+      "background": null,
+      "birthday": true,
+      "convert_stars": 21,
+      "first_sale_date": null,
+      "gifts_per_round": null,
+      "id": 5454418585415843841,
+      "last_sale_date": null,
+      "limited": false,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": false,
+      "stars": 25,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeSticker",
+            "alt": "🙈",
+            "mask": false,
+            "mask_coords": null,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 1258816259751963
+            }
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5113955114817683457,
+        "mime_type": "application/x-tgsticker",
+        "size": 59497,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b302dc4609804d088054078048806c8571804544424d8053844bb74808860449048f49af88be8085424747484c424c805884628b589f63b07487478b50935686448f45944987468d558f5d81414c814a438244944c944c8041444981499a81b54487029385878a9b919fa591ae9b86068606878f93a697b68084448a808c89869c45a58087848e96939d878bb68705ab88044484618067804702804e0480550780",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 2984,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": [
+          {
+            "_": "VideoSize",
+            "h": 512,
+            "size": 39295,
+            "type": "f",
+            "video_start_ts": null,
+            "w": 512
+          }
+        ]
+      },
+      "title": null,
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    },
+    {
+      "_": "StarGift",
+      "auction": true,
+      "auction_slug": "Wood",
+      "auction_start_date": "2025-10-25T22:50:00+00:00",
+      "availability_remains": 0,
+      "availability_resale": null,
+      "availability_total": 1000,
+      "background": null,
+      "birthday": false,
+      "convert_stars": 85,
+      "first_sale_date": "2025-10-30T12:38:41+00:00",
+      "gifts_per_round": 4,
+      "id": 5472072150837886977,
+      "last_sale_date": "2025-11-07T00:56:43+00:00",
+      "limited": true,
+      "limited_per_user": false,
+      "locked_until_date": null,
+      "peer_color_available": false,
+      "per_user_total": null,
+      "released_by": null,
+      "require_premium": false,
+      "resell_min_stars": null,
+      "sold_out": true,
+      "stars": 100,
+      "sticker": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🪵",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563336
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5183872603961425921,
+        "mime_type": "application/x-tgsticker",
+        "size": 22865,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "2208af03dc4881508158415c47775a4801665c4c7857480462614e49055e4a08460847554a7e8548018142858086418180434642488a559c67b2709548a543ba8286828d8394858180848283814b5263606478437687024b058c044b05a280b7ab87028607828399a69aa583414d7586678583858089828b858ca08eaa828d42a085ac8e98b0b4b4880083984aa450b8448c819d80a945b46b8b0049088b02",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 4692,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "title": "Wood",
+      "upgrade_stars": null,
+      "upgrade_variants": null
+    }
+  ]
+}

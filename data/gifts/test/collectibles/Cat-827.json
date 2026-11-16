@@ -1,0 +1,164 @@
+{
+  "_": "UniqueStarGift",
+  "gift": {
+    "_": "StarGiftUnique",
+    "attributes": [
+      {
+        "_": "StarGiftAttributeModel",
+        "crafted": false,
+        "document": {
+          "_": "Document",
+          "attributes": [
+            {
+              "_": "DocumentAttributeImageSize",
+              "h": 512,
+              "w": 512
+            },
+            {
+              "_": "DocumentAttributeCustomEmoji",
+              "alt": "🐈‍⬛",
+              "free": false,
+              "stickerset": {
+                "_": "InputStickerSetID",
+                "id": 2964141614563353
+              },
+              "text_color": false
+            },
+            {
+              "_": "DocumentAttributeFilename",
+              "file_name": "AnimatedSticker.tgs"
+            }
+          ],
+          "dc_id": 1,
+          "id": 4976905513015967745,
+          "mime_type": "application/x-tgsticker",
+          "size": 20604,
+          "thumbs": [
+            {
+              "_": "PhotoPathSize",
+              "bytes": "2903b209dc618150574e64824d435d4569818042554354498b46b84f8703478e698d6e43434b854f86598355514d02654e0548455f9f62a552a7488d035b8f0545864f845584518061465b5b81448748874b8351437449460981414184418541894192429b429b82bc5fbc47804f81554343434749474d804b874e885684524472484608804357435a43654847035848077d495648718147028346884b895184524f6e44470783478a579556a483b4b68905b382808f6391679e75880548018e054803bb428b06a38d098809868f8b9d8fad81848190828ca064784c035152028a4fa263b5559b9448b545870785afa688049c8d0547a36db5738605448a448c03488f00459e428705688705",
+              "type": "j"
+            },
+            {
+              "_": "PhotoSize",
+              "h": 128,
+              "size": 5410,
+              "type": "m",
+              "w": 128
+            }
+          ],
+          "video_thumbs": []
+        },
+        "name": "Chili Whisk",
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 150
+        }
+      },
+      {
+        "_": "StarGiftAttributePattern",
+        "document": {
+          "_": "Document",
+          "attributes": [
+            {
+              "_": "DocumentAttributeImageSize",
+              "h": 512,
+              "w": 512
+            },
+            {
+              "_": "DocumentAttributeCustomEmoji",
+              "alt": "🐹",
+              "free": false,
+              "stickerset": {
+                "_": "InputStickerSetID",
+                "id": 2964141614563348
+              },
+              "text_color": true
+            },
+            {
+              "_": "DocumentAttributeFilename",
+              "file_name": "AnimatedSticker.tgs"
+            }
+          ],
+          "dc_id": 1,
+          "id": 5132006132218331137,
+          "mime_type": "application/x-tgsticker",
+          "size": 2323,
+          "thumbs": [
+            {
+              "_": "PhotoPathSize",
+              "bytes": "0f00ac00dc588270444609507f6348014e01425100a24c8a02a78c04438b56837d5846065143638b6f9580814e8c4e8b84508d5f976d83438a468a4b814a676057470183488a4d9250a950ad9f8604b4828298469b469743ab828604868180885189528c58a97686085b9f9f51870651880081888a8b8e91838496a792a74682655d6f5f634974a96586069cad8a01608f04958e8e96a096b4808e819b44a956ba480988064e0687014d43594d66504a425e886a884d805d49694752826391460492",
+              "type": "j"
+            },
+            {
+              "_": "PhotoSize",
+              "h": 128,
+              "size": 1524,
+              "type": "m",
+              "w": 128
+            }
+          ],
+          "video_thumbs": []
+        },
+        "name": "Hamster",
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 50
+        }
+      },
+      {
+        "_": "StarGiftAttributeBackdrop",
+        "backdrop_id": 38,
+        "center_color": 11771778,
+        "edge_color": 8287067,
+        "name": "Desert Sand",
+        "pattern_color": 5260329,
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 17
+        },
+        "text_color": 15918541
+      }
+    ],
+    "availability_issued": 5172,
+    "availability_total": 9968,
+    "burned": false,
+    "craft_chance_permille": null,
+    "crafted": false,
+    "gift_address": null,
+    "gift_id": 5265149461264334849,
+    "id": 5271482527981240321,
+    "num": 827,
+    "offer_min_stars": null,
+    "owner_visibility": {
+      "blockchain_address": false,
+      "display_name": true,
+      "peer": false
+    },
+    "peer_color": null,
+    "released_by": {
+      "_": "PeerChannel",
+      "channel_id": 10929622
+    },
+    "require_premium": false,
+    "resale_ton_only": true,
+    "resell_amount": [
+      {
+        "_": "StarsAmount",
+        "amount": 6331,
+        "nanos": 0
+      },
+      {
+        "_": "StarsTonAmount",
+        "amount": 90000000000
+      }
+    ],
+    "slug": "Cat-827",
+    "theme_available": false,
+    "theme_peer": null,
+    "title": "Cat",
+    "value_amount": 13159100,
+    "value_currency": "RUB",
+    "value_usd_amount": 150000
+  }
+}

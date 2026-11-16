@@ -1,0 +1,161 @@
+{
+  "_": "UniqueStarGift",
+  "gift": {
+    "_": "StarGiftUnique",
+    "attributes": [
+      {
+        "_": "StarGiftAttributeModel",
+        "crafted": false,
+        "document": {
+          "_": "Document",
+          "attributes": [
+            {
+              "_": "DocumentAttributeImageSize",
+              "h": 512,
+              "w": 512
+            },
+            {
+              "_": "DocumentAttributeCustomEmoji",
+              "alt": "🤦‍♀️",
+              "free": false,
+              "stickerset": {
+                "_": "InputStickerSetID",
+                "id": 2964141614563359
+              },
+              "text_color": false
+            },
+            {
+              "_": "DocumentAttributeFilename",
+              "file_name": "AnimatedSticker.tgs"
+            }
+          ],
+          "dc_id": 1,
+          "id": 4967705693067935745,
+          "mime_type": "application/x-tgsticker",
+          "size": 63533,
+          "thumbs": [
+            {
+              "_": "PhotoPathSize",
+              "bytes": "1902af03dc684751018b5307434844494b47538967a671860946048342464349434c445a4860545261464904804c09897b994d0287025103894793469d4b86438a49904c984bb64a8709468e0195910894079005a007429160976d9a41804481448181849b8c9e8e9089afa7a7bd448a528b5a8b7b804b0980510880",
+              "type": "j"
+            },
+            {
+              "_": "PhotoSize",
+              "h": 128,
+              "size": 5206,
+              "type": "m",
+              "w": 128
+            }
+          ],
+          "video_thumbs": []
+        },
+        "name": "Female",
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 500
+        }
+      },
+      {
+        "_": "StarGiftAttributePattern",
+        "document": {
+          "_": "Document",
+          "attributes": [
+            {
+              "_": "DocumentAttributeImageSize",
+              "h": 512,
+              "w": 512
+            },
+            {
+              "_": "DocumentAttributeCustomEmoji",
+              "alt": "🐷",
+              "free": false,
+              "stickerset": {
+                "_": "InputStickerSetID",
+                "id": 2964141614563348
+              },
+              "text_color": true
+            },
+            {
+              "_": "DocumentAttributeFilename",
+              "file_name": "AnimatedSticker.tgs"
+            }
+          ],
+          "dc_id": 1,
+          "id": 5129803153297899521,
+          "mime_type": "application/x-tgsticker",
+          "size": 2243,
+          "thumbs": [
+            {
+              "_": "PhotoPathSize",
+              "bytes": "1903ab03dc77814b054b4f067364627d4b015f4f078080958597859383ae85bd4a9b5a9549089b4a0492578b054f8e014786828d82928785868387059589089095ad93860890828095459544b38d084702940953039407f3cc1a01a309dc0f819d44aa4c86086f4f4a0647034900480097678a069f8a02f3cc0b059502dc4d815a4166444b0859aa4e0186064c07978e968c085c8d01f3cc28049502dc5c84654f6b674556514707884902984e9105890587058c054d845a856886",
+              "type": "j"
+            },
+            {
+              "_": "PhotoSize",
+              "h": 128,
+              "size": 1620,
+              "type": "m",
+              "w": 128
+            }
+          ],
+          "video_thumbs": []
+        },
+        "name": "Pig",
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 263
+        }
+      },
+      {
+        "_": "StarGiftAttributeBackdrop",
+        "backdrop_id": 4,
+        "center_color": 11108595,
+        "edge_color": 5989080,
+        "name": "Electric Indigo",
+        "pattern_color": 3613355,
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 15
+        },
+        "text_color": 14211327
+      }
+    ],
+    "availability_issued": 23,
+    "availability_total": 100,
+    "burned": false,
+    "craft_chance_permille": null,
+    "crafted": false,
+    "gift_address": null,
+    "gift_id": 5255973117607542786,
+    "id": 5260342409312600065,
+    "num": 61,
+    "offer_min_stars": null,
+    "owner_visibility": {
+      "blockchain_address": false,
+      "display_name": true,
+      "peer": false
+    },
+    "peer_color": null,
+    "released_by": null,
+    "require_premium": false,
+    "resale_ton_only": true,
+    "resell_amount": [
+      {
+        "_": "StarsAmount",
+        "amount": 492401,
+        "nanos": 0
+      },
+      {
+        "_": "StarsTonAmount",
+        "amount": 7000000000000
+      }
+    ],
+    "slug": "Facepalm-61",
+    "theme_available": false,
+    "theme_peer": null,
+    "title": "Facepalm",
+    "value_amount": 36200,
+    "value_currency": "RUB",
+    "value_usd_amount": 413
+  }
+}
