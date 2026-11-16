@@ -367,7 +367,7 @@
       "resell_amount": [
         {
           "_": "StarsAmount",
-          "amount": 69321,
+          "amount": 69257,
           "nanos": 0
         },
         {
@@ -528,7 +528,7 @@
       "resell_amount": [
         {
           "_": "StarsAmount",
-          "amount": 6239,
+          "amount": 6233,
           "nanos": 0
         },
         {
@@ -689,7 +689,7 @@
       "resell_amount": [
         {
           "_": "StarsAmount",
-          "amount": 6932058,
+          "amount": 6925619,
           "nanos": 0
         },
         {
@@ -706,5 +706,5 @@
       "value_usd_amount": 195
     }
   ],
-  "next_offset": "6820286094032312180_3"
+  "next_offset": "5922514938473110929_3"
 }
