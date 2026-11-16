@@ -1,0 +1,6 @@
+{
+  "check": "http.https://l-toauth.stel.com/js/oauth.js",
+  "error": null,
+  "scope": "This session and endpoint only; not proof of a global outage.",
+  "status": "ok"
+}
