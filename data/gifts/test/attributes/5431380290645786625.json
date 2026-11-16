@@ -1,0 +1,1813 @@
+{
+  "_": "StarGiftUpgradeAttributes",
+  "attributes": [
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 21,
+      "center_color": 14332741,
+      "edge_color": 11632682,
+      "name": "Amber",
+      "pattern_color": 8007936,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 16772551
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 11,
+      "center_color": 6336917,
+      "edge_color": 4631476,
+      "name": "Aquamarine",
+      "pattern_color": 221031,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 13106686
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 9,
+      "center_color": 6140363,
+      "edge_color": 4492203,
+      "name": "Azure Blue",
+      "pattern_color": 151668,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 11922687
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "name": "Battleship Grey",
+      "pattern_color": 2828832,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 13618884
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 0,
+      "center_color": 3553080,
+      "edge_color": 921359,
+      "name": "Black",
+      "pattern_color": 7104616,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 14
+      },
+      "text_color": 9211793
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "name": "Burgundy",
+      "pattern_color": 3408647,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 15187136
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 39,
+      "center_color": 11636862,
+      "edge_color": 8151894,
+      "name": "Cappuccino",
+      "pattern_color": 4862502,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 15455432
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 22,
+      "center_color": 13670706,
+      "edge_color": 12022833,
+      "name": "Caramel",
+      "pattern_color": 8205824,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 16767411
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 24,
+      "center_color": 14391399,
+      "edge_color": 13070159,
+      "name": "Carrot Juice",
+      "pattern_color": 9314560,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 16766922
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "name": "Chestnut",
+      "pattern_color": 6296840,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 16697017
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 59,
+      "center_color": 10776152,
+      "edge_color": 7619643,
+      "name": "Chocolate",
+      "pattern_color": 4065794,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 14988972
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "name": "Cobalt Blue",
+      "pattern_color": 1254524,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 12768245
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 57,
+      "center_color": 13665878,
+      "edge_color": 10315057,
+      "name": "Copper",
+      "pattern_color": 6301953,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 16046270
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "name": "Coral Red",
+      "pattern_color": 8983040,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 16767442
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "name": "Cyberpunk",
+      "pattern_color": 4397222,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 14735871
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 31,
+      "center_color": 11632037,
+      "edge_color": 9197434,
+      "name": "Dark Lilac",
+      "pattern_color": 6629458,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 15779042
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "name": "Desert Sand",
+      "pattern_color": 5260329,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 15918541
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 4,
+      "center_color": 11108595,
+      "edge_color": 5989080,
+      "name": "Electric Indigo",
+      "pattern_color": 3613355,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 14211327
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 1,
+      "center_color": 13267142,
+      "edge_color": 9855700,
+      "name": "Electric Purple",
+      "pattern_color": 6426548,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 15453951
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 13,
+      "center_color": 7914885,
+      "edge_color": 4366705,
+      "name": "Emerald",
+      "pattern_color": 25906,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 12188121
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 32,
+      "center_color": 11634363,
+      "edge_color": 8870545,
+      "name": "English Violet",
+      "pattern_color": 5513823,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 15124461
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "name": "Fandango",
+      "pattern_color": 9307470,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 16762859
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "name": "French Blue",
+      "pattern_color": 473948,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 12706809
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 52,
+      "center_color": 10319041,
+      "edge_color": 7949728,
+      "name": "Grape",
+      "pattern_color": 4065899,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 14728702
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 35,
+      "center_color": 9416312,
+      "edge_color": 4948571,
+      "name": "Hunter Green",
+      "pattern_color": 1853727,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 14218718
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "name": "Indigo Dye",
+      "pattern_color": 203561,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 12770542
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "name": "Ivory White",
+      "pattern_color": 6709074,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 16119026
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 56,
+      "center_color": 5620892,
+      "edge_color": 3905911,
+      "name": "Jade Green",
+      "pattern_color": 280881,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 12517095
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 37,
+      "center_color": 11382896,
+      "edge_color": 7044436,
+      "name": "Khaki Green",
+      "pattern_color": 3756059,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 13887163
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "name": "Lavender",
+      "pattern_color": 5968043,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 15258111
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 17,
+      "center_color": 11450458,
+      "edge_color": 5608261,
+      "name": "Lemongrass",
+      "pattern_color": 4614663,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 14217922
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 18,
+      "center_color": 12758884,
+      "edge_color": 8945221,
+      "name": "Light Olive",
+      "pattern_color": 5852164,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 16116668
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 15,
+      "center_color": 9811031,
+      "edge_color": 4036437,
+      "name": "Malachite",
+      "pattern_color": 289542,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 12775358
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 48,
+      "center_color": 6056325,
+      "edge_color": 3489879,
+      "name": "Midnight Blue",
+      "pattern_color": 199192,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 12569824
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 14,
+      "center_color": 8309634,
+      "edge_color": 4562522,
+      "name": "Mint Green",
+      "pattern_color": 158498,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 12451788
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 33,
+      "center_color": 8303028,
+      "edge_color": 5800848,
+      "name": "Moonstone",
+      "pattern_color": 1459538,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 14349821
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "name": "Mystic Pearl",
+      "pattern_color": 10159398,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 16702944
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "name": "Navy Blue",
+      "pattern_color": 1194402,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 13885951
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 5,
+      "center_color": 7706361,
+      "edge_color": 6841060,
+      "name": "Neon Blue",
+      "pattern_color": 2631868,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 13622783
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 49,
+      "center_color": 5067348,
+      "edge_color": 3225144,
+      "name": "Onyx Black",
+      "pattern_color": 0,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 11119533
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 23,
+      "center_color": 13736506,
+      "edge_color": 12611399,
+      "name": "Orange",
+      "pattern_color": 10303751,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 16769475
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 10,
+      "center_color": 5947046,
+      "edge_color": 4036026,
+      "name": "Pacific Cyan",
+      "pattern_color": 156813,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 11988991
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 12,
+      "center_color": 7325587,
+      "edge_color": 3906692,
+      "name": "Pacific Green",
+      "pattern_color": 24905,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 13041648
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 26,
+      "center_color": 15181658,
+      "edge_color": 12937055,
+      "name": "Persimmon",
+      "pattern_color": 11341312,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 16770263
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 34,
+      "center_color": 7055740,
+      "edge_color": 4094320,
+      "name": "Pine Green",
+      "pattern_color": 739379,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 14218725
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 36,
+      "center_color": 9941116,
+      "edge_color": 6062412,
+      "name": "Pistachio",
+      "pattern_color": 2639643,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 14283465
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "name": "Platinum",
+      "pattern_color": 4012077,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 15329250
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "name": "Pure Gold",
+      "pattern_color": 7355392,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 17
+      },
+      "text_color": 16770475
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 51,
+      "center_color": 11431086,
+      "edge_color": 8669060,
+      "name": "Purple",
+      "pattern_color": 4656199,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 15977459
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "name": "Raspberry",
+      "pattern_color": 8980024,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 16
+      },
+      "text_color": 16766694
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 43,
+      "center_color": 10725557,
+      "edge_color": 8159370,
+      "name": "Roman Silver",
+      "pattern_color": 4146512,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 19
+      },
+      "text_color": 14344162
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "name": "Rosewood",
+      "pattern_color": 5577762,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 15583949
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "name": "Sapphire",
+      "pattern_color": 869814,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 12705535
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 19,
+      "center_color": 12557127,
+      "edge_color": 9271097,
+      "name": "Satin Gold",
+      "pattern_color": 6109952,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 16704681
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 16,
+      "center_color": 9089379,
+      "edge_color": 5608261,
+      "name": "Shamrock Green",
+      "pattern_color": 1207040,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 14023624
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "name": "Silver Blue",
+      "pattern_color": 1390411,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 13231348
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "name": "Sky Blue",
+      "pattern_color": 483483,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 15
+      },
+      "text_color": 13494525
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 44,
+      "center_color": 9937580,
+      "edge_color": 6517372,
+      "name": "Steel Grey",
+      "pattern_color": 3360082,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 14673128
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "name": "Strawberry",
+      "pattern_color": 11078668,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 16
+      },
+      "text_color": 16765907
+    },
+    {
+      "_": "StarGiftAttributeBackdrop",
+      "backdrop_id": 55,
+      "center_color": 6209720,
+      "edge_color": 4035214,
+      "name": "Turquoise",
+      "pattern_color": 1135436,
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 18
+      },
+      "text_color": 12450034
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": true,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563365
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5107224377078841345,
+        "mime_type": "application/x-tgsticker",
+        "size": 17208,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc51806180714347424e4a4d528081854e854f79514e07805208795a65956d9a7b824447804b42454149464c4a484d8752885d8148464f435984509b54a649868685938a9888868c828a4645555874564702835d9c6fa2470485595159546e424ea561ae6a8242875088509548b1878700808a439658a45d9749b64487028e8282898e8c8fa38f9b50ad558e4493879d8d8080b387b9888f8368a264b9849887008c8607ac429a76967bad4288929196978385878b86908082458b438c8f858d8a979488869583989088a5699274a453a08707a2870288004686084e068605530187048080858f85908087448d4a904f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 7104,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Bonecake",
+      "rarity": {
+        "_": "StarGiftAttributeRarityUncommon"
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": true,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563365
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5104986084937302017,
+        "mime_type": "application/x-tgsticker",
+        "size": 19771,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc50436c8579474342464a454e8081854e854f694c53044853034706806c86046d8701788e55584809824c058d51a855bb5a818185818541895f55788148068a4fb457b5578245814c80524144574e5264834f9358a1558981909095908f808f6ab38483838d4f90518b489f45a787959e5fab5186058689ac82b69c87944b8701438801878ab6858606a489994a8a04418b06888b87068f8702ba46be4e088606530187048080858f85918086458c4a8f4f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 6304,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Cherry Kiss",
+      "rarity": {
+        "_": "StarGiftAttributeRarityEpic"
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": false,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563351
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5145578362017677313,
+        "mime_type": "application/x-tgsticker",
+        "size": 17947,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc50436c8579474342464a454e8081854e854f694c53044853034706806c86046d870178864a4d4804434b038c64be5e8608678a514c76444708895cb659b95f8b546c6e454702944eaa8fac8dac67a582b38482808e5497559444a68ea2a34289569656974286438d8091888db544baad829051b3478605878ab7858606a48a99498a04418b06898c8901938609870058b54e00b55208be8080858f85918086448c4a8f4f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5502,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Choco Dream",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 147
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": false,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563351
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5143401466433634305,
+        "mime_type": "application/x-tgsticker",
+        "size": 16857,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc50436c8579474342464a454e8081854e854f694c53044853034706806c86046d870178864a4d4804434b038c64be5e8608678a514c76444708895cb659b95f8b546c6e454702944eaa8fac8dac67a582b38482808e5497559444a68ea2a34289569656974286438d8091888db544baad829051b3478605878ab7858606a48a99498a04418b06898c8901938609870058b54e00b55208be8080858f85918086448c4a8f4f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5566,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Emerald Plum",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 146
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": true,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563365
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5107271587359358977,
+        "mime_type": "application/x-tgsticker",
+        "size": 19588,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc4e805b8068424941584556538081854e854f674b540849530348048663860465870170884d4670477d47748a4706bc480884418c818d43885d4f71454708895cb659b95f8b546c6e454702934d9b85a78d828295519f50908198979b948545844c8b518c489f45a787969e5eaa518605818184818681838188858a828849816d9f72a146a18ba9a181828c828e829587a1a690b751907f8546079b418643a380a78687b287bf9e919e498a05828c02888abc8b8701af9486084e068801520388054f8187964ca04f8768847884",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 6594,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Honey Cake",
+      "rarity": {
+        "_": "StarGiftAttributeRarityRare"
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": true,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563365
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5107323904355991553,
+        "mime_type": "application/x-tgsticker",
+        "size": 20805,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc4e805b8068424941584556538081854e854f684c540845530348048664bd61870170884d4947044749028155916194728147814d8253834c928592858643884c8e50894592a592878054455647648042824606834609825096929a43896a896bb46782808b69ba518e878ca483ae4181628f4f918580948399818643504805b175898591a18baa4181568f56908689a882b19b8a9b4fb64388018892a14ba9488883839085968187918d94958a9c4d8a00418b078a8e87068e8702ba4686084e068605530187048080858f85908087448d4a904f8768847884",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 6240,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Meadow",
+      "rarity": {
+        "_": "StarGiftAttributeRarityEpic"
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": true,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563365
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5107306909170401281,
+        "mime_type": "application/x-tgsticker",
+        "size": 14979,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc51806180714347424e4a4d528081854e854f4b435a4266436e464c004d4f00765c67a075a07f80425c445d504255b35bbf61828147574758435242718946048c4fbc56bf5b8b53496d474604846aa15eab6a8445837591460792559bba9cbc8a8e924607a0470095459a8800a4870082428b48069e798a8e8dbd9086058c8ea281a9a4839151b7478609878ab7858606a4868f4487024187068689b089bb998587818f47924a8459865986878ebc93aabd58b54e00b55208be8080858f85918086448c4a8f4f8768847884",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5502,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Naughty",
+      "rarity": {
+        "_": "StarGiftAttributeRarityLegendary"
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": false,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563351
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5143288946880413697,
+        "mime_type": "application/x-tgsticker",
+        "size": 18426,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc50436c8579474342464a454e8081854e854f694c53044853034706806c86046d870178864a4d4804434b038c64be5e8608678a514c76444708895cb659b95f8b546c6e454702944eaa8fac8dac67a582b38482808e5497559444a68ea2a34289569656974286438d8091888db544baad829051b3478605878ab7858606a48a99498a04418b06898c8901938609870058b54e00b55208be8080858f85918086448c4a8f4f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5462,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Noir Night",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 126
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": false,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563351
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5143399258820444161,
+        "mime_type": "application/x-tgsticker",
+        "size": 17918,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc50436c8579474342464a454e8081854e854f694c53044853034706806c86046d870178864a4d4804434b038c64be5e8608678a514c76444708895cb659b95f8b546c6e454702944eaa8fac8dac67a582b38482808e5497559444a68ea2a34289569656974286438d8091888db544baad829051b3478605878ab7858606a48a99498a04418b06898c8901938609870058b54e00b55208be8080858f85918086448c4a8f4f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5764,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Orange Sunset",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 146
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": false,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563351
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5143358778753679361,
+        "mime_type": "application/x-tgsticker",
+        "size": 17908,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc50436c8579474342464a454e8081854e854f694c53044853034706806cb86987007886464b4808424b038c64be5e8608678a514c76444708895cb659b95f8b546c6e454702944eaa8fac8dac67a582b38482808e5497559444a68ea2a34289569656974286438d8091888db544baad829051b34786058b8ebf818609b3839943b44487088085808b80918182488246839c8d89059c8706870358b54e01b55208be8080858f85918086448c4a8f4f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5836,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Say Cheese",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 89
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": true,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563365
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5107594929677271041,
+        "mime_type": "application/x-tgsticker",
+        "size": 26288,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc50436c8579474746895a805d755050018153017f577288067d860948074345448e4a8e4880484b4c5043434e8453804b488f5d8d6142435243574758575b4800824a018b48a04eab42888986a590a08945924b9d4e844198439a468d564c76444708854e8f559c598080934592454a5c6c6b4a46078c48a147ab83828183938a8d8f4fa263b648939954b250b4868495819c82ad8463689046048a4596449f82a19745b04d86064182a784af9b8896508604438801828397869c88898394959b8e9254947bba5f9d959a8706828a00458654845788418293978fa080805e925e92458249504c4b4a958706a2870287024686094e068606530187054a82859b459f4f8868857884",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 7570,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Sugar Bows",
+      "rarity": {
+        "_": "StarGiftAttributeRarityRare"
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": false,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563351
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5143295251892404225,
+        "mime_type": "application/x-tgsticker",
+        "size": 17068,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc51806180714347424e4a4d528081854e854f4b435a4266436c464d014d4f037c566e860946068607470541454e474d52814d874a8f4d81804757475943514270897f8c4fbc56bf5b8a514c76444708895cb659b95f8b546c6e454702944eaa8fac8dac67a582b38482808e5497559444a68ea2a34289569656974286438d8091888db544baad829051b34786058b8ebf818609b2829049b544860482868c868b9180844d944b95998d88089a8609870058b54e00b55208be8080858f85918086448c4a8f4f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 6110,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Sweet Lilac",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 87
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": true,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563365
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5107294702873346049,
+        "mime_type": "application/x-tgsticker",
+        "size": 17078,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc51806180714347424e4a4d528081854e854f79514e07805208795a65956d9a7b824447804b42454149464c4a484d8752885d8148464f435984509b54a649868685938a9888868c828a4645555874564702835d9c6fa2470485595159546e424ea561ae6a8242875088509548b1878700808a439658a45d9749b64487028e8282898e8c8fa38f9b50ad558e4493879d8d8080b387b9888f8368a264b9849887008c8607ac429a76967bad4288929196978385878b86908082458b438c8f858d8a979488869583989088a5699274a453a08707a2870288004686084e068605530187048080858f85908087448d4a904f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 7162,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Toxicake",
+      "rarity": {
+        "_": "StarGiftAttributeRarityUncommon"
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": false,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563351
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5145641970483331073,
+        "mime_type": "application/x-tgsticker",
+        "size": 20408,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc51806180714347424e4a4d528081854e854f694c520247530346084a72bf7487014604874c47460947480580518467937185438c4390488241414441478047814b8352804155804f4b8447aa80b345844248504852424c815b87668a4eb556b5568b546c6e454702944eaa8fac8dac67a582b38482808e5497559444a68ea2a34289569656974286438d8091878bae42b8a5828949ba45be8987994aa14d85428985888981834c884c8989919f99a5a98a9a498a05418b07888b87068f8702ba46be4e088606530187048080858f85908087448d4a904f8768847884",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 6068,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Сherry Topping",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 88
+      }
+    },
+    {
+      "_": "StarGiftAttributeModel",
+      "crafted": false,
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🎂",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563351
+            },
+            "text_color": false
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5143492433840963585,
+        "mime_type": "application/x-tgsticker",
+        "size": 16869,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1906b301dc50436c8579474342464a454e8081854e854f694c53044853034706806c86046d870178864a4d4804434b038c64be5e8608678a514c76444708895cb659b95f8b546c6e454702944eaa8fac8dac67a582b38482808e5497559444a68ea2a34289569656974286438d8091888db544baad829051b3478605878ab7858606a48a99498a04418b06898c8901938609870058b54e00b55208be8080858f85918086448c4a8f4f8769847984",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 5540,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Сitrus Matcha",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 146
+      }
+    },
+    {
+      "_": "StarGiftAttributePattern",
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🐄",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563348
+            },
+            "text_color": true
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5131971562026565633,
+        "mime_type": "application/x-tgsticker",
+        "size": 2736,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1904af00dc5d816f5246095f524a624a705c4d5247624c75434f535f596d454d47774a7b80804702a447088644538e6d9a7986468c4b944f814187818542494a584c605850595c4a04864b08a14da6af8803b79584b2898702858e429c4aab4b9f44b88588068b998586084189024999489d4605860473a28e978905858b0946884e8e57934382498149848081918a928b8f8da5aaa08604489e470648470847428181858187419243a54ab6468e549c58ab43888193419c47a261a87cb55b8f699c47039ff3cc1602a901dc0b819743a3439b80b488870944aa529047085249005a48658d7c8f568263577e4f7c947889089a8907",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 1870,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Cow",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 200
+      }
+    },
+    {
+      "_": "StarGiftAttributePattern",
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🦞",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563348
+            },
+            "text_color": true
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5131861967346073601,
+        "mime_type": "application/x-tgsticker",
+        "size": 1972,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "0b04af00dc704d4647049448098180474d474d584f6db146099a6665870475b6470753576f5b7a7b495a867082470144585d615747008874880149048d0046099188528701578804448caa56bc4c8d8883a643b04d9968aa4607ad4a8257816142438148464a4347908c87089e8701874394619c68a55f8905668e01609b84bb8e8801a0858599a79ca88381904c924e8c4e94678c79424447824b834a8356846182584371527e66484c566d4777914b860498bc8c4d65774805844900b3448b00a88a048905429456a258b242938aa785bc4bac4806870873880992858608a3acba57967770470255428346864487938c860786079e880866955047067d796d934706a74c099a52456d5d7e5a65874db16abb",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 1856,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Crab",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 396
+      }
+    },
+    {
+      "_": "StarGiftAttributePattern",
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🐹",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563348
+            },
+            "text_color": true
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5132006132218331137,
+        "mime_type": "application/x-tgsticker",
+        "size": 2323,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "0f00ac00dc588270444609507f6348014e01425100a24c8a02a78c04438b56837d5846065143638b6f9580814e8c4e8b84508d5f976d83438a468a4b814a676057470183488a4d9250a950ad9f8604b4828298469b469743ab828604868180885189528c58a97686085b9f9f51870651880081888a8b8e91838496a792a74682655d6f5f634974a96586069cad8a01608f04958e8e96a096b4808e819b44a956ba480988064e0687014d43594d66504a425e886a884d805d49694752826391460492",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 1524,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Hamster",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 53
+      }
+    },
+    {
+      "_": "StarGiftAttributePattern",
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🐷",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563348
+            },
+            "text_color": true
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5129803153297899521,
+        "mime_type": "application/x-tgsticker",
+        "size": 2243,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1903ab03dc77814b054b4f067364627d4b015f4f078080958597859383ae85bd4a9b5a9549089b4a0492578b054f8e014786828d82928785868387059589089095ad93860890828095459544b38d084702940953039407f3cc1a01a309dc0f819d44aa4c86086f4f4a0647034900480097678a069f8a02f3cc0b059502dc4d815a4166444b0859aa4e0186064c07978e968c085c8d01f3cc28049502dc5c84654f6b674556514707884902984e9105890587058c054d845a856886",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 1620,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Pig",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 298
+      }
+    },
+    {
+      "_": "StarGiftAttributePattern",
+      "document": {
+        "_": "Document",
+        "attributes": [
+          {
+            "_": "DocumentAttributeImageSize",
+            "h": 512,
+            "w": 512
+          },
+          {
+            "_": "DocumentAttributeCustomEmoji",
+            "alt": "🦤",
+            "free": false,
+            "stickerset": {
+              "_": "InputStickerSetID",
+              "id": 2964141614563348
+            },
+            "text_color": true
+          },
+          {
+            "_": "DocumentAttributeFilename",
+            "file_name": "AnimatedSticker.tgs"
+          }
+        ],
+        "dc_id": 1,
+        "id": 5130158656330924033,
+        "mime_type": "application/x-tgsticker",
+        "size": 1966,
+        "thumbs": [
+          {
+            "_": "PhotoPathSize",
+            "bytes": "1e06ae01dc5f8347034947046e8154876d907e874e915a915a5e4a4705634a065d6f894f8a094801b17d77470050028b5406a7568a02468f025aa74f8b05480890007d84838888878d81854c8b478d998888099f88018608418649874d86438147434841818489908b9588928ba888bc46b26d880847008c096686044889034a048908f3cc20089e07dc2282bb5187066ca67f444f0248024e055d83789548039f548768867b8b4682848c8692858d859a85a7809246a24db280808f8498869386a68db8949788ae8e87008e",
+            "type": "j"
+          },
+          {
+            "_": "PhotoSize",
+            "h": 128,
+            "size": 1400,
+            "type": "m",
+            "w": 128
+          }
+        ],
+        "video_thumbs": []
+      },
+      "name": "Turkey",
+      "rarity": {
+        "_": "StarGiftAttributeRarity",
+        "permille": 53
+      }
+    }
+  ]
+}
