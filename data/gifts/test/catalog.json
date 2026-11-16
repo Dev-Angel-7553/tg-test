@@ -87,7 +87,7 @@
       "first_sale_date": "2024-10-07T18:44:44+00:00",
       "gifts_per_round": null,
       "id": 5197455433740058625,
-      "last_sale_date": "2026-11-16T22:32:49+00:00",
+      "last_sale_date": "2026-11-16T22:39:16+00:00",
       "limited": true,
       "limited_per_user": false,
       "locked_until_date": null,
@@ -773,7 +773,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 490703,
+      "resell_min_stars": 491775,
       "sold_out": true,
       "stars": 100,
       "sticker": {
@@ -1313,7 +1313,7 @@
         "channel_id": 10929622
       },
       "require_premium": false,
-      "resell_min_stars": 3505,
+      "resell_min_stars": 3513,
       "sold_out": false,
       "stars": 500,
       "sticker": {
@@ -1360,7 +1360,7 @@
         "video_thumbs": []
       },
       "title": "Cat",
-      "upgrade_stars": 6072,
+      "upgrade_stars": 5749,
       "upgrade_variants": 1500
     },
     {
@@ -1855,7 +1855,7 @@
         "user_id": 429000
       },
       "require_premium": false,
-      "resell_min_stars": 350503,
+      "resell_min_stars": 351268,
       "sold_out": true,
       "stars": 50,
       "sticker": {
@@ -2339,7 +2339,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 11132,
+      "upgrade_stars": 10735,
       "upgrade_variants": 2000
     },
     {
@@ -2612,7 +2612,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 90,
+      "upgrade_stars": 87,
       "upgrade_variants": 40
     },
     {
@@ -2759,7 +2759,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 88,
+      "upgrade_stars": 84,
       "upgrade_variants": 100
     },
     {
@@ -2861,7 +2861,7 @@
       "per_user_total": 5,
       "released_by": null,
       "require_premium": true,
-      "resell_min_stars": 350503,
+      "resell_min_stars": 351268,
       "sold_out": false,
       "stars": 200,
       "sticker": {
@@ -3173,7 +3173,7 @@
         "video_thumbs": []
       },
       "title": "Crystal Ball",
-      "upgrade_stars": 3823,
+      "upgrade_stars": 3573,
       "upgrade_variants": 2400
     },
     {
@@ -3351,7 +3351,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 104309,
+      "resell_min_stars": 104537,
       "sold_out": false,
       "stars": 450,
       "sticker": {
@@ -3549,7 +3549,7 @@
         "video_thumbs": []
       },
       "title": "Cake",
-      "upgrade_stars": 2818,
+      "upgrade_stars": 2590,
       "upgrade_variants": 2400
     },
     {
@@ -3621,7 +3621,7 @@
         "video_thumbs": []
       },
       "title": "Drink",
-      "upgrade_stars": 2818,
+      "upgrade_stars": 2590,
       "upgrade_variants": 1500
     },
     {
