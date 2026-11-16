@@ -2595,6 +2595,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "AudioUpNext",
+      "value": "Далее"
+    },
+    {
+      "_": "LangPackString",
       "key": "AudioVolume",
       "value": "Громкость"
     },
@@ -13975,6 +13980,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "PictureInPictureResizeHint",
+      "value": "Увеличьте окно, чтобы увидеть содержимое."
+    },
+    {
+      "_": "LangPackString",
       "key": "PinChatsLimitSubtitle",
       "value": "Закрепление до {count} чатов в основном списке"
     },
@@ -21665,6 +21675,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "WalletConnectActionExcess",
+      "value": "Возврат излишка"
+    },
+    {
+      "_": "LangPackString",
       "key": "WalletConnectActionTransfer",
       "value": "Перевод"
     },
@@ -23214,5 +23229,5 @@
       "value": "Ваше имя"
     }
   ],
-  "version": 398439
+  "version": 399054
 }

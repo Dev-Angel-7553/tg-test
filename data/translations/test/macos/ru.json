@@ -8851,7 +8851,7 @@
     {
       "_": "LangPackString",
       "key": "Chat.Input.Dictation.Error.Language",
-      "value": "Диктовка недоступна для текущего языка ввода."
+      "value": "Диктовка на этом языке недоступна."
     },
     {
       "_": "LangPackString",
@@ -8866,7 +8866,7 @@
     {
       "_": "LangPackString",
       "key": "Chat.Input.Dictation.Error.Speech",
-      "value": "Telegram нужен доступ к распознаванию речи, чтобы превращать Ваш голос в текст. Разрешить его можно в Системных настройках → Конфиденциальность и безопасность → Распознавание речи."
+      "value": "Для диктовки разрешите Telegram доступ к распознаванию речи в системных настройках → Конфиденциальность и безопасность → Распознавание речи."
     },
     {
       "_": "LangPackString",
@@ -11686,7 +11686,7 @@
     {
       "_": "LangPackString",
       "key": "Chat.Transcription.Listening",
-      "value": "Слушаю…"
+      "value": "Голосовой ввод..."
     },
     {
       "_": "LangPackString",
@@ -48431,7 +48431,7 @@
     {
       "_": "LangPackString",
       "key": "Wallet.Controller.Excess",
-      "value": "Превышение"
+      "value": "Возврат излишка"
     },
     {
       "_": "LangPackString",
@@ -51199,5 +51199,5 @@
       "value": "Показать автозамены"
     }
   ],
-  "version": 2441705
+  "version": 2468762
 }

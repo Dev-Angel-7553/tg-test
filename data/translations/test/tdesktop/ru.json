@@ -46406,7 +46406,7 @@
     {
       "_": "LangPackString",
       "key": "lng_wallet_connect_request_excess",
-      "value": "Превышение"
+      "value": "Возврат излишка"
     },
     {
       "_": "LangPackString",
@@ -47689,5 +47689,5 @@
       "zero_value": null
     }
   ],
-  "version": 6155988
+  "version": 6165558
 }

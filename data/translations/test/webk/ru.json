@@ -1991,7 +1991,7 @@
     {
       "_": "LangPackString",
       "key": "AiEditor.ApplyOnSend.Label.Fix",
-      "value": "Исправление опечаток"
+      "value": "исправление опечаток"
     },
     {
       "_": "LangPackString",
@@ -2767,6 +2767,11 @@
       "_": "LangPackString",
       "key": "AskAQuestion",
       "value": "Задать вопрос"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AskAQuestion.SearchKeywords",
+      "value": "помощь, поддержка, связаться, контакты, обратная связь"
     },
     {
       "_": "LangPackString",
@@ -7600,6 +7605,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "Chat.Service.PeerRequest.Confirm.Add",
+      "value": "Вы точно хотите отправить %1$@ боту %2$@? %3$@ также будет добавлен в %4$@."
+    },
+    {
+      "_": "LangPackString",
       "key": "Chat.Service.PeerRequest.Confirm.Ok",
       "value": "Отправить"
     },
@@ -10582,6 +10592,11 @@
       "_": "LangPackString",
       "key": "DeleteAccountIfAwayFor2",
       "value": "Автоудаление аккаунта"
+    },
+    {
+      "_": "LangPackString",
+      "key": "DeleteAccountIfAwayFor2.SearchKeywords",
+      "value": "удалить, деактивировать, автоудаление, неактивность, не захожу, без активности, аккаунт"
     },
     {
       "_": "LangPackString",
@@ -19880,6 +19895,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "PremiumBusinessChatLinks.SearchKeywords",
+      "value": "ссылка, ссылка на чат, короткая ссылка, предложенное сообщение, бизнес"
+    },
+    {
+      "_": "LangPackString",
       "key": "PremiumBusinessChatLinksDescription",
       "value": "Ссылки для открытия чата с Вами — с подстановкой текста."
     },
@@ -19907,6 +19927,11 @@
       "_": "LangPackString",
       "key": "PremiumBusinessIntro",
       "value": "Вид нового чата"
+    },
+    {
+      "_": "LangPackString",
+      "key": "PremiumBusinessIntro.SearchKeywords",
+      "value": "приветствие, вид нового чата, оформление нового чата, стартовая страница, начальная страница, пустой чат, стикер, бизнес"
     },
     {
       "_": "LangPackString",
@@ -26965,6 +26990,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "SuggestContacts.SearchKeywords",
+      "value": "подсказка, частые, частые контакты, топ, люди"
+    },
+    {
+      "_": "LangPackString",
       "key": "SuggestContactsInfo",
       "value": "Показывать пользователей, которым Вы часто пишете, вверху в разделе поиска."
     },
@@ -29530,6 +29560,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "Wallet.Backup.VerifyPhraseErrorText",
+      "value": "Эта секретная фраза могла устареть. Чтобы включить резервное копирование, введите актуальную фразу."
+    },
+    {
+      "_": "LangPackString",
       "key": "Wallet.Backup.VerifyPhraseErrorTitle",
       "value": "Не удалось проверить секретную фразу"
     },
@@ -29600,6 +29635,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "Wallet.Collectible.PlayAnimation",
+      "value": "Повторить анимацию"
+    },
+    {
+      "_": "LangPackString",
       "key": "Wallet.Collectible.Sent",
       "value": "🎉 %1$s отправлен %2$s."
     },
@@ -29647,6 +29687,11 @@
       "_": "LangPackString",
       "key": "Wallet.Conflict.Title",
       "value": "Старый кошелёк"
+    },
+    {
+      "_": "LangPackString",
+      "key": "Wallet.Conflict.UpdatePendingText",
+      "value": "Была запрошена смена секретной фразы этого кошелька — ожидается подтверждение актуальной фразы от блокчейна. Попробуйте позже."
     },
     {
       "_": "LangPackString",
@@ -29965,6 +30010,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "Wallet.Keys.ForgetUpdatePendingText",
+      "value": "Секретная фраза кошелька обновляется. Ключ можно будет удалить с устройства, когда обновление завершится."
+    },
+    {
+      "_": "LangPackString",
       "key": "Wallet.Keys.PhraseCaption",
       "value": "Вы можете перенести кошелёк на другое устройство. Для этого скопируйте секретную фразу из 12 или 24 слов."
     },
@@ -30132,6 +30182,11 @@
       "_": "LangPackString",
       "key": "Wallet.Request.DeployContract",
       "value": "Запуск смарт-контракта"
+    },
+    {
+      "_": "LangPackString",
+      "key": "Wallet.Request.Excess",
+      "value": "Возврат излишка"
     },
     {
       "_": "LangPackString",
@@ -31589,5 +31644,5 @@
       "zero_value": null
     }
   ],
-  "version": 388107
+  "version": 388887
 }
