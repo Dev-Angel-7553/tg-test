@@ -87,7 +87,7 @@
       "first_sale_date": "2024-10-07T18:44:44+00:00",
       "gifts_per_round": null,
       "id": 5197455433740058625,
-      "last_sale_date": "2026-11-17T14:16:25+00:00",
+      "last_sale_date": "2026-11-17T14:23:02+00:00",
       "limited": true,
       "limited_per_user": false,
       "locked_until_date": null,
@@ -2612,7 +2612,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 5182,
+      "upgrade_stars": 4835,
       "upgrade_variants": 40
     },
     {
@@ -2759,7 +2759,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 4932,
+      "upgrade_stars": 4603,
       "upgrade_variants": 100
     },
     {
@@ -2908,7 +2908,7 @@
         "video_thumbs": []
       },
       "title": "Shard Test",
-      "upgrade_stars": 38,
+      "upgrade_stars": 37,
       "upgrade_variants": 1600
     },
     {
@@ -3398,7 +3398,7 @@
         "video_thumbs": []
       },
       "title": "Candy Cane",
-      "upgrade_stars": 513,
+      "upgrade_stars": 484,
       "upgrade_variants": 3200
     },
     {
