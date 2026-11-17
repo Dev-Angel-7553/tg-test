@@ -342,7 +342,7 @@
           "text_color": 15779042
         }
       ],
-      "availability_issued": 5172,
+      "availability_issued": 5173,
       "availability_total": 9968,
       "burned": false,
       "craft_chance_permille": null,
@@ -367,7 +367,7 @@
       "resell_amount": [
         {
           "_": "StarsAmount",
-          "amount": 67971,
+          "amount": 67819,
           "nanos": 0
         },
         {
@@ -503,7 +503,7 @@
           "text_color": 15918541
         }
       ],
-      "availability_issued": 5172,
+      "availability_issued": 5173,
       "availability_total": 9968,
       "burned": false,
       "craft_chance_permille": null,
@@ -528,7 +528,7 @@
       "resell_amount": [
         {
           "_": "StarsAmount",
-          "amount": 6117,
+          "amount": 6104,
           "nanos": 0
         },
         {
@@ -664,7 +664,7 @@
           "text_color": 11119533
         }
       ],
-      "availability_issued": 5172,
+      "availability_issued": 5173,
       "availability_total": 9968,
       "burned": false,
       "craft_chance_permille": null,
@@ -689,7 +689,7 @@
       "resell_amount": [
         {
           "_": "StarsAmount",
-          "amount": 6797062,
+          "amount": 6781831,
           "nanos": 0
         },
         {
@@ -706,5 +706,5 @@
       "value_usd_amount": 195
     }
   ],
-  "next_offset": "5280176036708600632_3"
+  "next_offset": "8576627320533206020_3"
 }

@@ -120,7 +120,7 @@
         "text_color": 11119533
       }
     ],
-    "availability_issued": 5172,
+    "availability_issued": 5173,
     "availability_total": 9968,
     "burned": false,
     "craft_chance_permille": null,
@@ -145,7 +145,7 @@
     "resell_amount": [
       {
         "_": "StarsAmount",
-        "amount": 6797062,
+        "amount": 6781831,
         "nanos": 0
       },
       {
