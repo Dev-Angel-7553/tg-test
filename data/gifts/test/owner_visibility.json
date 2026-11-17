@@ -1,8 +1,8 @@
 {
   "failed_or_missing_samples": 0,
-  "requested_sample_size": 7,
-  "sample_size": 7,
+  "requested_sample_size": 8,
+  "sample_size": 8,
   "scope": "Bounded sample of collectible gifts. This does not establish visibility for all Telegram gifts.",
-  "with_public_owner_fields": 7,
+  "with_public_owner_fields": 8,
   "without_public_owner_fields": 0
 }

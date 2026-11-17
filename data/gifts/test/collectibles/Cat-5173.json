@@ -1,0 +1,164 @@
+{
+  "_": "UniqueStarGift",
+  "gift": {
+    "_": "StarGiftUnique",
+    "attributes": [
+      {
+        "_": "StarGiftAttributeModel",
+        "crafted": false,
+        "document": {
+          "_": "Document",
+          "attributes": [
+            {
+              "_": "DocumentAttributeImageSize",
+              "h": 512,
+              "w": 512
+            },
+            {
+              "_": "DocumentAttributeCustomEmoji",
+              "alt": "🐈‍⬛",
+              "free": false,
+              "stickerset": {
+                "_": "InputStickerSetID",
+                "id": 2964141614563353
+              },
+              "text_color": false
+            },
+            {
+              "_": "DocumentAttributeFilename",
+              "file_name": "AnimatedSticker.tgs"
+            }
+          ],
+          "dc_id": 1,
+          "id": 4976632245721759745,
+          "mime_type": "application/x-tgsticker",
+          "size": 20547,
+          "thumbs": [
+            {
+              "_": "PhotoPathSize",
+              "bytes": "2903b209dc4e81584b5558834d874e865c4c4c078587017ca3524a43574262814c435b446680448148414a43435a805e8049806b45728047868187084d8904468755845c8464804f5b4d668350436d477c804243814382418e429b43a8429843a95ea947804f8155434e4b43578162834a425a44648145814b424e454453535856554a6d484605595e5b684700594a088346884b8951834c4a6c4746058e4802be888803858080805580568156836b9a769c4d9204449606449980b68587088084814146424a424c435880658656a47bbe68999244ae45860841a298bf9c8906839c81b850880042844d8c4e904bb79789045a8d0843838189418d429143880257880945824d825382",
+              "type": "j"
+            },
+            {
+              "_": "PhotoSize",
+              "h": 128,
+              "size": 5118,
+              "type": "m",
+              "w": 128
+            }
+          ],
+          "video_thumbs": []
+        },
+        "name": "Nyan Cat",
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 150
+        }
+      },
+      {
+        "_": "StarGiftAttributePattern",
+        "document": {
+          "_": "Document",
+          "attributes": [
+            {
+              "_": "DocumentAttributeImageSize",
+              "h": 512,
+              "w": 512
+            },
+            {
+              "_": "DocumentAttributeCustomEmoji",
+              "alt": "🐷",
+              "free": false,
+              "stickerset": {
+                "_": "InputStickerSetID",
+                "id": 2964141614563348
+              },
+              "text_color": true
+            },
+            {
+              "_": "DocumentAttributeFilename",
+              "file_name": "AnimatedSticker.tgs"
+            }
+          ],
+          "dc_id": 1,
+          "id": 5129803153297899521,
+          "mime_type": "application/x-tgsticker",
+          "size": 2243,
+          "thumbs": [
+            {
+              "_": "PhotoPathSize",
+              "bytes": "1903ab03dc77814b054b4f067364627d4b015f4f078080958597859383ae85bd4a9b5a9549089b4a0492578b054f8e014786828d82928785868387059589089095ad93860890828095459544b38d084702940953039407f3cc1a01a309dc0f819d44aa4c86086f4f4a0647034900480097678a069f8a02f3cc0b059502dc4d815a4166444b0859aa4e0186064c07978e968c085c8d01f3cc28049502dc5c84654f6b674556514707884902984e9105890587058c054d845a856886",
+              "type": "j"
+            },
+            {
+              "_": "PhotoSize",
+              "h": 128,
+              "size": 1620,
+              "type": "m",
+              "w": 128
+            }
+          ],
+          "video_thumbs": []
+        },
+        "name": "Pig",
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 300
+        }
+      },
+      {
+        "_": "StarGiftAttributeBackdrop",
+        "backdrop_id": 31,
+        "center_color": 11632037,
+        "edge_color": 9197434,
+        "name": "Dark Lilac",
+        "pattern_color": 6629458,
+        "rarity": {
+          "_": "StarGiftAttributeRarity",
+          "permille": 17
+        },
+        "text_color": 15779042
+      }
+    ],
+    "availability_issued": 5173,
+    "availability_total": 9968,
+    "burned": false,
+    "craft_chance_permille": null,
+    "crafted": false,
+    "gift_address": null,
+    "gift_id": 5265149461264334849,
+    "id": 5469637183553929221,
+    "num": 5173,
+    "offer_min_stars": null,
+    "owner_visibility": {
+      "blockchain_address": false,
+      "display_name": true,
+      "peer": false
+    },
+    "peer_color": null,
+    "released_by": {
+      "_": "PeerChannel",
+      "channel_id": 10929622
+    },
+    "require_premium": false,
+    "resale_ton_only": true,
+    "resell_amount": [
+      {
+        "_": "StarsAmount",
+        "amount": 68,
+        "nanos": 0
+      },
+      {
+        "_": "StarsTonAmount",
+        "amount": 1000000000
+      }
+    ],
+    "slug": "Cat-5173",
+    "theme_available": false,
+    "theme_peer": null,
+    "title": "Cat",
+    "value_amount": 80000,
+    "value_currency": "RUB",
+    "value_usd_amount": 912
+  }
+}
