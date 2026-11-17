@@ -87,7 +87,7 @@
       "first_sale_date": "2024-10-07T18:44:44+00:00",
       "gifts_per_round": null,
       "id": 5197455433740058625,
-      "last_sale_date": "2026-11-17T15:27:59+00:00",
+      "last_sale_date": "2026-11-17T15:34:44+00:00",
       "limited": true,
       "limited_per_user": false,
       "locked_until_date": null,
@@ -2612,7 +2612,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 2606,
+      "upgrade_stars": 2440,
       "upgrade_variants": 40
     },
     {
@@ -2759,7 +2759,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 2486,
+      "upgrade_stars": 2328,
       "upgrade_variants": 100
     },
     {
@@ -3398,7 +3398,7 @@
         "video_thumbs": []
       },
       "title": "Candy Cane",
-      "upgrade_stars": 292,
+      "upgrade_stars": 277,
       "upgrade_variants": 3200
     },
     {
