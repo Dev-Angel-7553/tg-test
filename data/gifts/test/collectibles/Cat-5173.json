@@ -141,18 +141,8 @@
       "channel_id": 10929622
     },
     "require_premium": false,
-    "resale_ton_only": true,
-    "resell_amount": [
-      {
-        "_": "StarsAmount",
-        "amount": 69,
-        "nanos": 0
-      },
-      {
-        "_": "StarsTonAmount",
-        "amount": 1000000000
-      }
-    ],
+    "resale_ton_only": false,
+    "resell_amount": [],
     "slug": "Cat-5173",
     "theme_available": false,
     "theme_peer": null,
