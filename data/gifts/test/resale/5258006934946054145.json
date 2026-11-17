@@ -225,7 +225,7 @@
         },
         {
           "_": "StarsTonAmount",
-          "amount": 71320000000
+          "amount": 71250000000
         }
       ],
       "slug": "Medal-1661",
@@ -383,7 +383,7 @@
         },
         {
           "_": "StarsTonAmount",
-          "amount": 81470000000
+          "amount": 81390000000
         }
       ],
       "slug": "Medal-1572",
@@ -541,7 +541,7 @@
         },
         {
           "_": "StarsTonAmount",
-          "amount": 81470000000
+          "amount": 81390000000
         }
       ],
       "slug": "Medal-1526",
@@ -553,5 +553,5 @@
       "value_usd_amount": 437
     }
   ],
-  "next_offset": "779988210660593219_3"
+  "next_offset": "2092701928716905907_3"
 }
