@@ -87,7 +87,7 @@
       "first_sale_date": "2024-10-07T18:44:44+00:00",
       "gifts_per_round": null,
       "id": 5197455433740058625,
-      "last_sale_date": "2026-11-17T11:43:22+00:00",
+      "last_sale_date": "2026-11-17T11:49:43+00:00",
       "limited": true,
       "limited_per_user": false,
       "locked_until_date": null,
@@ -773,7 +773,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 479713,
+      "resell_min_stars": 480459,
       "sold_out": true,
       "stars": 100,
       "sticker": {
@@ -1855,7 +1855,7 @@
         "user_id": 429000
       },
       "require_premium": false,
-      "resell_min_stars": 342652,
+      "resell_min_stars": 343185,
       "sold_out": true,
       "stars": 50,
       "sticker": {
@@ -2612,7 +2612,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 25,
+      "upgrade_stars": 23689,
       "upgrade_variants": 40
     },
     {
@@ -2759,7 +2759,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 23945,
+      "upgrade_stars": 22449,
       "upgrade_variants": 100
     },
     {
@@ -2861,7 +2861,7 @@
       "per_user_total": 5,
       "released_by": null,
       "require_premium": true,
-      "resell_min_stars": 342652,
+      "resell_min_stars": 343185,
       "sold_out": false,
       "stars": 200,
       "sticker": {
@@ -2908,7 +2908,7 @@
         "video_thumbs": []
       },
       "title": "Shard Test",
-      "upgrade_stars": 82,
+      "upgrade_stars": 79,
       "upgrade_variants": 1600
     },
     {
@@ -3351,7 +3351,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 101973,
+      "resell_min_stars": 102132,
       "sold_out": false,
       "stars": 450,
       "sticker": {
@@ -3398,7 +3398,7 @@
         "video_thumbs": []
       },
       "title": "Candy Cane",
-      "upgrade_stars": 1950,
+      "upgrade_stars": 1845,
       "upgrade_variants": 3200
     },
     {
