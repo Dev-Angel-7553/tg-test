@@ -87,7 +87,7 @@
       "first_sale_date": "2024-10-07T18:44:44+00:00",
       "gifts_per_round": null,
       "id": 5197455433740058625,
-      "last_sale_date": "2026-11-17T16:47:26+00:00",
+      "last_sale_date": "2026-11-17T16:55:03+00:00",
       "limited": true,
       "limited_per_user": false,
       "locked_until_date": null,
@@ -752,7 +752,7 @@
       "auction_slug": "Facepalm",
       "auction_start_date": "2025-11-19T18:15:00+00:00",
       "availability_remains": 0,
-      "availability_resale": 1,
+      "availability_resale": null,
       "availability_total": 100,
       "background": {
         "_": "StarGiftBackground",
@@ -773,7 +773,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 491244,
+      "resell_min_stars": null,
       "sold_out": true,
       "stars": 100,
       "sticker": {
@@ -909,7 +909,7 @@
       "auction_slug": "Medal",
       "auction_start_date": "2025-11-20T08:00:00+00:00",
       "availability_remains": 0,
-      "availability_resale": 5,
+      "availability_resale": null,
       "availability_total": 5000,
       "background": {
         "_": "StarGiftBackground",
@@ -930,7 +930,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 5000,
+      "resell_min_stars": null,
       "sold_out": true,
       "stars": 100,
       "sticker": {
@@ -1294,7 +1294,7 @@
       "auction_slug": null,
       "auction_start_date": null,
       "availability_remains": 4669,
-      "availability_resale": 23,
+      "availability_resale": null,
       "availability_total": 10000,
       "background": null,
       "birthday": false,
@@ -1313,7 +1313,7 @@
         "channel_id": 10929622
       },
       "require_premium": false,
-      "resell_min_stars": 3509,
+      "resell_min_stars": null,
       "sold_out": false,
       "stars": 500,
       "sticker": {
@@ -1359,7 +1359,7 @@
         ],
         "video_thumbs": []
       },
-      "title": "Cat",
+      "title": null,
       "upgrade_stars": 100,
       "upgrade_variants": 1500
     },
@@ -1831,7 +1831,7 @@
       "auction_slug": "Flower",
       "auction_start_date": "2025-12-04T19:00:00+00:00",
       "availability_remains": 0,
-      "availability_resale": 1,
+      "availability_resale": null,
       "availability_total": 10000,
       "background": {
         "_": "StarGiftBackground",
@@ -1855,7 +1855,7 @@
         "user_id": 429000
       },
       "require_premium": false,
-      "resell_min_stars": 350889,
+      "resell_min_stars": null,
       "sold_out": true,
       "stars": 50,
       "sticker": {
@@ -2612,7 +2612,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 1249,
+      "upgrade_stars": 1163,
       "upgrade_variants": 40
     },
     {
@@ -2759,7 +2759,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 1195,
+      "upgrade_stars": 1113,
       "upgrade_variants": 100
     },
     {
@@ -2845,7 +2845,7 @@
       "auction_slug": null,
       "auction_start_date": null,
       "availability_remains": 99879,
-      "availability_resale": 2,
+      "availability_resale": null,
       "availability_total": 100000,
       "background": null,
       "birthday": false,
@@ -2861,7 +2861,7 @@
       "per_user_total": 5,
       "released_by": null,
       "require_premium": true,
-      "resell_min_stars": 350889,
+      "resell_min_stars": null,
       "sold_out": false,
       "stars": 200,
       "sticker": {
@@ -2907,7 +2907,7 @@
         ],
         "video_thumbs": []
       },
-      "title": "Shard Test",
+      "title": null,
       "upgrade_stars": 25,
       "upgrade_variants": 1600
     },
@@ -3110,7 +3110,7 @@
       "auction_slug": null,
       "auction_start_date": null,
       "availability_remains": 4040,
-      "availability_resale": 2,
+      "availability_resale": null,
       "availability_total": 5000,
       "background": null,
       "birthday": false,
@@ -3126,7 +3126,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 99999,
+      "resell_min_stars": null,
       "sold_out": false,
       "stars": 250,
       "sticker": {
@@ -3172,7 +3172,7 @@
         ],
         "video_thumbs": []
       },
-      "title": "Crystal Ball",
+      "title": null,
       "upgrade_stars": 25,
       "upgrade_variants": 2400
     },
@@ -3335,7 +3335,7 @@
       "auction_slug": null,
       "auction_start_date": null,
       "availability_remains": 716,
-      "availability_resale": 9,
+      "availability_resale": null,
       "availability_total": 1000,
       "background": null,
       "birthday": false,
@@ -3351,7 +3351,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 104425,
+      "resell_min_stars": null,
       "sold_out": false,
       "stars": 450,
       "sticker": {
@@ -3397,8 +3397,8 @@
         ],
         "video_thumbs": []
       },
-      "title": "Candy Cane",
-      "upgrade_stars": 163,
+      "title": null,
+      "upgrade_stars": 154,
       "upgrade_variants": 3200
     },
     {
@@ -3486,7 +3486,7 @@
       "auction_slug": null,
       "auction_start_date": null,
       "availability_remains": 136772,
-      "availability_resale": 3177,
+      "availability_resale": null,
       "availability_total": 1000000,
       "background": null,
       "birthday": false,
@@ -3502,7 +3502,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 70,
+      "resell_min_stars": null,
       "sold_out": false,
       "stars": 20,
       "sticker": {
@@ -3548,7 +3548,7 @@
         ],
         "video_thumbs": []
       },
-      "title": "Cake",
+      "title": null,
       "upgrade_stars": 5,
       "upgrade_variants": 2400
     },
@@ -3558,7 +3558,7 @@
       "auction_slug": null,
       "auction_start_date": null,
       "availability_remains": 4873,
-      "availability_resale": 13,
+      "availability_resale": null,
       "availability_total": 10000,
       "background": null,
       "birthday": false,
@@ -3574,7 +3574,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 1000,
+      "resell_min_stars": null,
       "sold_out": false,
       "stars": 50,
       "sticker": {
@@ -3620,7 +3620,7 @@
         ],
         "video_thumbs": []
       },
-      "title": "Drink",
+      "title": null,
       "upgrade_stars": 5,
       "upgrade_variants": 1500
     },
