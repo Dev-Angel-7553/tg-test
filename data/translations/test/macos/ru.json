@@ -41265,6 +41265,21 @@
     },
     {
       "_": "LangPackString",
+      "key": "StoryCreationAdjustmentsView.Tint",
+      "value": "Оттенок"
+    },
+    {
+      "_": "LangPackString",
+      "key": "StoryCreationAdjustmentsView.TintIntensity",
+      "value": "Насыщенность оттенка"
+    },
+    {
+      "_": "LangPackString",
+      "key": "StoryCreationController.VideoNoteCameraAccessRequired",
+      "value": "Для записи видеосообщения разрешите Telegram доступ к камере."
+    },
+    {
+      "_": "LangPackString",
       "key": "StoryFeed.TooltipArchive",
       "value": "Истории от %@ перенесены в архив."
     },
@@ -48091,7 +48106,7 @@
     {
       "_": "LangPackString",
       "key": "Wallet.Collectible.Header.AddToCard",
-      "value": "поместить на карту"
+      "value": "на карту"
     },
     {
       "_": "LangPackString",
@@ -51199,5 +51214,5 @@
       "value": "Показать автозамены"
     }
   ],
-  "version": 2468762
+  "version": 2476602
 }

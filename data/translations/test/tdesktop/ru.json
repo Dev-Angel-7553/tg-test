@@ -14306,7 +14306,7 @@
     {
       "_": "LangPackString",
       "key": "lng_drag_to_send_files",
-      "value": "для их отправки без сжатия"
+      "value": "для отправки без сжатия"
     },
     {
       "_": "LangPackString",
@@ -14331,7 +14331,7 @@
     {
       "_": "LangPackString",
       "key": "lng_drag_to_send_no_compression",
-      "value": "для отправки их без сжатия"
+      "value": "для отправки без сжатия"
     },
     {
       "_": "LangPackString",
@@ -47689,5 +47689,5 @@
       "zero_value": null
     }
   ],
-  "version": 6165558
+  "version": 6171755
 }

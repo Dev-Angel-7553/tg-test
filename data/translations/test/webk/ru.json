@@ -16231,7 +16231,7 @@
     {
       "_": "LangPackString",
       "key": "MediaEditor.Adjustments.Fade",
-      "value": "Затемнение"
+      "value": "Выцветание"
     },
     {
       "_": "LangPackString",
@@ -31644,5 +31644,5 @@
       "zero_value": null
     }
   ],
-  "version": 388887
+  "version": 389686
 }

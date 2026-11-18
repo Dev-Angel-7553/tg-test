@@ -2345,6 +2345,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "AttachmentGifSeparateHint",
+      "value": "GIF-анимации будут отправлены отдельными сообщениями."
+    },
+    {
+      "_": "LangPackString",
       "key": "AttachmentMenuArticle",
       "value": "Статья"
     },
@@ -2807,6 +2812,16 @@
       "_": "LangPackString",
       "key": "AvatarChooseFrame",
       "value": "Выберите кадр для миниатюры"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AvatarChooseFrameOther",
+      "value": "Выберите кадр для миниатюры"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AvatarVideoUnsupported",
+      "value": "Telegram не поддерживает видео такого типа."
     },
     {
       "_": "LangPackString",
@@ -7205,8 +7220,18 @@
     },
     {
       "_": "LangPackString",
+      "key": "EditorChooseCoverFromComputer",
+      "value": "Выбрать из файлов"
+    },
+    {
+      "_": "LangPackString",
       "key": "EditorClearCover",
       "value": "Убрать обложку"
+    },
+    {
+      "_": "LangPackString",
+      "key": "EditorCoverAspectHint",
+      "value": "У обложки такое же соотношение сторон, как у видео."
     },
     {
       "_": "LangPackString",
@@ -7295,8 +7320,18 @@
     },
     {
       "_": "LangPackString",
+      "key": "EditorTintNone",
+      "value": "Без оттенка"
+    },
+    {
+      "_": "LangPackString",
       "key": "EditorUnmutedHint",
       "value": "Звук снова включён."
+    },
+    {
+      "_": "LangPackString",
+      "key": "EditorUseFrameAsCover",
+      "value": "Использовать текущий кадр"
     },
     {
       "_": "LangPackString",
@@ -8076,7 +8111,7 @@
     {
       "_": "LangPackString",
       "key": "Fade",
-      "value": "Затемнение"
+      "value": "Выцветание"
     },
     {
       "_": "LangPackString",
@@ -11802,6 +11837,11 @@
       "_": "LangPackString",
       "key": "MediaAccessMicrophoneText",
       "value": "**{name}** запрашивает доступ к **микрофону**. Это разрешение можно будет в любой момент отозвать в профиле **{name}**."
+    },
+    {
+      "_": "LangPackString",
+      "key": "MediaAccessReloadNote",
+      "value": "Чтобы применить это разрешение, необходимо перезапустить мини-приложение."
     },
     {
       "_": "LangPackString",
@@ -20186,7 +20226,7 @@
     {
       "_": "LangPackString",
       "key": "TintHighlights",
-      "value": "Света"
+      "value": "Свет"
     },
     {
       "_": "LangPackString",
@@ -21125,6 +21165,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "VideoAudioUnsupported",
+      "value": "Браузер не может обработать звук в этом видео. Чтобы отредактировать видео, отключите в нём звук."
+    },
+    {
+      "_": "LangPackString",
       "key": "VideoCall",
       "value": "Видеозвонок"
     },
@@ -21150,8 +21195,28 @@
     },
     {
       "_": "LangPackString",
+      "key": "VideoEditingUnsupportedCover",
+      "value": "Браузер не может обработать видео, но можно выбрать обложку."
+    },
+    {
+      "_": "LangPackString",
+      "key": "VideoEditingUnsupportedCoverMute",
+      "value": "Браузер не может обработать видео, но можно выбрать обложку или отключить звук."
+    },
+    {
+      "_": "LangPackString",
+      "key": "VideoEditingUnsupportedMute",
+      "value": "Браузер не может обработать видео, но можно отключить звук."
+    },
+    {
+      "_": "LangPackString",
+      "key": "VideoEditorLoadFailed",
+      "value": "Не удалось открыть видео в редакторе."
+    },
+    {
+      "_": "LangPackString",
       "key": "VideoMessagePermissionDenied",
-      "value": "Чтобы записать видеосообщение, разрешите доступ к камере и микрофону."
+      "value": "Для записи видеосообщений разрешите Telegram доступ к камере и микрофону."
     },
     {
       "_": "LangPackString",
@@ -21180,8 +21245,23 @@
     },
     {
       "_": "LangPackString",
+      "key": "VideoProcessingFailed",
+      "value": "Не удалось обработать видео."
+    },
+    {
+      "_": "LangPackString",
+      "key": "VideoQualityGifHint",
+      "value": "Качество GIF выбирается автоматически."
+    },
+    {
+      "_": "LangPackString",
       "key": "VideoQualityInfo",
       "value": "{type} • ~{size} • {width}×{height}"
+    },
+    {
+      "_": "LangPackString",
+      "key": "VideoTooLargeToEdit",
+      "value": "Видео слишком большое для обработки редактором."
     },
     {
       "_": "LangPackString",
@@ -22655,6 +22735,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "WalletSendPasswordRequired",
+      "value": "Включена двухэтапная аутентификация. Повторите отправку и введите облачный пароль."
+    },
+    {
+      "_": "LangPackString",
       "key": "WalletSendPending",
       "value": "Возможно, перевод уже был отправлен. Не отправляйте его снова, пока идёт обработка."
     },
@@ -23090,6 +23175,16 @@
     },
     {
       "_": "LangPackString",
+      "key": "WebAppMediaReloadButton",
+      "value": "Перезапустить"
+    },
+    {
+      "_": "LangPackString",
+      "key": "WebAppMediaReloadText",
+      "value": "Чтобы новые разрешения вступили в силу, перезапустите мини-приложение."
+    },
+    {
+      "_": "LangPackString",
       "key": "WebAppMicrophoneAccessRevoked",
       "value": "Доступ к микрофону отключён, приложение перезапущено."
     },
@@ -23229,5 +23324,5 @@
       "value": "Ваше имя"
     }
   ],
-  "version": 399054
+  "version": 399566
 }
