@@ -1,0 +1,20 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:b6a4c5f5c535c01a76f596d4250b83cf14f99155:web:test",
+  "files": [
+    {
+      "additions": 3,
+      "deletions": 3,
+      "filename": "y-/translations.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-17T22:18:41Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "b6a4c5f5c535c01a76f596d4250b83cf14f99155",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/b6a4c5f5c535c01a76f596d4250b83cf14f99155"
+  }
+}
