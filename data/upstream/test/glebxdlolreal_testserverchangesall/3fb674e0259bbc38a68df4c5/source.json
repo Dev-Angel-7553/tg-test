@@ -1,0 +1,32 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:706a7dfd97711403889715d8c63c04317d3a7b65:web:test",
+  "files": [
+    {
+      "additions": 33,
+      "deletions": 5,
+      "filename": "l-/bugtracker-app.css",
+      "status": "modified"
+    },
+    {
+      "additions": 14,
+      "deletions": 1,
+      "filename": "l-/bugtracker-dark.css",
+      "status": "modified"
+    },
+    {
+      "additions": 48,
+      "deletions": 5,
+      "filename": "l-/bugtracker.css",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-17T14:16:49Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "706a7dfd97711403889715d8c63c04317d3a7b65",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/706a7dfd97711403889715d8c63c04317d3a7b65"
+  }
+}
