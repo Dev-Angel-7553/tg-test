@@ -1,0 +1,1670 @@
+diff --git a/i-/bugtracker-app.css b/i-/bugtracker-app.css
+@@ -596,6 +596,12 @@ span.bt-search-tab {
+   color: var(--text-primary);
+ }
+ 
++.bt-select-query .select .search-item .select-list-item.vt3,
++.bt-select-query .select .selected-item.vt3 {
++  background-color: #887feb;
++  color: var(--text-primary);
++}
++
+ .bt-select-query .select .search-item .select-list-item.team,
+ .bt-select-query .select .selected-item.team {
+   background-color: #e6a243;
+@@ -848,7 +854,7 @@ a.bt-card-row:hover {
+ 
+ }
+ 
+-.bt-card-type.internal:before, .bt-card-title.internal:before, .bt-merge-card-title.internal:before, .bt-issue-title.internal:before, .select-list-item.internal:before, .selected-item.internal .label:before, .bt-card-type.private:before, .bt-card-title.private:before, .bt-merge-card-title.private:before, .bt-issue-title.private:before, .select-list-item.private:before, .selected-item.private .label:before {
++.bt-card-type.internal:before, .bt-card-title.internal:before, .bt-merge-card-title.internal:before, .bt-issue-title.internal:before, .select-list-item.internal:before, .selected-item.internal .label:before, .bt-card-type.private:before, .bt-card-title.private:before, .bt-merge-card-title.private:before, .bt-issue-title.private:before, .select-list-item.private:before, .selected-item.private .label:before, .bt-card-type.vt3:before, .bt-card-title.vt3:before, .bt-merge-card-title.vt3:before, .bt-issue-title.vt3:before, .select-list-item.vt3:before, .selected-item.vt3 .label:before {
+   content: '';
+   display: inline-block;
+   width: 11px;
+@@ -863,16 +869,20 @@ a.bt-card-row:hover {
+   background-image: url("data:image/svg+xml,%3Csvg%20height%3D%2213%22%20viewBox%3D%220%200%2011%2013%22%20width%3D%2211%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20fill%3D%22%23238fe1%22%20height%3D%227%22%20rx%3D%221.5%22%20width%3D%2211%22%20y%3D%226%22%2F%3E%3Crect%20height%3D%229%22%20rx%3D%222.5%22%20stroke%3D%22%23238fe1%22%20stroke-width%3D%222%22%20width%3D%225%22%20x%3D%223%22%20y%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+ }
+ 
+-.bt-issue-title.internal:before, .bt-issue-title.private:before {
++.bt-card-type.vt3:before, .bt-card-title.vt3:before, .bt-merge-card-title.vt3:before, .bt-issue-title.vt3:before, .select-list-item.vt3:before {
++  background-image: url("data:image/svg+xml,%3Csvg%20height%3D%2213%22%20viewBox%3D%220%200%2011%2013%22%20width%3D%2211%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20fill%3D%22%238a5cf6%22%20height%3D%227%22%20rx%3D%221.5%22%20width%3D%2211%22%20y%3D%226%22%2F%3E%3Crect%20height%3D%229%22%20rx%3D%222.5%22%20stroke%3D%22%238a5cf6%22%20stroke-width%3D%222%22%20width%3D%225%22%20x%3D%223%22%20y%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
++}
++
++.bt-issue-title.internal:before, .bt-issue-title.private:before, .bt-issue-title.vt3:before {
+   width: 13px;
+   height: 15px;
+ }
+ 
+-.select-list-item.internal:before, .select-list-item.private:before {
++.select-list-item.internal:before, .select-list-item.private:before, .select-list-item.vt3:before {
+   margin-right: 6px;
+ }
+ 
+-.selected-item.internal .label:before, .selected-item.private .label:before {
++.selected-item.internal .label:before, .selected-item.private .label:before, .selected-item.vt3 .label:before {
+   background-image: url("data:image/svg+xml,%3Csvg%20height%3D%2213%22%20viewBox%3D%220%200%2011%2013%22%20width%3D%2211%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20fill%3D%22%23fff%22%20height%3D%227%22%20rx%3D%221.5%22%20width%3D%2211%22%20y%3D%226%22%2F%3E%3Crect%20height%3D%229%22%20rx%3D%222.5%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20width%3D%225%22%20x%3D%223%22%20y%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+   margin-right: 8px;
+ }
+@@ -1085,6 +1095,11 @@ a.bt-card-row:hover {
+   background-color: #d7f4cc;
+ }
+ 
++.bt-card-type.vt3 {
++  color: #813dc6;
++  background-color: #ede6fc;
++}
++
+ .cd-issue-status-wrap {
+   margin-top: -24px;
+   display: flex;
+@@ -1742,6 +1757,15 @@ a.bt-comment-reply-content:hover, a.bt-comment-reply-content:focus {
+   fill: #54a344;
+ }
+ 
++.bt-type-dd.vt3 {
++  color: #813dc6;
++  background-color: #ede6fc;
++}
++
++.bt-type-dd.vt3 svg.dd use {
++  fill: #9d7bea;
++}
++
+ .bt-type-dd-tips {
+   display: inline-block;
+   padding: 6px 0 5px;
+@@ -1770,7 +1794,7 @@ a.bt-comment-reply-content:hover, a.bt-comment-reply-content:focus {
+   background-color: initial;
+ }
+ 
+-.bt-card-type.internal:before, .bt-card-type.private:before {
++.bt-card-type.internal:before, .bt-card-type.private:before, .bt-card-type.vt3:before {
+   margin-right: 8px;
+ }
+ 
+@@ -2994,6 +3018,10 @@ body .cd-dialog-options.disabled input.radio:checked ~ .radio-label {
+ .bt-merge-target-title.internal {
+   color: #7fcfff;
+ }
++.bt-merge-card-title.vt3,
++.bt-merge-target-title.vt3 {
++  color: #bea2ff;
++}
+ .bt-merge-card-preview-text {
+   margin-top: 4px;
+   font-size: 13px;
+diff --git a/i-/bugtracker-dark.css b/i-/bugtracker-dark.css
+@@ -649,8 +649,16 @@ html.bt-theme-dark .bt-merge-target-title.private {
+   color: var(--bt-dark-success);
+   background-color: rgba(91, 173, 87, .16);
+ }
++html.bt-theme-dark .bt-card-type.vt3,
++html.bt-theme-dark .bt-type-dd.vt3,
++html.bt-theme-dark .bt-merge-card-title.vt3,
++html.bt-theme-dark .bt-merge-target-title.vt3 {
++  color: #b79cfa;
++  background-color: rgba(138, 92, 246, .18);
++}
+ html.bt-theme-dark .bt-type-dd-wrap .bt-dropdown-item .bt-card-type.internal,
+-html.bt-theme-dark .bt-type-dd-wrap .bt-dropdown-item .bt-card-type.private {
++html.bt-theme-dark .bt-type-dd-wrap .bt-dropdown-item .bt-card-type.private,
++html.bt-theme-dark .bt-type-dd-wrap .bt-dropdown-item .bt-card-type.vt3 {
+   background-color: transparent;
+ }
+ html.bt-theme-dark .bt-select-query .select .search-item .select-list-item.c-aqua,
+@@ -729,6 +737,11 @@ html.bt-theme-dark .bt-select-query .select .selected-item.private {
+   background-color: #5bad57;
+   color: var(--bt-dark-text-primary);
+ }
++html.bt-theme-dark .bt-select-query .select .search-item .select-list-item.vt3,
++html.bt-theme-dark .bt-select-query .select .selected-item.vt3 {
++  background-color: #887feb;
++  color: var(--bt-dark-text-primary);
++}
+ 
+ html.bt-theme-dark .bt-action-btn,
+ html.bt-theme-dark .bt-action-btn:hover,
+diff --git a/i-/bugtracker.css b/i-/bugtracker.css
+@@ -469,6 +469,13 @@ span.bt-search-tab {
+ .bt-select-query .select .search-item.selected .select-list-item.c-green {
+   background-color: #ceedc2;
+ }
++.bt-select-query .select .search-item .select-list-item.vt3 {
++  background-color: #ede6fc;
++  color: #813dc6;
++}
++.bt-select-query .select .search-item.selected .select-list-item.vt3 {
++  background-color: #e2d6fb;
++}
+ .bt-select-query .select .search-item .select-list-item.team {
+   background-color: #ffecc9;
+   color: #a86e00;
+@@ -552,6 +559,10 @@ span.bt-search-tab {
+   background-color: #5bad57;
+   color: #fff;
+ }
++.bt-select-query .select .selected-item.vt3 {
++  background-color: #887feb;
++  color: #fff;
++}
+ .bt-select-query .select .selected-item.team {
+   background-color: #e6a243;
+   color: #fff;
+@@ -751,7 +762,13 @@ a.bt-card-row:hover {
+ .bt-merge-card-title.private:before,
+ .bt-issue-title.private:before,
+ .select-list-item.private:before,
+-.selected-item.private .label:before {
++.selected-item.private .label:before,
++.bt-card-type.vt3:before,
++.bt-card-title.vt3:before,
++.bt-merge-card-title.vt3:before,
++.bt-issue-title.vt3:before,
++.select-list-item.vt3:before,
++.selected-item.vt3 .label:before {
+   content: '';
+   display: inline-block;
+   width: 11px;
+@@ -768,17 +785,27 @@ a.bt-card-row:hover {
+ .select-list-item.internal:before {
+   background-image: url("data:image/svg+xml,%3Csvg%20height%3D%2213%22%20viewBox%3D%220%200%2011%2013%22%20width%3D%2211%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20fill%3D%22%23238fe1%22%20height%3D%227%22%20rx%3D%221.5%22%20width%3D%2211%22%20y%3D%226%22%2F%3E%3Crect%20height%3D%229%22%20rx%3D%222.5%22%20stroke%3D%22%23238fe1%22%20stroke-width%3D%222%22%20width%3D%225%22%20x%3D%223%22%20y%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+ }
++.bt-card-type.vt3:before,
++.bt-card-title.vt3:before,
++.bt-merge-card-title.vt3:before,
++.bt-issue-title.vt3:before,
++.select-list-item.vt3:before {
++  background-image: url("data:image/svg+xml,%3Csvg%20height%3D%2213%22%20viewBox%3D%220%200%2011%2013%22%20width%3D%2211%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20fill%3D%22%238a5cf6%22%20height%3D%227%22%20rx%3D%221.5%22%20width%3D%2211%22%20y%3D%226%22%2F%3E%3Crect%20height%3D%229%22%20rx%3D%222.5%22%20stroke%3D%22%238a5cf6%22%20stroke-width%3D%222%22%20width%3D%225%22%20x%3D%223%22%20y%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
++}
+ .bt-issue-title.internal:before,
+-.bt-issue-title.private:before {
++.bt-issue-title.private:before,
++.bt-issue-title.vt3:before {
+   width: 13px;
+   height: 15px;
+ }
+ .select-list-item.internal:before,
+-.select-list-item.private:before {
++.select-list-item.private:before,
++.select-list-item.vt3:before {
+   margin-right: 6px;
+ }
+ .selected-item.internal .label:before,
+-.selected-item.private .label:before {
++.selected-item.private .label:before,
++.selected-item.vt3 .label:before {
+   background-image: url("data:image/svg+xml,%3Csvg%20height%3D%2213%22%20viewBox%3D%220%200%2011%2013%22%20width%3D%2211%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20fill%3D%22%23fff%22%20height%3D%227%22%20rx%3D%221.5%22%20width%3D%2211%22%20y%3D%226%22%2F%3E%3Crect%20height%3D%229%22%20rx%3D%222.5%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20width%3D%225%22%20x%3D%223%22%20y%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+   margin-right: 8px;
+ }
+@@ -943,6 +970,10 @@ a.bt-card-row:hover {
+   color: #1a7e0e;
+   background-color: #d7f4cc;
+ }
++.bt-card-type.vt3 {
++  color: #813dc6;
++  background-color: #ede6fc;
++}
+ 
+ .cd-issue-status-wrap {
+   margin-top: -24px;
+@@ -1514,6 +1545,13 @@ a.bt-comment-reply-content:focus {
+ .bt-type-dd.private svg.dd use {
+   fill: #54a344;
+ }
++.bt-type-dd.vt3 {
++  color: #813dc6;
++  background-color: #ede6fc;
++}
++.bt-type-dd.vt3 svg.dd use {
++  fill: #9d7bea;
++}
+ .bt-type-dd-tips {
+   display: inline-block;
+   padding: 6px 0 5px;
+@@ -1539,7 +1577,8 @@ a.bt-comment-reply-content:focus {
+   background-color: initial;
+ }
+ .bt-card-type.internal:before,
+-.bt-card-type.private:before {
++.bt-card-type.private:before,
++.bt-card-type.vt3:before {
+   margin-right: 8px;
+ }
+ .bt-type-dd-wrap .bt-dropdown-item .bt-card-type:before {
+@@ -2550,6 +2589,10 @@ button.cd-edit-btn {
+ .bt-merge-target-title.internal {
+   color: #0e79b2;
+ }
++.bt-merge-card-title.vt3,
++.bt-merge-target-title.vt3 {
++  color: #7c4ddb;
++}
+ .bt-merge-card-preview-text {
+   margin-top: 4px;
+   font-size: 13px;
+diff --git a/i-/premiumbot-lottie.js b/i-/premiumbot-lottie.js
+@@ -149,9 +149,6 @@ window.PremiumLottie = (function() {
+     if (player.poster) {
+       player.poster.style.display = '';
+     }
+-    if (player.target.classList) {
+-      player.target.classList.remove('is-ready');
+-    }
+   }
+ 
+   function destroy() {
+@@ -179,9 +176,6 @@ window.PremiumLottie = (function() {
+     if (player.poster) {
+       player.poster.style.display = 'none';
+     }
+-    if (player.target.classList) {
+-      player.target.classList.add('is-ready');
+-    }
+     return true;
+   }
+ 
+@@ -238,7 +232,7 @@ window.PremiumLottie = (function() {
+           removed: false
+         };
+         player.context = player.canvas.getContext('2d');
+-        player.canvas.className = 'js-lottie-canvas';
++        player.canvas.className = 'pm-lottie-canvas';
+         target.appendChild(player.canvas);
+         players.push(player);
+         Promise.all([
+diff --git a/i-/premiumbot.css b/i-/premiumbot.css
+@@ -1,101 +1,542 @@
+-/* Premium Bot Mini App: local additions on top of the design-system stylesheets
+-   (premiumbot-tokens/base/components/fx/screens-*.css). No framework, no preprocessor. */
++/* Premium Bot Mini App: theme-aware, responsive, no preprocessor. */
++:root {
++  --pm-accent: #8774e1;
++  --pm-accent-strong: #735bd1;
++  --pm-accent-soft: rgba(135, 116, 225, 0.12);
++  --pm-card: #ffffff;
++  --pm-page: var(--tg-theme-bg-color, #f4f4f5);
++  --pm-section: var(--tg-theme-section-bg-color, var(--pm-card));
++  --pm-text: var(--tg-theme-text-color, #18212b);
++  --pm-hint: var(--tg-theme-hint-color, #708090);
++  --pm-link: var(--tg-theme-link-color, #4e46b8);
++  --pm-border: var(--tg-theme-section-separator-color, rgba(20, 32, 48, 0.1));
++  --pm-danger: #e55353;
++  --pm-shadow: 0 8px 30px rgba(24, 20, 66, 0.08);
++}
+ 
+-/* Toasts: created by premiumbot.js inside .toast-region (base styles live in premiumbot-components.css). */
++html, body {
++  background: var(--pm-page);
++  color: var(--pm-text);
++}
+ 
+-/* Peer picker status line under the picker cell. */
+-.pm-picker-status {
++body {
++  margin: 0;
++  min-height: var(--tg-viewport-stable-height, 100vh);
++  -webkit-tap-highlight-color: transparent;
++}
++
++.pm-app {
++  box-sizing: border-box;
++  width: 100%;
++  max-width: 580px;
++  min-height: var(--tg-viewport-stable-height, 100vh);
++  margin: 0 auto;
++  padding: calc(14px + var(--tg-safe-area-inset-top, 0px)) 16px calc(30px + var(--tg-content-safe-area-inset-bottom, 0px));
++  color: var(--pm-text);
++}
++
++.pm-app *, .pm-app *::before, .pm-app *::after {
++  box-sizing: border-box;
++}
++
++.pm-hero {
++  position: relative;
++  overflow: hidden;
++  margin-bottom: 18px;
++  padding: 30px 24px 26px;
++  border-radius: 28px;
++  background:
++    radial-gradient(circle at 88% 2%, rgba(255, 255, 255, 0.3), transparent 34%),
++    linear-gradient(145deg, #a18cf1 0%, #8268d9 43%, #ac5db0 100%);
++  color: #ffffff;
++  text-align: center;
++  box-shadow: 0 15px 40px rgba(104, 76, 179, 0.2);
++}
++
++.pm-hero::after {
++  position: absolute;
++  right: -35px;
++  bottom: -70px;
++  width: 160px;
++  height: 160px;
++  border: 28px solid rgba(255, 255, 255, 0.08);
++  border-radius: 50%;
++  content: '';
++  pointer-events: none;
++}
++
++.pm-hero-art {
++  position: relative;
++  width: 120px;
++  height: 120px;
++  margin: 0 auto 8px;
++  animation: pm-hero-in 420ms cubic-bezier(.2,.8,.2,1) both;
++}
++
++.pm-svg {
+   display: block;
+-  margin-top: var(--space-8);
+-  color: var(--hint);
+-  font-size: var(--fs-sub);
+-  line-height: var(--lh-sub);
++  width: 100%;
++  height: 100%;
++  background-color: currentColor;
++  -webkit-mask-position: center;
++  mask-position: center;
++  -webkit-mask-repeat: no-repeat;
++  mask-repeat: no-repeat;
++  -webkit-mask-size: contain;
++  mask-size: contain;
+ }
+ 
+-.pm-picker-status.is-error {
+-  color: var(--destructive, var(--fb-destructive));
++.pm-hero-art > .pm-svg {
++  width: 104px;
++  height: 104px;
++  margin: 8px auto;
++  color: #ffffff;
++  filter: drop-shadow(0 10px 18px rgba(42, 25, 94, 0.22));
+ }
+ 
+-.pm-picker-status:empty {
+-  display: none;
++.pm-lottie-canvas {
++  position: absolute;
++  inset: 0;
++  width: 100%;
++  height: 100%;
++  pointer-events: none;
+ }
+ 
+-/* Two choice cells in one row (Choose Channel / Choose Group). */
+-.pm-choice-cells {
+-  display: grid;
+-  grid-template-columns: 1fr 1fr;
+-  gap: var(--space-12);
++.pm-title {
++  position: relative;
++  margin: 4px 0 8px;
++  color: inherit;
++  font-size: 30px;
++  font-weight: 750;
++  line-height: 1.18;
++  letter-spacing: -0.02em;
++  outline: none;
+ }
+ 
+-@media (max-width: 340px) {
+-  .pm-choice-cells {
+-    grid-template-columns: 1fr;
+-  }
++.pm-subtitle {
++  position: relative;
++  max-width: 400px;
++  margin: 0 auto;
++  color: rgba(255, 255, 255, 0.88);
++  font-size: 15px;
++  line-height: 1.45;
+ }
+ 
+-/* Hidden giveaway option records; the client resolves selections against them. */
+-.js-gw-matrix {
+-  display: none;
++.pm-subtitle a {
++  color: inherit;
++  text-decoration: underline;
+ }
+ 
+-/* Anchor segments (page links) mirror the checked state of the design's radio segments. */
+-.segment {
+-  cursor: pointer;
+-  text-decoration: none;
++.pm-content {
++  animation: pm-content-in 260ms ease-out both;
++}
++
++.pm-island, .pm-plans, .pm-features {
++  overflow: hidden;
++  margin: 12px 0;
++  border: 1px solid var(--pm-border);
++  border-radius: 20px;
++  background: var(--pm-section);
++  box-shadow: var(--pm-shadow);
++}
++
++.pm-cell {
++  display: flex;
++  align-items: center;
++  min-height: 66px;
++  padding: 12px 14px;
+   color: inherit;
++  text-decoration: none;
++  transition: background-color 140ms ease, transform 140ms ease;
+ }
+ 
+-.segment.is-active .segment-face {
+-  font-weight: var(--fw-strong);
++.pm-cell:not(:last-child) {
++  border-bottom: 1px solid var(--pm-border);
+ }
+ 
+-.segment.is-active .segment-face::before {
+-  background: var(--thumb);
+-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
++.pm-cell:hover {
++  background: var(--pm-accent-soft);
++  text-decoration: none;
+ }
+ 
+-.theme-dark .segment.is-active .segment-face::before {
+-  box-shadow: none;
++.pm-cell:active, .pm-plan:active, .pm-chip:active, .pm-primary:active, .pm-secondary:active {
++  transform: scale(0.975);
+ }
+ 
+-/* Error screen action stack. */
+-.pm-error-actions {
+-  display: grid;
+-  gap: var(--space-12);
+-  margin-top: var(--space-16);
++.pm-cell-icon {
++  flex: 0 0 auto;
++  width: 36px;
++  height: 36px;
++  margin-right: 12px;
++  padding: 7px;
++  border-radius: 11px;
++  background: var(--pm-accent-soft);
+ }
+ 
+-/* The in-page CTA fallback (clients without the native MainButton): the design's bar docks it above the safe area. */
+-.cta-bar > .cta-button {
++.pm-cell-copy {
++  display: flex;
++  flex: 1 1 auto;
++  flex-direction: column;
++  min-width: 0;
++}
++
++.pm-cell-title {
++  color: inherit;
++  font-size: 16px;
++  font-weight: 650;
++  line-height: 1.3;
++}
++
++.pm-cell-description {
++  margin-top: 3px;
++  color: var(--pm-hint);
++  font-size: 13px;
++  line-height: 1.35;
++}
++
++.pm-cell-chevron {
++  flex: 0 0 auto;
++  width: 18px;
++  height: 18px;
++  margin-left: 8px;
++  opacity: 0.45;
++}
++
++.pm-plans {
++  padding: 8px;
++}
++
++.pm-plan {
+   position: relative;
+-  display: grid;
++  display: flex;
++  align-items: center;
++  width: 100%;
++  min-height: 68px;
++  margin: 0;
++  padding: 13px 14px;
++  border: 1px solid transparent;
++  border-radius: 14px;
++  background: transparent;
++  color: var(--pm-text);
++  font: inherit;
++  text-align: left;
++  cursor: pointer;
++  transition: background-color 140ms ease, border-color 140ms ease, transform 140ms ease;
++}
++
++.pm-plan:hover {
++  border-color: rgba(135, 116, 225, 0.35);
++  background: var(--pm-accent-soft);
++}
++
++.pm-plan:disabled {
++  cursor: wait;
++  opacity: 0.65;
++}
++
++.pm-plan-copy {
++  display: flex;
++  flex: 1 1 auto;
++  flex-direction: column;
++  min-width: 0;
+ }
+ 
+-.cta-bar {
+-  margin-top: var(--space-16);
++.pm-plan-title {
++  font-size: 17px;
++  font-weight: 680;
++  line-height: 1.25;
+ }
+ 
+-/* The hidden CTA driving the native MainButton must never appear. */
+-.js-cta[hidden] {
++.pm-plan-description {
++  margin-top: 3px;
++  color: var(--pm-hint);
++  font-size: 13px;
++}
++
++.pm-plan-price {
++  flex: 0 0 auto;
++  margin-left: 12px;
++  color: var(--pm-link);
++  font-size: 17px;
++  font-weight: 730;
++}
++
++.pm-plan.is-loading::after {
++  width: 16px;
++  height: 16px;
++  margin-left: 8px;
++  border: 2px solid var(--pm-border);
++  border-top-color: var(--pm-accent);
++  border-radius: 50%;
++  content: '';
++  animation: pm-spin 650ms linear infinite;
++}
++
++.pm-filters {
++  display: flex;
++  gap: 8px;
++  overflow-x: auto;
++  margin: 12px 0 2px;
++  padding: 2px 2px 8px;
++  scrollbar-width: none;
++}
++
++.pm-filters::-webkit-scrollbar {
+   display: none;
+ }
+ 
+-/* Hero artwork: the server-rendered Lottie marks (the design's 3D canvases are client-side only). */
+-.hero-media > .lottie,
+-.hero.fx-field > .lottie {
+-  width: 104px;
+-  height: 104px;
+-  margin-inline: auto;
++.pm-chip {
++  flex: 0 0 auto;
++  min-height: 44px;
++  padding: 9px 13px;
++  border: 1px solid var(--pm-border);
++  border-radius: 18px;
++  background: var(--pm-section);
++  color: var(--pm-hint);
++  font: inherit;
++  font-size: 13px;
++  cursor: pointer;
++  transition: transform 120ms ease, background-color 120ms ease;
+ }
+ 
+-.fx-stage--compact .hero-media > .lottie {
+-  width: 88px;
+-  height: 88px;
++.pm-chip.is-active {
++  border-color: var(--pm-accent);
++  background: var(--pm-accent);
++  color: #ffffff;
+ }
+ 
+-.hero-media > .lottie canvas,
+-.lottie > canvas {
+-  display: block;
++.pm-feature {
++  display: flex;
++  gap: 14px;
++  align-items: flex-start;
++  padding: 15px 16px;
++}
++
++.pm-feature:not(:last-child) {
++  border-bottom: 1px solid var(--pm-border);
++}
++
++.pm-feature-icon {
++  flex: 0 0 auto;
++  width: 30px;
++  height: 30px;
++  padding: 4px;
++  border-radius: 9px;
++  background: var(--pm-accent-soft);
++  color: var(--pm-accent-strong);
++}
++
++.pm-feature h2 {
++  margin: 0 0 4px;
++  color: inherit;
++  font-size: 16px;
++  font-weight: 650;
++}
++
++.pm-feature p, .pm-picker p, .pm-note {
++  margin: 0;
++  color: var(--pm-hint);
++  font-size: 14px;
++  line-height: 1.45;
++}
++
++.pm-picker {
++  padding: 18px 16px;
++  text-align: center;
++}
++
++.pm-picker .pm-primary, .pm-picker .pm-secondary {
+   width: 100%;
+-  height: 100%;
++  margin-top: 14px;
++}
++
++.pm-picker-status {
++  min-height: 20px;
++  margin-top: 12px;
++  color: var(--pm-hint);
++  font-size: 13px;
++}
++
++.pm-picker-status.is-error, .pm-message-error {
++  color: var(--pm-danger);
++}
++
++.pm-primary, .pm-secondary {
++  display: inline-flex;
++  align-items: center;
++  justify-content: center;
++  min-height: 46px;
++  padding: 11px 20px;
++  border: 0;
++  border-radius: 14px;
++  font: inherit;
++  font-weight: 680;
++  cursor: pointer;
++  transition: transform 120ms ease, opacity 120ms ease;
++}
++
++.pm-primary {
++  background: linear-gradient(135deg, var(--pm-accent), var(--pm-accent-strong));
++  color: #ffffff;
++  box-shadow: 0 7px 18px rgba(111, 84, 202, 0.2);
++}
++
++.pm-secondary {
++  border: 1px solid var(--pm-border);
++  background: var(--pm-section);
++  color: var(--pm-link);
++}
++
++.pm-link {
++  width: 100%;
++  text-decoration: none;
++}
++
++.pm-note {
++  margin-top: 12px;
++  text-align: center;
++}
++
++.pm-island > .pm-note, .pm-island > .pm-secondary {
++  display: flex;
++  width: calc(100% - 28px);
++  margin-right: 14px;
++  margin-left: 14px;
++}
++
++.pm-island > .pm-secondary {
++  margin-top: 14px;
++}
++
++.pm-island > .pm-note {
++  margin-bottom: 14px;
++}
++
++.pm-banner, .pm-empty {
++  margin: 12px 0;
++  padding: 14px 16px;
++  border: 1px solid rgba(135, 116, 225, 0.2);
++  border-radius: 16px;
++  background: var(--pm-accent-soft);
++  color: var(--pm-hint);
++  font-size: 14px;
++  line-height: 1.45;
++}
++
++.pm-message {
++  position: fixed;
++  z-index: 20;
++  right: 16px;
++  bottom: calc(16px + var(--tg-content-safe-area-inset-bottom, 0px));
++  left: 16px;
++  width: auto;
++  max-width: 520px;
++  margin: 0 auto;
++  padding: 13px 16px;
++  border-radius: 14px;
++  background: var(--tg-theme-section-bg-color, #242f3d);
++  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
++  color: var(--pm-text);
++  font-size: 14px;
++  text-align: center;
++  animation: pm-content-in 180ms ease-out both;
++}
++
++.pm-sr-only {
++  position: absolute;
++  overflow: hidden;
++  width: 1px;
++  height: 1px;
++  padding: 0;
++  border: 0;
++  margin: -1px;
++  clip: rect(0, 0, 0, 0);
++  white-space: nowrap;
++}
++
++.pm-cell:focus-visible, .pm-plan:focus-visible, .pm-chip:focus-visible,
++.pm-primary:focus-visible, .pm-secondary:focus-visible {
++  outline: 3px solid rgba(135, 116, 225, 0.45);
++  outline-offset: 2px;
++}
++
++.lang_rtl .pm-app {
++  direction: rtl;
++}
++
++.lang_rtl .pm-cell-icon, .lang_rtl .pm-plan-price {
++  margin-right: 0;
++  margin-left: 12px;
++}
++
++.lang_rtl .pm-cell-chevron {
++  margin-right: 8px;
++  margin-left: 0;
++  transform: scaleX(-1);
++}
++
++.lang_rtl .pm-plan {
++  text-align: right;
++}
++
++[hidden] {
++  display: none !important;
++}
++
++@keyframes pm-spin {
++  to { transform: rotate(360deg); }
++}
++
++@keyframes pm-hero-in {
++  from { opacity: 0; transform: translateY(10px) scale(0.92); }
++  to { opacity: 1; transform: translateY(0) scale(1); }
++}
++
++@keyframes pm-content-in {
++  from { opacity: 0; transform: translateY(7px); }
++  to { opacity: 1; transform: translateY(0); }
++}
++
++@media (max-width: 520px) {
++  .pm-app {
++    padding-right: 12px;
++    padding-left: 12px;
++  }
++
++  .pm-hero {
++    padding: 24px 18px 22px;
++    border-radius: 24px;
++  }
++
++  .pm-title {
++    font-size: 27px;
++  }
++
++  .pm-cell {
++    min-height: 64px;
++  }
++
++  .pm-plan-price {
++    font-size: 16px;
++  }
++}
++
++@media (min-width: 700px) {
++  .pm-app {
++    padding-top: 24px;
++  }
++}
++
++@media (prefers-reduced-motion: reduce) {
++  .pm-hero-art, .pm-content, .pm-message {
++    animation: none;
++  }
++
++  .pm-cell, .pm-plan, .pm-chip, .pm-primary, .pm-secondary {
++    transition: none;
++  }
++
++  .pm-cell:active, .pm-plan:active, .pm-chip:active, .pm-primary:active, .pm-secondary:active {
++    transform: none;
++  }
+ }
+diff --git a/i-/premiumbot.html b/i-/premiumbot.html
+@@ -33,9 +33,9 @@
+     <script src="/js/telegram-web-app.js?65"></script>
+ <script src="/js/webapp-common.js?5"></script>
+ <script src="/js/premiumbot-lottie.js?1"></script>
+-<script src="/js/premiumbot.js?2"></script>
++<script src="/js/premiumbot.js?1"></script>
+ 
+-    <script>ajInit({"version":412,"apiUrl":"\/api?hash=xieworld_vf","unauth":true,"state":{"authPage":true}});</script>
++    <script>ajInit({"version":411,"apiUrl":"\/api?hash=xieworld_vf","unauth":true,"state":{"authPage":true}});</script>
+     <script id="aj_script">TWebApp.init('/premiumbot')
+ </script>
+     <script>Aj.pageLoaded();</script>
+diff --git a/i-/premiumbot.js b/i-/premiumbot.js
+@@ -6,251 +6,47 @@ window.PremiumApp = (function() {
+   var POLL_TIMEOUT = 120000;
+   var picker = null;
+   var pickerSequence = 0;
+-  var mainButtonHandler = null;
+-  var mainButtonMode = false;
+-  var pressDelegate = null;
+-  var bound = [];
++  var mainAction = false;
+ 
+   function webApp() {
+     return window.Telegram && window.Telegram.WebApp;
+   }
+ 
+-  function on(element, eventName, handler) {
++  function showMessage(text, isError) {
++    var element = document.getElementById('pm-message');
+     if (!element) {
+       return;
+     }
+-    element.addEventListener(eventName, handler, false);
+-    bound.push([element, eventName, handler]);
+-  }
+-
+-  function bind(selector, eventName, handler) {
+-    var elements = document.querySelectorAll(selector);
+-    for (var i = 0; i < elements.length; i++) {
+-      on(elements[i], eventName, handler);
+-    }
+-  }
+-
+-  function unbindAll() {
+-    for (var i = 0; i < bound.length; i++) {
+-      bound[i][0].removeEventListener(bound[i][1], bound[i][2], false);
+-    }
+-    bound = [];
+-  }
+-
+-  // ===== Theme and platform classes on <html> =====
+-
+-  function applyBridgeClasses() {
+-    var app = webApp();
+-    var root = document.documentElement;
+-    if (!app) {
+-      return;
+-    }
+-    var dark = app.colorScheme === 'dark';
+-    root.classList.toggle('theme-dark', dark);
+-    root.classList.toggle('theme-light', !dark);
+-    var platform = app.platform || '';
+-    root.classList.remove('platform-ios', 'platform-android', 'platform-desktop');
+-    if (platform === 'ios') {
+-      root.classList.add('platform-ios');
+-    } else if (platform === 'android') {
+-      root.classList.add('platform-android');
+-    } else if (platform) {
+-      root.classList.add('platform-desktop');
+-    }
+-    if (app.setHeaderColor) {
+-      app.setHeaderColor('bg_color');
+-    }
+-    if (app.setBackgroundColor) {
+-      app.setBackgroundColor('bg_color');
+-    }
+-  }
+-
+-  // ===== Toasts =====
+-
+-  function showMessage(text, isError) {
+-    var region = document.querySelector('.toast-region');
++    element.textContent = text;
++    element.className = isError ? 'pm-message pm-message-error' : 'pm-message';
++    element.hidden = false;
+     var live = document.getElementById('pm-live');
+-    if (region) {
+-      var toast = document.createElement('div');
+-      toast.className = 'toast';
+-      toast.textContent = text;
+-      region.appendChild(toast);
+-      setTimeout(function() {
+-        toast.classList.add('is-leaving');
+-        setTimeout(function() {
+-          if (toast.parentNode) {
+-            toast.parentNode.removeChild(toast);
+-          }
+-        }, 220);
+-      }, 3400);
+-    }
+     if (live) {
+       live.textContent = text;
+     }
+   }
+ 
+   function clearMessage() {
+-    var region = document.querySelector('.toast-region');
+-    if (region) {
+-      while (region.firstChild) {
+-        region.removeChild(region.firstChild);
+-      }
+-    }
+-  }
+-
+-  // ===== Haptics =====
+-
+-  function hapticSelection() {
+-    var app = webApp();
+-    if (app && app.HapticFeedback && app.isVersionAtLeast('6.1')) {
+-      try {
+-        app.HapticFeedback.selectionChanged();
+-      } catch (error) {}
+-    }
+-  }
+-
+-  function hapticNotify(type) {
+-    var app = webApp();
+-    if (app && app.HapticFeedback && app.isVersionAtLeast('6.1')) {
+-      try {
+-        app.HapticFeedback.notificationOccurred(type);
+-      } catch (error) {}
+-    }
+-  }
+-
+-  // ===== Native MainButton =====
+-
+-  function mainButtonAvailable() {
+-    var app = webApp();
+-    return !!(app && app.MainButton && app.isVersionAtLeast && app.isVersionAtLeast('6.0'));
+-  }
+-
+-  function mainButtonSet(text) {
+-    var app = webApp();
+-    if (!app) {
+-      return;
+-    }
+-    app.MainButton.setParams({
+-      text: text,
+-      is_visible: true,
+-      is_active: true,
+-      color: '#7356f6',
+-      text_color: '#ffffff'
+-    });
+-  }
+-
+-  function hideMainButton() {
+-    var app = webApp();
+-    if (app && app.MainButton) {
+-      if (mainButtonHandler) {
+-        app.MainButton.offClick(mainButtonHandler);
+-      }
+-      app.MainButton.hide();
+-    }
+-    mainButtonHandler = null;
+-    mainButtonMode = false;
+-    document.documentElement.classList.remove('has-main-button');
+-  }
+-
+-  function ctaButton() {
+-    return document.getElementById('pm-cta');
+-  }
+-
+-  function ctaCurrentUrl() {
+-    var button = ctaButton();
+-    return button ? button.getAttribute('data-invoice-url') : '';
+-  }
+-
+-  function ctaCurrentFlow() {
+-    var button = ctaButton();
+-    var flow = button ? button.getAttribute('data-result-flow') : '';
+-    return flow || inferResultFlow();
+-  }
+-
+-  function ctaClick() {
+-    var url = ctaCurrentUrl();
+-    if (url) {
+-      openInvoice(url, ctaCurrentFlow());
++    var element = document.getElementById('pm-message');
++    if (element) {
++      element.hidden = true;
++      element.textContent = '';
+     }
+   }
+ 
+-  function ctaUpdate(text, url) {
+-    var button = ctaButton();
+-    if (!button) {
+-      return;
+-    }
+-    if (text) {
+-      button.textContent = text;
+-    }
+-    if (url) {
+-      button.setAttribute('data-invoice-url', url);
+-    }
+-    if (mainButtonMode) {
+-      mainButtonSet(text || button.textContent);
+-    }
+-  }
+-
+-  function ctaInit() {
+-    var button = ctaButton();
+-    if (!button) {
+-      return false;
+-    }
+-    if (mainButtonAvailable()) {
+-      mainButtonMode = 'cta';
+-      mainButtonSet(button.textContent);
+-      mainButtonHandler = ctaClick;
+-      webApp().MainButton.onClick(mainButtonHandler);
+-      document.documentElement.classList.add('has-main-button');
+-    } else {
+-      button.hidden = false;
+-      var bar = document.createElement('div');
+-      bar.className = 'cta-bar';
+-      button.parentNode.insertBefore(bar, button);
+-      bar.appendChild(button);
+-    }
+-    return true;
+-  }
+-
+-  function resultButtonInit() {
+-    if (!mainButtonAvailable()) {
+-      return;
+-    }
+-    var pathname = window.location.pathname;
+-    if (pathname.indexOf('/premiumbot/result/') !== 0) {
+-      return;
+-    }
+-    mainButtonMode = 'result';
+-    mainButtonSet('BACK TO PREMIUM');
+-    mainButtonHandler = function() {
+-      Aj.location('/premiumbot');
+-    };
+-    webApp().MainButton.onClick(mainButtonHandler);
+-    document.documentElement.classList.add('has-main-button');
+-  }
+-
+-  // ===== Invoices =====
+-
+   function setButtonBusy(button, busy) {
+     if (!button) {
+       return;
+     }
+     button.disabled = !!busy;
+-    button.classList.toggle('is-loading', !!busy);
+-    if (mainButtonMode === 'cta') {
+-      var app = webApp();
+-      if (app) {
+-        if (busy) {
+-          app.MainButton.showProgress(false);
+-          app.MainButton.disable();
+-        } else {
+-          app.MainButton.hideProgress();
+-          app.MainButton.enable();
+-        }
+-      }
++    if (busy) {
++      button.classList.add('is-loading');
++    } else {
++      button.classList.remove('is-loading');
+     }
+   }
+ 
+-  function openInvoice(url, resultFlow) {
++  function openInvoice(url) {
+     var app = webApp();
+     if (!app || !url) {
+       return;
+@@ -273,16 +69,14 @@ window.PremiumApp = (function() {
+       app.openInvoice(url, function(status) {
+         setButtonBusy(button, false);
+         if (status === 'paid') {
+-          hapticNotify('success');
+-          Aj.location('/premiumbot/result/paid/' + (resultFlow || 'premium'));
++          Aj.location('/premiumbot/result/paid');
+           return;
+         }
+         if (status === 'pending') {
+           showMessage('Payment is pending. Your selection is kept; please check again shortly.', false);
+           return;
+         }
+         if (status === 'failed') {
+-          hapticNotify('error');
+           showMessage('Payment failed. You can retry with the same option.', true);
+           return;
+         }
+@@ -294,141 +88,60 @@ window.PremiumApp = (function() {
+     }
+   }
+ 
+-  // ===== Plan and gift-card selection (radio -> CTA) =====
+-
+-  function onPlanOptionChange(input) {
+-    var url = input.getAttribute('data-invoice-url');
+-    var text = input.getAttribute('data-cta-text');
+-    if (url && text) {
+-      ctaUpdate(text, url);
+-    }
+-    hapticSelection();
+-  }
+-
+-  // ===== Giveaway matrix (duration x winners -> option) =====
+-
+-  function giveawayMatrix() {
+-    return document.querySelector('.js-gw-matrix');
+-  }
+-
+-  function giveawayOptions() {
+-    var matrix = giveawayMatrix();
+-    if (!matrix) {
+-      return [];
+-    }
+-    var nodes = matrix.querySelectorAll('.js-gw-option');
+-    var records = [];
+-    for (var i = 0; i < nodes.length; i++) {
+-      records.push({
+-        months: nodes[i].getAttribute('data-months'),
+-        stars: nodes[i].getAttribute('data-stars'),
+-        users: nodes[i].getAttribute('data-users'),
+-        boosts: nodes[i].getAttribute('data-boosts'),
+-        price: nodes[i].getAttribute('data-price'),
+-        ctaText: nodes[i].getAttribute('data-cta-text'),
+-        url: nodes[i].getAttribute('data-invoice-url')
+-      });
+-    }
+-    return records;
+-  }
+-
+-  function giveawayChecked(name) {
+-    var input = document.querySelector('.js-gw-' + name + ':checked');
+-    return input ? input.value : '';
+-  }
+-
+-  function giveawayFind(records, flow, dur, users) {
+-    for (var i = 0; i < records.length; i++) {
+-      var durValue = flow === 'premium' ? records[i].months : records[i].stars;
+-      if (durValue === dur && records[i].users === users) {
+-        return records[i];
+-      }
+-    }
+-    return null;
+-  }
+-
+-  function giveawayUsersFor(records, flow, dur) {
+-    var users = {};
+-    for (var i = 0; i < records.length; i++) {
+-      var durValue = flow === 'premium' ? records[i].months : records[i].stars;
+-      if (durValue === dur) {
+-        users[records[i].users] = records[i];
+-      }
+-    }
+-    return users;
+-  }
+-
+-  function giveawayFill(template, record) {
+-    var text = template;
+-    if (record) {
+-      text = text.split('{users}').join(record.users)
+-        .split('{boosts}').join(record.boosts)
+-        .split('{price}').join(record.price)
+-        .split('{stars}').join(record.stars);
+-    }
+-    return text;
+-  }
+-
+-  function giveawayUpdate() {
+-    var matrix = giveawayMatrix();
+-    if (!matrix) {
++  function fallbackToBot(flow, button) {
++    var app = webApp();
++    if (!app) {
+       return;
+     }
+-    var flow = matrix.getAttribute('data-flow') || 'premium';
+-    var records = giveawayOptions();
+-    var users = giveawayChecked('users');
+-    var durInputs = document.querySelectorAll('.js-gw-dur');
+-    var anyEnabled = false;
+-    for (var i = 0; i < durInputs.length; i++) {
+-      var record = giveawayFind(records, flow, durInputs[i].value, users);
+-      var priceSpans = document.querySelectorAll('.js-gw-dur-price[data-dur="' + durInputs[i].value + '"]');
+-      for (var p = 0; p < priceSpans.length; p++) {
+-        priceSpans[p].textContent = record ? record.price : '—';
+-      }
+-      var boostsSpans = document.querySelectorAll('.js-gw-dur-boosts[data-dur="' + durInputs[i].value + '"]');
+-      for (var b = 0; b < boostsSpans.length; b++) {
+-        boostsSpans[b].textContent = record ? giveawayFill(matrix.getAttribute('data-tpl-boosts') || '', record) : '';
+-      }
+-      durInputs[i].disabled = !record;
+-      var label = durInputs[i].closest('label');
+-      if (label) {
+-        label.classList.toggle('is-disabled', !record);
+-      }
+-      if (record) {
+-        anyEnabled = true;
+-      }
+-    }
+-    if (!anyEnabled) {
++    var username = window.Aj && Aj.state.botUsername ? Aj.state.botUsername : 'PremiumBot';
++    var baseUrl = 'https://t.me/' + username;
++    if (flow === 'gift') {
++      app.openTelegramLink(baseUrl + '?start=gift');
+       return;
+     }
+-    var checked = document.querySelector('.js-gw-dur:checked');
+-    if (!checked || checked.disabled) {
+-      for (var j = 0; j < durInputs.length; j++) {
+-        if (!durInputs[j].disabled) {
+-          durInputs[j].checked = true;
+-          break;
++    var commands = {
++      stars_gift: '/stars',
++      premium_giveaway: '/giveaway',
++      stars_giveaway: '/stars_giveaway'
++    };
++    var command = commands[flow] || '/status';
++    var openBot = function() {
++      app.openTelegramLink(baseUrl);
++    };
++    if (app.isVersionAtLeast('6.2')) {
++      app.showPopup({
++        title: 'Continue in @' + username,
++        message: 'Send ' + command + ' to @' + username + ' to use this flow in the existing bot chat.',
++        buttons: [
++          {id: 'open', type: 'default', text: 'Open @' + username},
++          {id: 'cancel', type: 'cancel'}
++        ]
++      }, function(buttonId) {
++        if (buttonId === 'open') {
++          openBot();
+         }
++      });
++    } else {
++      var container = button ? button.closest('.pm-picker') : null;
++      var status = container ? container.querySelector('.pm-picker-status') : null;
++      if (status) {
++        status.textContent = 'Send ' + command + ' to @' + username + ' to use this flow in the existing bot chat.';
++        status.appendChild(document.createElement('br'));
++        var link = document.createElement('a');
++        link.href = baseUrl;
++        link.className = 'pm-secondary pm-link';
++        link.textContent = 'Open @' + username;
++        link.addEventListener('click', function(event) {
++          event.preventDefault();
++          openBot();
++        }, false);
++        status.appendChild(link);
++      } else {
++        openBot();
+       }
+     }
+-    users = giveawayChecked('users');
+-    var dur = giveawayChecked('dur');
+-    var picked = giveawayFind(records, flow, dur, users);
+-    var footer = document.querySelector('.js-gw-footer');
+-    if (footer) {
+-      footer.textContent = giveawayFill(matrix.getAttribute('data-tpl-footer') || '', picked);
+-    }
+-    if (picked) {
+-      // Per-combination footer needs boosts from the picked record only.
+-      if (footer) {
+-        footer.textContent = giveawayFill(matrix.getAttribute('data-tpl-footer') || '', picked);
+-      }
+-      var cta = giveawayFill(matrix.getAttribute('data-tpl-cta') || '', picked);
+-      ctaUpdate(cta || picked.ctaText, picked.url);
+-    }
+   }
+ 
+-  // ===== Peer picker (native request through the existing web methods) =====
+-
+   function pickerText(text, isError) {
+     if (!picker) {
+       return;
+@@ -483,7 +196,7 @@ window.PremiumApp = (function() {
+     picker.inFlight = true;
+     Aj.apiRequest('getPeerRequest', {
+       flow: current.flow,
+-      request_id: current.peerRequestId
++      webapp_req_id: current.requestId
+     }, function(result) {
+       if (!picker || picker.serial !== current.serial || picker.cancelled) {
+         return;
+@@ -513,7 +226,7 @@ window.PremiumApp = (function() {
+     }
+     var current = picker;
+     try {
+-      webApp().requestChat(current.webappRequestId, function(sent) {
++      webApp().requestChat(current.requestId, function(sent) {
+         if (!picker || picker.serial !== current.serial || picker.cancelled) {
+           return;
+         }
+@@ -546,8 +259,7 @@ window.PremiumApp = (function() {
+       flow: flow,
+       chatType: chatType || '',
+       button: button,
+-      webappRequestId: '',
+-      peerRequestId: 0,
++      requestId: '',
+       startedAt: Date.now(),
+       serial: ++pickerSequence,
+       timer: null,
+@@ -564,142 +276,82 @@ window.PremiumApp = (function() {
+       if (!picker || picker.serial !== current.serial || picker.cancelled) {
+         return;
+       }
+-      if (result.error || !result.webapp_req_id || !result.request_id) {
++      if (result.error || !result.webapp_req_id) {
+         finishPickerWithError('Unable to prepare the Telegram picker. Please try again.');
+         return;
+       }
+-      picker.webappRequestId = result.webapp_req_id;
+-      picker.peerRequestId = result.request_id;
++      picker.requestId = result.webapp_req_id;
+       picker.startedAt = Date.now();
+-      hapticSelection();
+       requestNativePeer();
+     });
+   }
+ 
+-  function fallbackToBot(flow, button) {
+-    var app = webApp();
+-    if (!app) {
+-      return;
+-    }
+-    var username = window.Aj && Aj.state.botUsername ? Aj.state.botUsername : 'PremiumBot';
+-    var baseUrl = 'https://t.me/' + username;
+-    if (flow === 'gift') {
+-      app.openTelegramLink(baseUrl + '?start=gift');
+-      return;
+-    }
+-    var commands = {
+-      stars_gift: '/stars',
+-      premium_giveaway: '/giveaway',
+-      stars_giveaway: '/stars_giveaway'
+-    };
+-    var command = commands[flow] || '/status';
+-    var openBot = function() {
+-      app.openTelegramLink(baseUrl);
+-    };
+-    if (app.isVersionAtLeast('6.2')) {
+-      app.showPopup({
+-        title: 'Continue in @' + username,
+-        message: 'Send ' + command + ' to @' + username + ' to use this flow in the existing bot chat.',
+-        buttons: [
+-          {id: 'open', type: 'default', text: 'Open @' + username},
+-          {id: 'cancel', type: 'cancel'}
+-        ]
+-      }, function(buttonId) {
+-        if (buttonId === 'open') {
+-          openBot();
++  function filterPlans(button) {
++    var group = button.parentNode;
++    var filters = group.querySelectorAll('.js-plan-filter');
++    for (var i = 0; i < filters.length; i++) {
++      filters[i].classList.toggle('is-active', filters[i] === button);
++    }
++    var constraints = {};
++    var rows = document.querySelectorAll('.pm-filters');
++    for (var r = 0; r < rows.length; r++) {
++      var active = rows[r].querySelector('.js-plan-filter.is-active');
++      if (active) {
++        var field = active.getAttribute('data-filter-field');
++        var value = active.getAttribute('data-filter-value');
++        if (value) {
++          constraints[field] = value;
+         }
+-      });
+-    } else {
+-      var container = button ? button.closest('.pm-picker') : null;
+-      var legacy = container ? container.querySelector('.pm-picker-legacy') : null;
+-      if (legacy) {
+-        legacy.hidden = false;
+-        var status = container.querySelector('.pm-picker-status');
+-        if (status) {
+-          status.textContent = 'Send ' + command + ' to @' + username + ' to use this flow in the existing bot chat.';
++      }
++    }
++    var plans = document.querySelectorAll('.pm-plan');
++    for (var j = 0; j < plans.length; j++) {
++      var show = true;
++      for (var fieldName in constraints) {
++        if (Object.prototype.hasOwnProperty.call(constraints, fieldName) &&
++            plans[j].getAttribute('data-' + fieldName) !== constraints[fieldName]) {
++          show = false;
+         }
+-        var link = document.createElement('a');
+-        link.href = baseUrl;
+-        link.className = 'cell cell--action is-tappable fx-press island';
+-        link.innerHTML = '<span class="cell-main"><span class="cell-title">Open @' + username + '</span></span>';
+-        link.addEventListener('click', function(event) {
+-          event.preventDefault();
+-          openBot();
+-        }, false);
+-        legacy.appendChild(link);
+-      } else {
+-        openBot();
+       }
++      plans[j].hidden = !show;
+     }
+   }
+ 
+-  // ===== Show-more packs =====
+-
+-  function showMorePacks(button) {
+-    var extras = document.querySelectorAll('.js-pack-extra');
+-    for (var i = 0; i < extras.length; i++) {
+-      extras[i].hidden = false;
++  function mainButtonHandler() {
++    if (mainAction === 'home') {
++      Aj.location('/premiumbot');
+     }
+-    button.hidden = true;
+   }
+ 
+-  // ===== Press effect =====
+-
+-  function setupPress() {
+-    pressDelegate = function(event) {
+-      var target = event.target && event.target.closest ? event.target.closest('.fx-press') : null;
+-      if (!target) {
+-        return;
+-      }
+-      if (event.type === 'pointerdown') {
+-        target.classList.add('is-pressed');
+-      } else {
+-        target.classList.remove('is-pressed');
+-      }
+-    };
+-    document.addEventListener('pointerdown', pressDelegate, true);
+-    document.addEventListener('pointerup', pressDelegate, true);
+-    document.addEventListener('pointercancel', pressDelegate, true);
+-    document.addEventListener('pointerleave', pressDelegate, true);
+-  }
+-
+-  function teardownPress() {
+-    if (!pressDelegate) {
+-      return;
++  function bind(selector, eventName, handler) {
++    var elements = document.querySelectorAll(selector);
++    for (var i = 0; i < elements.length; i++) {
++      elements[i].addEventListener(eventName, handler, false);
+     }
+-    document.removeEventListener('pointerdown', pressDelegate, true);
+-    document.removeEventListener('pointerup', pressDelegate, true);
+-    document.removeEventListener('pointercancel', pressDelegate, true);
+-    document.removeEventListener('pointerleave', pressDelegate, true);
+-    pressDelegate = null;
+   }
+ 
+-  // ===== Page lifecycle =====
+-
+   function cleanup() {
+     stopPicker();
+-    hideMainButton();
+-    unbindAll();
+-    teardownPress();
++    mainAction = false;
++    var app = webApp();
++    if (app && app.MainButton) {
++      app.MainButton.offClick(mainButtonHandler);
++      app.MainButton.hide();
++    }
+     if (window.PremiumLottie) {
+       window.PremiumLottie.destroy();
+     }
+   }
+ 
+   function init() {
+     cleanup();
+-    applyBridgeClasses();
+-    setupPress();
+     var app = webApp();
+-    if (app && app.onEvent) {
+-      // themeChanged is user-triggered while the app stays open.
+-      try {
+-        app.onEvent('themeChanged', applyBridgeClasses);
+-      } catch (error) {}
++    if (app) {
++      app.setHeaderColor('bg_color');
++      app.setBackgroundColor('bg_color');
+     }
+     bind('.js-invoice', 'click', function() {
+-      var flow = this.getAttribute('data-result-flow') || inferResultFlow();
+-      openInvoice(this.getAttribute('data-invoice-url'), flow);
++      openInvoice(this.getAttribute('data-invoice-url'));
+     });
+     bind('.js-request-peer', 'click', function() {
+       startPicker(this.getAttribute('data-peer-flow'), this.getAttribute('data-peer-chat-type'), this);
+@@ -710,26 +362,15 @@ window.PremiumApp = (function() {
+         appInstance.openTelegramLink(this.getAttribute('data-telegram-url'));
+       }
+     });
+-    bind('.js-plan-option', 'change', function() {
+-      onPlanOptionChange(this);
+-    });
+-    bind('.js-gw-dur', 'change', function() {
+-      giveawayUpdate();
+-      hapticSelection();
+-    });
+-    bind('.js-gw-users', 'change', function() {
+-      giveawayUpdate();
+-      hapticSelection();
+-    });
+-    bind('.js-show-more', 'click', function() {
+-      showMorePacks(this);
++    bind('.js-plan-filter', 'click', function() {
++      filterPlans(this);
+     });
+-    bind('[data-haptic="selection"]', 'click', hapticSelection);
+-    if (!ctaInit()) {
+-      resultButtonInit();
++    if (window.location.pathname.indexOf('/premiumbot/result/') === 0 && app && app.MainButton) {
++      mainAction = 'home';
++      app.MainButton.setParams({text: 'BACK TO PREMIUM', is_visible: true});
++      app.MainButton.onClick(mainButtonHandler);
+     }
+-    giveawayUpdate();
+-    var title = document.querySelector('.hero-title, .screen-title');
++    var title = document.querySelector('.pm-title');
+     if (title) {
+       title.focus();
+     }
+@@ -739,27 +380,6 @@ window.PremiumApp = (function() {
+     Aj.onUnload(cleanup);
+   }
+ 
+-  function inferResultFlow() {
+-    var screen = document.querySelector('.screen[data-route]');
+-    var route = screen ? screen.getAttribute('data-route') : '';
+-    if (route === 'stars') {
+-      return 'stars';
+-    }
+-    if (route === 'stars/gift') {
+-      return 'stars_gift';
+-    }
+-    if (route === 'giveaway/premium') {
+-      return 'premium_giveaway';
+-    }
+-    if (route === 'giveaway/stars') {
+-      return 'stars_giveaway';
+-    }
+-    if (route === 'gift') {
+-      return 'gift';
+-    }
+-    return 'premium';
+-  }
+-
+   return {
+     init: init,
+     openInvoice: openInvoice,
+diff --git a/i-/translations.js b/i-/translations.js
+@@ -1044,7 +1044,7 @@ var Screenshots = {
+                 return showAlert(result.error);
+               }
+               if (result.row) {
+-                $(result.row).insertBefore('.tr-screenshot-upload-row');
++                $(result.row).insertAfter('.tr-screenshot-upload-row');
+                 $('.tr-screenshots').sortable('refresh');
+               }
+               if (result.id) {
+@@ -1138,7 +1138,7 @@ var Screenshots = {
+     var $selectedEls = $('.tr-screenshot-row[data-screenshot-id].selected');
+     var selectedCount = $selectedEls.size();
+     if (!selectedCount) return;
+-    $selectedEls.prependTo('.tr-screenshots').removeClass('selected');
++    $selectedEls.insertAfter('.tr-screenshot-upload-row').removeClass('selected');
+     Screenshots.orderChanged();
+     $('.tr-screenshots').sortable('refresh');
+     Screenshots.updateSelected();
+@@ -1147,7 +1147,7 @@ var Screenshots = {
+     var $selectedEls = $('.tr-screenshot-row[data-screenshot-id].selected');
+     var selectedCount = $selectedEls.size();
+     if (!selectedCount) return;
+-    $selectedEls.insertBefore('.tr-screenshot-upload-row').removeClass('selected');
++    $selectedEls.appendTo('.tr-screenshots').removeClass('selected');
+     Screenshots.orderChanged();
+     $('.tr-screenshots').sortable('refresh');
+     Screenshots.updateSelected();
