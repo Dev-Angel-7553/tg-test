@@ -145,7 +145,7 @@
     "resell_amount": [
       {
         "_": "StarsAmount",
-        "amount": 71978,
+        "amount": 71856,
         "nanos": 0
       },
       {
@@ -157,8 +157,8 @@
     "theme_available": false,
     "theme_peer": null,
     "title": "Cat",
-    "value_amount": 17100,
+    "value_amount": 17000,
     "value_currency": "RUB",
-    "value_usd_amount": 195
+    "value_usd_amount": 194
   }
 }
