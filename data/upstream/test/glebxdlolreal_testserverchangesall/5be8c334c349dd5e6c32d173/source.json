@@ -1,0 +1,38 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:92c660f6dacd93ce65b6abe70db86941d1eb5e36:web:test",
+  "files": [
+    {
+      "additions": 33,
+      "deletions": 5,
+      "filename": "b-/bugtracker-app.css",
+      "status": "modified"
+    },
+    {
+      "additions": 14,
+      "deletions": 1,
+      "filename": "b-/bugtracker-dark.css",
+      "status": "modified"
+    },
+    {
+      "additions": 48,
+      "deletions": 5,
+      "filename": "b-/bugtracker.css",
+      "status": "modified"
+    },
+    {
+      "additions": 3,
+      "deletions": 3,
+      "filename": "b-/translations.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-18T02:15:56Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "92c660f6dacd93ce65b6abe70db86941d1eb5e36",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/92c660f6dacd93ce65b6abe70db86941d1eb5e36"
+  }
+}
