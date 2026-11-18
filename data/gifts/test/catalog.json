@@ -87,7 +87,7 @@
       "first_sale_date": "2024-10-07T18:44:44+00:00",
       "gifts_per_round": null,
       "id": 5197455433740058625,
-      "last_sale_date": "2026-11-18T18:35:49+00:00",
+      "last_sale_date": "2026-11-18T18:43:36+00:00",
       "limited": true,
       "limited_per_user": false,
       "locked_until_date": null,
@@ -773,7 +773,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 476195,
+      "resell_min_stars": 476835,
       "sold_out": true,
       "stars": 100,
       "sticker": {
@@ -1855,7 +1855,7 @@
         "user_id": 429000
       },
       "require_premium": false,
-      "resell_min_stars": 340139,
+      "resell_min_stars": 340597,
       "sold_out": true,
       "stars": 50,
       "sticker": {
@@ -2339,7 +2339,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 42188,
+      "upgrade_stars": 40208,
       "upgrade_variants": 2000
     },
     {
@@ -2612,7 +2612,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 496,
+      "upgrade_stars": 465,
       "upgrade_variants": 40
     },
     {
@@ -2759,7 +2759,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 477,
+      "upgrade_stars": 447,
       "upgrade_variants": 100
     },
     {
@@ -2861,7 +2861,7 @@
       "per_user_total": 5,
       "released_by": null,
       "require_premium": true,
-      "resell_min_stars": 340139,
+      "resell_min_stars": 340597,
       "sold_out": false,
       "stars": 200,
       "sticker": {
@@ -3126,7 +3126,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 136055,
+      "resell_min_stars": 136239,
       "sold_out": false,
       "stars": 250,
       "sticker": {
@@ -3351,7 +3351,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 101225,
+      "resell_min_stars": 101361,
       "sold_out": false,
       "stars": 450,
       "sticker": {
@@ -3398,7 +3398,7 @@
         "video_thumbs": []
       },
       "title": "Candy Cane",
-      "upgrade_stars": 81,
+      "upgrade_stars": 77,
       "upgrade_variants": 3200
     },
     {
