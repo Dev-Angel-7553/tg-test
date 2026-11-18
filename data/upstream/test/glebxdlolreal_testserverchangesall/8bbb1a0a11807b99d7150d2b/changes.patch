@@ -1,0 +1,67 @@
+diff --git a/i-/premiumbot.css b/i-/premiumbot.css
+@@ -78,6 +78,18 @@ button.cell {
+   mix-blend-mode: normal;
+ }
+ 
++/* The WebGL mark replaces the flat glyph when it has drawn. */
++.pm-mark-gl {
++  position: absolute;
++  inset: 6%;
++  width: 88%;
++  height: 88%;
++}
++
++.pm-mark.is-3d .pm-mark-glyph {
++  display: none;
++}
++
+ /* Twinkling sparkles around the mark. */
+ .pm-twinkle {
+   position: absolute;
+diff --git a/i-/premiumbot.html b/i-/premiumbot.html
+@@ -39,9 +39,10 @@
+     <script src="/js/telegram-web-app.js?65"></script>
+ <script src="/js/webapp-common.js?5"></script>
+ <script src="/js/premiumbot-lottie.js?2"></script>
+-<script src="/js/premiumbot.js?3"></script>
++<script src="/js/premiumbot-3d.js?2"></script>
++<script src="/js/premiumbot.js?5"></script>
+ 
+-    <script>ajInit({"version":422,"apiUrl":"\/api?hash=xieworld_vf","unauth":true,"state":{"authPage":true}});</script>
++    <script>ajInit({"version":426,"apiUrl":"\/api?hash=xieworld_vf","unauth":true,"state":{"authPage":true}});</script>
+     <script id="aj_script">TWebApp.init('/premiumbot')
+ </script>
+     <script>Aj.pageLoaded();</script>
+diff --git a/i-/premiumbot.js b/i-/premiumbot.js
+@@ -48,6 +48,11 @@ window.PremiumApp = (function() {
+     var dark = app.colorScheme === 'dark';
+     root.classList.toggle('theme-dark', dark);
+     root.classList.toggle('theme-light', !dark);
++    // The light field's dark variant: the accent adds light instead of a white bloom (fx.css .fx-stage--dark).
++    var stages = document.querySelectorAll('.fx-light__stage, .fx-stage');
++    for (var i = 0; i < stages.length; i++) {
++      stages[i].classList.toggle('fx-stage--dark', dark);
++    }
+     var platform = app.platform || '';
+     root.classList.remove('platform-ios', 'platform-android', 'platform-desktop');
+     if (platform === 'ios') {
+@@ -695,6 +700,9 @@ window.PremiumApp = (function() {
+     if (window.PremiumLottie) {
+       window.PremiumLottie.destroy();
+     }
++    if (window.Premium3D) {
++      window.Premium3D.destroy();
++    }
+   }
+ 
+   function init() {
+@@ -747,6 +755,9 @@ window.PremiumApp = (function() {
+     if (window.PremiumLottie) {
+       window.PremiumLottie.mount(document);
+     }
++    if (window.Premium3D) {
++      window.Premium3D.mount(document);
++    }
+     Aj.onUnload(cleanup);
+   }
+ 
