@@ -3515,8 +3515,53 @@
     },
     {
       "_": "LangPackString",
+      "key": "AgentEffort",
+      "value": "Усилия"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AgentEffortExpert",
+      "value": "Эксперт"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AgentEffortFast",
+      "value": "Быстро"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AgentEffortMedium",
+      "value": "Средне"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AgentEffortTitle",
+      "value": "Глубина рассуждений"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AgentEffortUltra",
+      "value": "Ультра"
+    },
+    {
+      "_": "LangPackString",
       "key": "AgentHundredsOfModels",
       "value": "Сотни моделей"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AgentModel",
+      "value": "Модель"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AgentModelSearch",
+      "value": "Поиск моделей"
+    },
+    {
+      "_": "LangPackString",
+      "key": "AgentModelsEmpty",
+      "value": "Модели не найдены."
     },
     {
       "_": "LangPackString",
@@ -22815,6 +22860,11 @@
     },
     {
       "_": "LangPackString",
+      "key": "FpnvConsentPhoneNumber",
+      "value": "Номер телефона"
+    },
+    {
+      "_": "LangPackString",
       "key": "Fragment",
       "value": "Fragment"
     },
@@ -33870,13 +33920,43 @@
     },
     {
       "_": "LangPackString",
+      "key": "NewsCollapsePost",
+      "value": "Свернуть"
+    },
+    {
+      "_": "LangPackString",
+      "key": "NewsCompact",
+      "value": "Компактный вид"
+    },
+    {
+      "_": "LangPackString",
       "key": "NewsEmpty",
       "value": "Новостей пока нет"
     },
     {
       "_": "LangPackString",
+      "key": "NewsExpandPost",
+      "value": "Развернуть"
+    },
+    {
+      "_": "LangPackString",
+      "key": "NewsExpanded",
+      "value": "Развёрнутый вид"
+    },
+    {
+      "_": "LangPackString",
       "key": "NewsForYou",
       "value": "Для Вас"
+    },
+    {
+      "_": "LangPackString",
+      "key": "NewsInteresting",
+      "value": "Интересно"
+    },
+    {
+      "_": "LangPackString",
+      "key": "NewsInterestingDone",
+      "value": "Мы будем чаще показывать похожие публикации."
     },
     {
       "_": "LangPackString",
@@ -33892,6 +33972,21 @@
       "_": "LangPackString",
       "key": "NewsInterestsSaved",
       "value": "Интересы сохранены"
+    },
+    {
+      "_": "LangPackString",
+      "key": "NewsNotInterested",
+      "value": "Неинтересно"
+    },
+    {
+      "_": "LangPackString",
+      "key": "NewsNotInterestedDone",
+      "value": "Мы будем реже показывать похожие публикации."
+    },
+    {
+      "_": "LangPackString",
+      "key": "NewsReloadFeed",
+      "value": "Обновить ленту"
     },
     {
       "_": "LangPackString",
@@ -35087,6 +35182,11 @@
       "_": "LangPackString",
       "key": "NotificationGramTransferComment",
       "value": "%1$s отправил(а) Вам %2$s: %3$s"
+    },
+    {
+      "_": "LangPackString",
+      "key": "NotificationGramTransferOnramp",
+      "value": "Вы пополнили баланс на %1$s через %2$s"
     },
     {
       "_": "LangPackString",
@@ -62479,5 +62579,5 @@
       "value": "Telegram Passport"
     }
   ],
-  "version": 61893216
+  "version": 61898857
 }
