@@ -26846,7 +26846,7 @@
     {
       "_": "LangPackString",
       "key": "Gift.OnchainOffer.Confirm.PlatformFee",
-      "value": "Комиссия\nплатформы"
+      "value": "Комиссия платформы"
     },
     {
       "_": "LangPackString",
@@ -65721,7 +65721,7 @@
     {
       "_": "LangPackString",
       "key": "Wallet.Transaction.OfferPlatformFee",
-      "value": "Комиссия платформы"
+      "value": "Комиссия"
     },
     {
       "_": "LangPackString",
@@ -67794,5 +67794,5 @@
       "value": "Вы ввели неверный код безопасности."
     }
   ],
-  "version": 22634895
+  "version": 22634923
 }
