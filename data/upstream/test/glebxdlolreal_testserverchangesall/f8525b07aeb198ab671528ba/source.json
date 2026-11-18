@@ -1,0 +1,20 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:cd648fe8126c1532d88755c41e5a34c8ca92c2c1:web:test",
+  "files": [
+    {
+      "additions": 94,
+      "deletions": 0,
+      "filename": "i-/botfather.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-16T21:43:05Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "cd648fe8126c1532d88755c41e5a34c8ca92c2c1",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/cd648fe8126c1532d88755c41e5a34c8ca92c2c1"
+  }
+}
