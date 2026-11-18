@@ -87,7 +87,7 @@
       "first_sale_date": "2024-10-07T18:44:44+00:00",
       "gifts_per_round": null,
       "id": 5197455433740058625,
-      "last_sale_date": "2026-11-18T11:15:53+00:00",
+      "last_sale_date": "2026-11-18T11:22:38+00:00",
       "limited": true,
       "limited_per_user": false,
       "locked_until_date": null,
@@ -773,7 +773,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 480885,
+      "resell_min_stars": 480411,
       "sold_out": true,
       "stars": 100,
       "sticker": {
@@ -1313,7 +1313,7 @@
         "channel_id": 10929622
       },
       "require_premium": false,
-      "resell_min_stars": 3435,
+      "resell_min_stars": 3431,
       "sold_out": false,
       "stars": 500,
       "sticker": {
@@ -1360,7 +1360,7 @@
         "video_thumbs": []
       },
       "title": "Cat",
-      "upgrade_stars": 103,
+      "upgrade_stars": 102,
       "upgrade_variants": 1500
     },
     {
@@ -1855,7 +1855,7 @@
         "user_id": 429000
       },
       "require_premium": false,
-      "resell_min_stars": 343489,
+      "resell_min_stars": 343151,
       "sold_out": true,
       "stars": 50,
       "sticker": {
@@ -2861,7 +2861,7 @@
       "per_user_total": 5,
       "released_by": null,
       "require_premium": true,
-      "resell_min_stars": 343489,
+      "resell_min_stars": 343151,
       "sold_out": false,
       "stars": 200,
       "sticker": {
@@ -2908,7 +2908,7 @@
         "video_thumbs": []
       },
       "title": "Shard Test",
-      "upgrade_stars": 97,
+      "upgrade_stars": 93,
       "upgrade_variants": 1600
     },
     {
@@ -3126,7 +3126,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 137395,
+      "resell_min_stars": 137261,
       "sold_out": false,
       "stars": 250,
       "sticker": {
@@ -3351,7 +3351,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 102222,
+      "resell_min_stars": 102122,
       "sold_out": false,
       "stars": 450,
       "sticker": {
@@ -3398,7 +3398,7 @@
         "video_thumbs": []
       },
       "title": "Candy Cane",
-      "upgrade_stars": 2533,
+      "upgrade_stars": 2372,
       "upgrade_variants": 3200
     },
     {
