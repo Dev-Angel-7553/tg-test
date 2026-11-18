@@ -87,7 +87,7 @@
       "first_sale_date": "2024-10-07T18:44:44+00:00",
       "gifts_per_round": null,
       "id": 5197455433740058625,
-      "last_sale_date": "2026-11-18T07:33:04+00:00",
+      "last_sale_date": "2026-11-18T07:39:50+00:00",
       "limited": true,
       "limited_per_user": false,
       "locked_until_date": null,
@@ -773,7 +773,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 500221,
+      "resell_min_stars": 500435,
       "sold_out": true,
       "stars": 100,
       "sticker": {
@@ -1313,7 +1313,7 @@
         "channel_id": 10929622
       },
       "require_premium": false,
-      "resell_min_stars": 3573,
+      "resell_min_stars": 3575,
       "sold_out": false,
       "stars": 500,
       "sticker": {
@@ -1360,7 +1360,7 @@
         "video_thumbs": []
       },
       "title": "Cat",
-      "upgrade_stars": 206,
+      "upgrade_stars": 201,
       "upgrade_variants": 1500
     },
     {
@@ -1855,7 +1855,7 @@
         "user_id": 429000
       },
       "require_premium": false,
-      "resell_min_stars": 357301,
+      "resell_min_stars": 357453,
       "sold_out": true,
       "stars": 50,
       "sticker": {
@@ -2339,7 +2339,7 @@
         "video_thumbs": []
       },
       "title": null,
-      "upgrade_stars": 1286,
+      "upgrade_stars": 1268,
       "upgrade_variants": 2000
     },
     {
@@ -2861,7 +2861,7 @@
       "per_user_total": 5,
       "released_by": null,
       "require_premium": true,
-      "resell_min_stars": 357301,
+      "resell_min_stars": 357453,
       "sold_out": false,
       "stars": 200,
       "sticker": {
@@ -2908,7 +2908,7 @@
         "video_thumbs": []
       },
       "title": "Shard Test",
-      "upgrade_stars": 484,
+      "upgrade_stars": 461,
       "upgrade_variants": 1600
     },
     {
@@ -3173,7 +3173,7 @@
         "video_thumbs": []
       },
       "title": "Crystal Ball",
-      "upgrade_stars": 58,
+      "upgrade_stars": 57,
       "upgrade_variants": 2400
     },
     {
@@ -3351,7 +3351,7 @@
       "per_user_total": null,
       "released_by": null,
       "require_premium": false,
-      "resell_min_stars": 106333,
+      "resell_min_stars": 106378,
       "sold_out": false,
       "stars": 450,
       "sticker": {
@@ -3398,7 +3398,7 @@
         "video_thumbs": []
       },
       "title": "Candy Cane",
-      "upgrade_stars": 23945,
+      "upgrade_stars": 22449,
       "upgrade_variants": 3200
     },
     {
@@ -3549,7 +3549,7 @@
         "video_thumbs": []
       },
       "title": "Cake",
-      "upgrade_stars": 16,
+      "upgrade_stars": 15,
       "upgrade_variants": 2400
     },
     {
@@ -3621,7 +3621,7 @@
         "video_thumbs": []
       },
       "title": "Drink",
-      "upgrade_stars": 16,
+      "upgrade_stars": 15,
       "upgrade_variants": 1500
     },
     {
