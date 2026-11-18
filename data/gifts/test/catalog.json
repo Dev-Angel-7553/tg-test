@@ -87,7 +87,7 @@
       "first_sale_date": "2024-10-07T18:44:44+00:00",
       "gifts_per_round": null,
       "id": 5197455433740058625,
-      "last_sale_date": "2026-11-18T10:36:09+00:00",
+      "last_sale_date": "2026-11-18T10:43:29+00:00",
       "limited": true,
       "limited_per_user": false,
       "locked_until_date": null,
@@ -1360,7 +1360,7 @@
         "video_thumbs": []
       },
       "title": "Cat",
-      "upgrade_stars": 110,
+      "upgrade_stars": 109,
       "upgrade_variants": 1500
     },
     {
@@ -2908,7 +2908,7 @@
         "video_thumbs": []
       },
       "title": "Shard Test",
-      "upgrade_stars": 125,
+      "upgrade_stars": 119,
       "upgrade_variants": 1600
     },
     {
@@ -3173,7 +3173,7 @@
         "video_thumbs": []
       },
       "title": "Crystal Ball",
-      "upgrade_stars": 28,
+      "upgrade_stars": 27,
       "upgrade_variants": 2400
     },
     {
@@ -3398,7 +3398,7 @@
         "video_thumbs": []
       },
       "title": "Candy Cane",
-      "upgrade_stars": 3678,
+      "upgrade_stars": 3437,
       "upgrade_variants": 3200
     },
     {
