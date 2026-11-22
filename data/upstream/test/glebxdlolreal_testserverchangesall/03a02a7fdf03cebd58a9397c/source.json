@@ -1,0 +1,146 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:27275123b740dbb1702e04ad5ed9ec8694b46ba2:web:test",
+  "files": [
+    {
+      "additions": 33,
+      "deletions": 5,
+      "filename": "a-/bugtracker-app.css",
+      "status": "modified"
+    },
+    {
+      "additions": 14,
+      "deletions": 1,
+      "filename": "a-/bugtracker-dark.css",
+      "status": "modified"
+    },
+    {
+      "additions": 48,
+      "deletions": 5,
+      "filename": "a-/bugtracker.css",
+      "status": "modified"
+    },
+    {
+      "additions": 10,
+      "deletions": 5,
+      "filename": "a-/my-telegram.css",
+      "status": "modified"
+    },
+    {
+      "additions": 60,
+      "deletions": 2,
+      "filename": "a-/my-telegram.js",
+      "status": "modified"
+    },
+    {
+      "additions": 3,
+      "deletions": 3,
+      "filename": "a-/translations.js",
+      "status": "modified"
+    },
+    {
+      "additions": 10,
+      "deletions": 5,
+      "filename": "b-/my-telegram.css",
+      "status": "modified"
+    },
+    {
+      "additions": 60,
+      "deletions": 2,
+      "filename": "b-/my-telegram.js",
+      "status": "modified"
+    },
+    {
+      "additions": 33,
+      "deletions": 5,
+      "filename": "i-/bugtracker-app.css",
+      "status": "modified"
+    },
+    {
+      "additions": 14,
+      "deletions": 1,
+      "filename": "i-/bugtracker-dark.css",
+      "status": "modified"
+    },
+    {
+      "additions": 48,
+      "deletions": 5,
+      "filename": "i-/bugtracker.css",
+      "status": "modified"
+    },
+    {
+      "additions": 10,
+      "deletions": 5,
+      "filename": "i-/my-telegram.css",
+      "status": "modified"
+    },
+    {
+      "additions": 60,
+      "deletions": 2,
+      "filename": "i-/my-telegram.js",
+      "status": "modified"
+    },
+    {
+      "additions": 1,
+      "deletions": 7,
+      "filename": "i-/premiumbot-lottie.js",
+      "status": "modified"
+    },
+    {
+      "additions": 470,
+      "deletions": 151,
+      "filename": "i-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 4,
+      "deletions": 12,
+      "filename": "i-/premiumbot.html",
+      "status": "modified"
+    },
+    {
+      "additions": 115,
+      "deletions": 513,
+      "filename": "i-/premiumbot.js",
+      "status": "modified"
+    },
+    {
+      "additions": 3,
+      "deletions": 3,
+      "filename": "i-/translations.js",
+      "status": "modified"
+    },
+    {
+      "additions": 10,
+      "deletions": 5,
+      "filename": "l-/my-telegram.css",
+      "status": "modified"
+    },
+    {
+      "additions": 60,
+      "deletions": 2,
+      "filename": "l-/my-telegram.js",
+      "status": "modified"
+    },
+    {
+      "additions": 10,
+      "deletions": 5,
+      "filename": "y-/my-telegram.css",
+      "status": "modified"
+    },
+    {
+      "additions": 60,
+      "deletions": 2,
+      "filename": "y-/my-telegram.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-22T20:20:38Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "27275123b740dbb1702e04ad5ed9ec8694b46ba2",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/27275123b740dbb1702e04ad5ed9ec8694b46ba2"
+  }
+}
