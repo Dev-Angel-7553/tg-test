@@ -1,0 +1,2495 @@
+diff --git a/y-/premiumbot-lottie.js b/y-/premiumbot-lottie.js
+@@ -2,8 +2,9 @@
+ window.PremiumLottie = (function() {
+   'use strict';
+ 
+-  var WASM_URL = '/js/premiumbot-tlottie.wasm';
+-  var NOSIMD_URL = '/js/premiumbot-tlottie.nosimd.wasm';
++  // Deployments and standalone playgrounds may override the engines' root before this script runs.
++  var WASM_URL = (window.PMA_LOTTIE_WASM_BASE || '/js/') + 'premiumbot-tlottie.wasm';
++  var NOSIMD_URL = (window.PMA_LOTTIE_WASM_BASE || '/js/') + 'premiumbot-tlottie.nosimd.wasm';
+   var SIMD_PROBE = new Uint8Array([
+     0, 97, 115, 109, 1, 0, 0, 0, 1, 5, 1, 96, 0, 1, 123, 3, 2, 1, 0, 10, 8, 1, 6, 0, 65, 0, 253, 15, 11
+   ]);
+@@ -53,9 +54,9 @@ window.PremiumLottie = (function() {
+     };
+   };
+ 
++  // Where the frame's pixels lie in the engine's memory; 0 when it could not draw.
+   Engine.prototype.render = function(handle, frame, width, height) {
+-    var pointer = this.exports.tlottie_render(handle, frame, width, height, 1);
+-    return pointer ? new Uint8ClampedArray(this.exports.memory.buffer, pointer, width * height * 4) : null;
++    return this.exports.tlottie_render(handle, frame, width, height, 1);
+   };
+ 
+   Engine.prototype.drop = function(handle) {
+@@ -123,13 +124,14 @@ window.PremiumLottie = (function() {
+     if (!root || !window.fetch || !window.WebAssembly || !window.TextEncoder || !window.ImageData) {
+       return false;
+     }
+-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+-      return false;
+-    }
+     var canvas = document.createElement('canvas');
+     return !!canvas.getContext && !!canvas.getContext('2d');
+   }
+ 
++  function reducedMotion() {
++    return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
++  }
++
+   function removePlayer(player) {
+     if (player.removed) {
+       return;
+@@ -139,6 +141,10 @@ window.PremiumLottie = (function() {
+     if (player.frameRequest) {
+       cancelAnimationFrame(player.frameRequest);
+     }
++    if (player.replay) {
++      player.target.removeEventListener('click', player.replay, false);
++      player.target.classList.remove('is-tappable');
++    }
+     if (player.handle && player.engine) {
+       player.engine.drop(player.handle);
+       player.handle = 0;
+@@ -149,6 +155,9 @@ window.PremiumLottie = (function() {
+     if (player.poster) {
+       player.poster.style.display = '';
+     }
++    if (player.target.classList) {
++      player.target.classList.remove('is-ready');
++    }
+   }
+ 
+   function destroy() {
+@@ -160,52 +169,77 @@ window.PremiumLottie = (function() {
+ 
+   function draw(player, frame) {
+     var target = player.target;
+-    var ratio = Math.min(window.devicePixelRatio || 1, 2);
+     var cssSize = target.clientWidth || 96;
+-    var size = Math.max(1, Math.round(cssSize * ratio));
++    var size = Math.max(1, Math.round(cssSize * (window.devicePixelRatio || 1)));
++    // A display that refreshes faster than the file's rate asks for the same frame again.
++    if (frame === player.frame && size === player.canvas.width) {
++      return true;
++    }
+     if (player.canvas.width !== size || player.canvas.height !== size) {
+       player.canvas.width = size;
+       player.canvas.height = size;
+     }
+-    var pixels = player.engine.render(player.handle, frame, size, size);
+-    if (!pixels) {
++    var pointer = player.engine.render(player.handle, frame, size, size);
++    if (!pointer) {
+       return false;
+     }
+-    var image = new ImageData(pixels, size, size);
+-    player.context.putImageData(image, 0, 0);
++    // The pixels are read where the engine drew them: a new view only when it moved them or its memory grew.
++    var buffer = player.engine.exports.memory.buffer;
++    if (!player.image || player.buffer !== buffer || player.pointer !== pointer || player.image.width !== size) {
++      player.image = new ImageData(new Uint8ClampedArray(buffer, pointer, size * size * 4), size, size);
++      player.buffer = buffer;
++      player.pointer = pointer;
++    }
++    player.context.putImageData(player.image, 0, 0);
++    player.frame = frame;
+     if (player.poster) {
+       player.poster.style.display = 'none';
+     }
++    if (player.target.classList) {
++      player.target.classList.add('is-ready');
++    }
+     return true;
+   }
+ 
+-  function start(player) {
+-    var loop = !/(success|error|empty)\.json$/.test(player.url);
+-    var frameRate = player.info.frameRate || 30;
+-    var frameCount = Math.max(1, player.info.frameCount || 1);
+-    var frame = 0;
+-    var lastFrameTime = 0;
+-    var frameDuration = 1000 / Math.min(frameRate, 30);
++  // Plays once, by the clock at the file's own rate, and rests on the last frame. Reduced motion shows that frame
++  // alone.
++  function play(player) {
++    var frameRate = player.info.frameRate || 60;
++    var last = Math.max(1, player.info.frameCount || 1) - 1;
++    var position = 0;
++    var lastTime = 0;
++
++    function show(frame) {
++      if (!draw(player, frame)) {
++        removePlayer(player);
++        return false;
++      }
++      return true;
++    }
+ 
+     function tick(now) {
++      player.frameRequest = 0;
+       if (player.cancelled) {
+         return;
+       }
+-      if (now - lastFrameTime >= frameDuration || !lastFrameTime) {
+-        if (!draw(player, frame)) {
+-          removePlayer(player);
+-          return;
+-        }
+-        lastFrameTime = now;
+-        frame++;
+-        if (frame >= frameCount) {
+-          if (!loop) {
+-            return;
+-          }
+-          frame = 0;
+-        }
++      // A page that stalled goes on from where it stopped: one step counts for a tenth of a second at most.
++      if (lastTime) {
++        position += Math.min(now - lastTime, 100) * frameRate / 1000;
++      }
++      lastTime = now;
++      var frame = Math.min(last, Math.floor(position));
++      if (show(frame) && frame < last) {
++        player.frameRequest = requestAnimationFrame(tick);
+       }
+-      player.frameRequest = requestAnimationFrame(tick);
++    }
++
++    if (player.frameRequest) {
++      cancelAnimationFrame(player.frameRequest);
++      player.frameRequest = 0;
++    }
++    if (reducedMotion()) {
++      show(last);
++      return;
+     }
+     player.frameRequest = requestAnimationFrame(tick);
+   }
+@@ -227,12 +261,17 @@ window.PremiumLottie = (function() {
+           engine: null,
+           handle: 0,
+           info: null,
++          frame: -1,
++          image: null,
++          buffer: null,
++          pointer: 0,
++          replay: null,
+           frameRequest: 0,
+           cancelled: false,
+           removed: false
+         };
+         player.context = player.canvas.getContext('2d');
+-        player.canvas.className = 'pm-lottie-canvas';
++        player.canvas.className = 'js-lottie-canvas';
+         target.appendChild(player.canvas);
+         players.push(player);
+         Promise.all([
+@@ -251,7 +290,15 @@ window.PremiumLottie = (function() {
+           var bytes = new TextEncoder().encode(JSON.stringify(values[1]));
+           player.handle = player.engine.create(bytes);
+           player.info = player.engine.info(player.handle);
+-          start(player);
++          play(player);
++          // A tap plays it again.
++          player.replay = function() {
++            if (!player.cancelled && !reducedMotion()) {
++              play(player);
++            }
++          };
++          target.addEventListener('click', player.replay, false);
++          target.classList.add('is-tappable');
+         }).catch(function() {
+           removePlayer(player);
+         });
+diff --git a/y-/premiumbot.css b/y-/premiumbot.css
+@@ -1,542 +1,241 @@
+-/* Premium Bot Mini App: theme-aware, responsive, no preprocessor. */
+-:root {
+-  --pm-accent: #8774e1;
+-  --pm-accent-strong: #735bd1;
+-  --pm-accent-soft: rgba(135, 116, 225, 0.12);
+-  --pm-card: #ffffff;
+-  --pm-page: var(--tg-theme-bg-color, #f4f4f5);
+-  --pm-section: var(--tg-theme-section-bg-color, var(--pm-card));
+-  --pm-text: var(--tg-theme-text-color, #18212b);
+-  --pm-hint: var(--tg-theme-hint-color, #708090);
+-  --pm-link: var(--tg-theme-link-color, #4e46b8);
+-  --pm-border: var(--tg-theme-section-separator-color, rgba(20, 32, 48, 0.1));
+-  --pm-danger: #e55353;
+-  --pm-shadow: 0 8px 30px rgba(24, 20, 66, 0.08);
+-}
+-
+-html, body {
+-  background: var(--pm-page);
+-  color: var(--pm-text);
+-}
+-
+-body {
+-  margin: 0;
+-  min-height: var(--tg-viewport-stable-height, 100vh);
+-  -webkit-tap-highlight-color: transparent;
+-}
+-
+-.pm-app {
+-  box-sizing: border-box;
+-  width: 100%;
+-  max-width: 580px;
+-  min-height: var(--tg-viewport-stable-height, 100vh);
+-  margin: 0 auto;
+-  padding: calc(14px + var(--tg-safe-area-inset-top, 0px)) 16px calc(30px + var(--tg-content-safe-area-inset-bottom, 0px));
+-  color: var(--pm-text);
+-}
+-
+-.pm-app *, .pm-app *::before, .pm-app *::after {
+-  box-sizing: border-box;
+-}
+-
+-.pm-hero {
+-  position: relative;
+-  overflow: hidden;
+-  margin-bottom: 18px;
+-  padding: 30px 24px 26px;
+-  border-radius: 28px;
+-  background:
+-    radial-gradient(circle at 88% 2%, rgba(255, 255, 255, 0.3), transparent 34%),
+-    linear-gradient(145deg, #a18cf1 0%, #8268d9 43%, #ac5db0 100%);
+-  color: #ffffff;
+-  text-align: center;
+-  box-shadow: 0 15px 40px rgba(104, 76, 179, 0.2);
+-}
+-
+-.pm-hero::after {
+-  position: absolute;
+-  right: -35px;
+-  bottom: -70px;
+-  width: 160px;
+-  height: 160px;
+-  border: 28px solid rgba(255, 255, 255, 0.08);
+-  border-radius: 50%;
+-  content: '';
+-  pointer-events: none;
+-}
+-
+-.pm-hero-art {
+-  position: relative;
+-  width: 120px;
+-  height: 120px;
+-  margin: 0 auto 8px;
+-  animation: pm-hero-in 420ms cubic-bezier(.2,.8,.2,1) both;
+-}
+-
+-.pm-svg {
+-  display: block;
+-  width: 100%;
+-  height: 100%;
+-  background-color: currentColor;
+-  -webkit-mask-position: center;
+-  mask-position: center;
+-  -webkit-mask-repeat: no-repeat;
+-  mask-repeat: no-repeat;
+-  -webkit-mask-size: contain;
+-  mask-size: contain;
+-}
+-
+-.pm-hero-art > .pm-svg {
+-  width: 104px;
+-  height: 104px;
+-  margin: 8px auto;
+-  color: #ffffff;
+-  filter: drop-shadow(0 10px 18px rgba(42, 25, 94, 0.22));
+-}
+-
+-.pm-lottie-canvas {
+-  position: absolute;
+-  inset: 0;
+-  width: 100%;
+-  height: 100%;
+-  pointer-events: none;
+-}
+-
+-.pm-title {
+-  position: relative;
+-  margin: 4px 0 8px;
+-  color: inherit;
+-  font-size: 30px;
+-  font-weight: 750;
+-  line-height: 1.18;
+-  letter-spacing: -0.02em;
+-  outline: none;
+-}
+-
+-.pm-subtitle {
+-  position: relative;
+-  max-width: 400px;
+-  margin: 0 auto;
+-  color: rgba(255, 255, 255, 0.88);
+-  font-size: 15px;
+-  line-height: 1.45;
+-}
+-
+-.pm-subtitle a {
+-  color: inherit;
+-  text-decoration: underline;
+-}
+-
+-.pm-content {
+-  animation: pm-content-in 260ms ease-out both;
+-}
+-
+-.pm-island, .pm-plans, .pm-features {
+-  overflow: hidden;
+-  margin: 12px 0;
+-  border: 1px solid var(--pm-border);
+-  border-radius: 20px;
+-  background: var(--pm-section);
+-  box-shadow: var(--pm-shadow);
+-}
+-
+-.pm-cell {
+-  display: flex;
+-  align-items: center;
+-  min-height: 66px;
+-  padding: 12px 14px;
+-  color: inherit;
+-  text-decoration: none;
+-  transition: background-color 140ms ease, transform 140ms ease;
+-}
+-
+-.pm-cell:not(:last-child) {
+-  border-bottom: 1px solid var(--pm-border);
+-}
+-
+-.pm-cell:hover {
+-  background: var(--pm-accent-soft);
++/* Premium Bot Mini App: local additions on top of the design-system stylesheets
++   (premiumbot-tokens/base/components/fx/screens-*.css). No framework, no preprocessor. */
++
++/* The site chrome's base styles colour and underline links in every state, and ring them on any focus. Cells and
++   segments that are links keep the kit's ink there: a row's text colour, an action's accent, a destructive row's red.
++   Only a pointer's focus loses its ring: a keyboard's keeps the kit's, which a segment draws on its thumb
++   (components.css). */
++a.cell:is(:link, :visited, :hover, :active, :focus) {
++  color: var(--text);
+   text-decoration: none;
+ }
+ 
+-.pm-cell:active, .pm-plan:active, .pm-chip:active, .pm-primary:active, .pm-secondary:active {
+-  transform: scale(0.975);
+-}
+-
+-.pm-cell-icon {
+-  flex: 0 0 auto;
+-  width: 36px;
+-  height: 36px;
+-  margin-right: 12px;
+-  padding: 7px;
+-  border-radius: 11px;
+-  background: var(--pm-accent-soft);
++a.cell--action:is(:link, :visited, :hover, :active, :focus) {
++  color: var(--accent);
+ }
+ 
+-.pm-cell-copy {
+-  display: flex;
+-  flex: 1 1 auto;
+-  flex-direction: column;
+-  min-width: 0;
++a.cell--destructive:is(:link, :visited, :hover, :active, :focus) {
++  color: var(--destructive-ink);
+ }
+ 
+-.pm-cell-title {
++a.segment:is(:link, :visited, :hover, :active, :focus) {
+   color: inherit;
+-  font-size: 16px;
+-  font-weight: 650;
+-  line-height: 1.3;
+-}
+-
+-.pm-cell-description {
+-  margin-top: 3px;
+-  color: var(--pm-hint);
+-  font-size: 13px;
+-  line-height: 1.35;
+-}
+-
+-.pm-cell-chevron {
+-  flex: 0 0 auto;
+-  width: 18px;
+-  height: 18px;
+-  margin-left: 8px;
+-  opacity: 0.45;
++  text-decoration: none;
+ }
+ 
+-.pm-plans {
+-  padding: 8px;
++a.cell:focus:not(:focus-visible),
++a.segment:focus {
++  outline: none;
+ }
+ 
+-.pm-plan {
+-  position: relative;
+-  display: flex;
+-  align-items: center;
++button.cell {
+   width: 100%;
+-  min-height: 68px;
+-  margin: 0;
+-  padding: 13px 14px;
+-  border: 1px solid transparent;
+-  border-radius: 14px;
+-  background: transparent;
+-  color: var(--pm-text);
+-  font: inherit;
+-  text-align: left;
+-  cursor: pointer;
+-  transition: background-color 140ms ease, border-color 140ms ease, transform 140ms ease;
+-}
+-
+-.pm-plan:hover {
+-  border-color: rgba(135, 116, 225, 0.35);
+-  background: var(--pm-accent-soft);
+-}
+-
+-.pm-plan:disabled {
+-  cursor: wait;
+-  opacity: 0.65;
+-}
+-
+-.pm-plan-copy {
+-  display: flex;
+-  flex: 1 1 auto;
+-  flex-direction: column;
+-  min-width: 0;
++  text-align: start;
+ }
+ 
+-.pm-plan-title {
+-  font-size: 17px;
+-  font-weight: 680;
+-  line-height: 1.25;
++/* The server prints these parts of a row even when they are empty, and an empty one still takes the gap beside it:
++   4 px off the centre of a plan's name, 12 px at a row's end. */
++.cell-subtitle:empty,
++.cell-trail:empty {
++  display: none;
+ }
+ 
+-.pm-plan-description {
+-  margin-top: 3px;
+-  color: var(--pm-hint);
+-  font-size: 13px;
++/* The plan's billing period under its price. */
++.plan-period {
++  color: var(--hint);
++  font-size: var(--fs-small);
++  line-height: var(--lh-small);
+ }
+ 
+-.pm-plan-price {
+-  flex: 0 0 auto;
+-  margin-left: 12px;
+-  color: var(--pm-link);
+-  font-size: 17px;
+-  font-weight: 730;
++/* The hero mark's box, as large as its stage's mark (fx.css --fx-mark): 120 px, or 88 on a compact stage. */
++.pm-mark {
++  position: relative;
++  display: block;
++  width: var(--fx-mark, 120px);
++  height: var(--fx-mark, 120px);
++  margin: 0 auto var(--space-16);
+ }
+ 
+-.pm-plan.is-loading::after {
+-  width: 16px;
+-  height: 16px;
+-  margin-left: 8px;
+-  border: 2px solid var(--pm-border);
+-  border-top-color: var(--pm-accent);
+-  border-radius: 50%;
+-  content: '';
+-  animation: pm-spin 650ms linear infinite;
++/* The flat glyph is the mark's fallback, Telegram's Premium glyph or the Star. It shows only under .is-flat, which
++   premiumbot-3d.js sets where the 3D mark cannot draw or is slow to, so a normal load never flashes it. */
++.pm-mark-glyph {
++  position: absolute;
++  inset: 6%;
++  display: none;
++  background: var(--brand-gradient, linear-gradient(90deg, #6b93ff, #976fff, #e169a0));
++  -webkit-mask: url(../img/premiumbot/ui-premium.svg) center / contain no-repeat;
++  mask: url(../img/premiumbot/ui-premium.svg) center / contain no-repeat;
+ }
+ 
+-.pm-filters {
+-  display: flex;
+-  gap: 8px;
+-  overflow-x: auto;
+-  margin: 12px 0 2px;
+-  padding: 2px 2px 8px;
+-  scrollbar-width: none;
++.pm-mark--stars .pm-mark-glyph {
++  background: linear-gradient(180deg, #ffe071, #f5a623);
++  -webkit-mask-image: url(../img/premiumbot/ui-star.svg);
++  mask-image: url(../img/premiumbot/ui-star.svg);
+ }
+ 
+-.pm-filters::-webkit-scrollbar {
++/* The golden star's soft halo: the 3D star's own silhouette added as light, so in dark only and only behind that
++   star, not the flat glyph, whose star is another shape. premiumbot-3d.js sets its box and turns it with the star. */
++.pm-mark-bloom {
++  position: absolute;
+   display: none;
++  background: url(../img/premiumbot/star-bloom.svg) center / 100% 100% no-repeat;
++  mix-blend-mode: plus-lighter;
++  pointer-events: none;
+ }
+ 
+-.pm-chip {
+-  flex: 0 0 auto;
+-  min-height: 44px;
+-  padding: 9px 13px;
+-  border: 1px solid var(--pm-border);
+-  border-radius: 18px;
+-  background: var(--pm-section);
+-  color: var(--pm-hint);
+-  font: inherit;
+-  font-size: 13px;
+-  cursor: pointer;
+-  transition: transform 120ms ease, background-color 120ms ease;
+-}
+-
+-.pm-chip.is-active {
+-  border-color: var(--pm-accent);
+-  background: var(--pm-accent);
+-  color: #ffffff;
++.theme-dark .pm-mark.is-3d .pm-mark-bloom {
++  display: block;
+ }
+ 
+-.pm-feature {
+-  display: flex;
+-  gap: 14px;
+-  align-items: flex-start;
+-  padding: 15px 16px;
++/* The WebGL mark's canvas, which premiumbot-3d.js sizes and centres on the mark. Where the mark falls back the script
++   hides it, and the glyph shows in its place. */
++.pm-mark-gl {
++  position: absolute;
+ }
+ 
+-.pm-feature:not(:last-child) {
+-  border-bottom: 1px solid var(--pm-border);
++.pm-mark.is-flat .pm-mark-glyph {
++  display: block;
+ }
+ 
+-.pm-feature-icon {
+-  flex: 0 0 auto;
+-  width: 30px;
+-  height: 30px;
+-  padding: 4px;
+-  border-radius: 9px;
+-  background: var(--pm-accent-soft);
+-  color: var(--pm-accent-strong);
++/* Twinkling sparkles around the flat glyph, shown with it alone: the 3D mark has the stage's own particles. */
++.pm-twinkle {
++  position: absolute;
++  display: none;
++  border-radius: 50%;
++  background: radial-gradient(closest-side, var(--twinkle-c), transparent 80%);
++  opacity: 0;
++  animation: pm-twinkle 3.1s ease-in-out infinite;
++  pointer-events: none;
+ }
+ 
+-.pm-feature h2 {
+-  margin: 0 0 4px;
+-  color: inherit;
+-  font-size: 16px;
+-  font-weight: 650;
++.pm-mark.is-flat .pm-twinkle {
++  display: block;
+ }
+ 
+-.pm-feature p, .pm-picker p, .pm-note {
+-  margin: 0;
+-  color: var(--pm-hint);
+-  font-size: 14px;
+-  line-height: 1.45;
++@keyframes pm-twinkle {
++  0%, 100% {
++    opacity: 0;
++    transform: scale(0.55);
++  }
++  45% {
++    opacity: 0.95;
++    transform: scale(1);
++  }
+ }
+ 
+-.pm-picker {
+-  padding: 18px 16px;
+-  text-align: center;
++@media (prefers-reduced-motion: reduce) {
++  .pm-twinkle {
++    animation: none;
++    opacity: 0.6;
++  }
+ }
+ 
+-.pm-picker .pm-primary, .pm-picker .pm-secondary {
+-  width: 100%;
+-  margin-top: 14px;
+-}
++/* Toasts: created by premiumbot.js inside .toast-region (base styles live in premiumbot-components.css). */
+ 
++/* Peer picker status line under the picker cell. */
+ .pm-picker-status {
+-  min-height: 20px;
+-  margin-top: 12px;
+-  color: var(--pm-hint);
+-  font-size: 13px;
+-}
+-
+-.pm-picker-status.is-error, .pm-message-error {
+-  color: var(--pm-danger);
+-}
+-
+-.pm-primary, .pm-secondary {
+-  display: inline-flex;
+-  align-items: center;
+-  justify-content: center;
+-  min-height: 46px;
+-  padding: 11px 20px;
+-  border: 0;
+-  border-radius: 14px;
+-  font: inherit;
+-  font-weight: 680;
+-  cursor: pointer;
+-  transition: transform 120ms ease, opacity 120ms ease;
++  display: block;
++  margin-top: var(--space-8);
++  color: var(--hint);
++  font-size: var(--fs-sub);
++  line-height: var(--lh-sub);
+ }
+ 
+-.pm-primary {
+-  background: linear-gradient(135deg, var(--pm-accent), var(--pm-accent-strong));
+-  color: #ffffff;
+-  box-shadow: 0 7px 18px rgba(111, 84, 202, 0.2);
++.pm-picker-status.is-error {
++  color: var(--destructive, var(--fb-destructive));
+ }
+ 
+-.pm-secondary {
+-  border: 1px solid var(--pm-border);
+-  background: var(--pm-section);
+-  color: var(--pm-link);
++.pm-picker-status:empty {
++  display: none;
+ }
+ 
+-.pm-link {
+-  width: 100%;
+-  text-decoration: none;
++/* On the gift pages the footer under the choose row holds the status alone: it keeps no room while the status is
++   empty, and the status text starts where a footer's text does. */
++.commerce--gift .section-footer:has(> .pm-picker-status:empty) {
++  display: none;
+ }
+ 
+-.pm-note {
+-  margin-top: 12px;
+-  text-align: center;
++.commerce--gift .pm-picker-status {
++  margin-top: 0;
+ }
+ 
+-.pm-island > .pm-note, .pm-island > .pm-secondary {
+-  display: flex;
+-  width: calc(100% - 28px);
+-  margin-right: 14px;
+-  margin-left: 14px;
+-}
+-
+-.pm-island > .pm-secondary {
+-  margin-top: 14px;
+-}
+-
+-.pm-island > .pm-note {
+-  margin-bottom: 14px;
+-}
+-
+-.pm-banner, .pm-empty {
+-  margin: 12px 0;
+-  padding: 14px 16px;
+-  border: 1px solid rgba(135, 116, 225, 0.2);
+-  border-radius: 16px;
+-  background: var(--pm-accent-soft);
+-  color: var(--pm-hint);
+-  font-size: 14px;
+-  line-height: 1.45;
+-}
+-
+-.pm-message {
+-  position: fixed;
+-  z-index: 20;
+-  right: 16px;
+-  bottom: calc(16px + var(--tg-content-safe-area-inset-bottom, 0px));
+-  left: 16px;
+-  width: auto;
+-  max-width: 520px;
+-  margin: 0 auto;
+-  padding: 13px 16px;
+-  border-radius: 14px;
+-  background: var(--tg-theme-section-bg-color, #242f3d);
+-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+-  color: var(--pm-text);
+-  font-size: 14px;
+-  text-align: center;
+-  animation: pm-content-in 180ms ease-out both;
+-}
+-
+-.pm-sr-only {
+-  position: absolute;
+-  overflow: hidden;
+-  width: 1px;
+-  height: 1px;
+-  padding: 0;
+-  border: 0;
+-  margin: -1px;
+-  clip: rect(0, 0, 0, 0);
+-  white-space: nowrap;
++/* Two choice cells in one row (Choose Channel / Choose Group). */
++/* One choice under the other: side by side a label of two words wraps in a phone's column. */
++.pm-choice-cells {
++  display: grid;
++  gap: var(--space-12);
+ }
+ 
+-.pm-cell:focus-visible, .pm-plan:focus-visible, .pm-chip:focus-visible,
+-.pm-primary:focus-visible, .pm-secondary:focus-visible {
+-  outline: 3px solid rgba(135, 116, 225, 0.45);
+-  outline-offset: 2px;
++/* Each choice is an island of its own: no row separator between them. */
++.pm-choice-cells .cell + .cell::before {
++  display: none;
+ }
+ 
+-.lang_rtl .pm-app {
+-  direction: rtl;
++/* Hidden giveaway option records; the client resolves selections against them. */
++.js-gw-matrix {
++  display: none;
+ }
+ 
+-.lang_rtl .pm-cell-icon, .lang_rtl .pm-plan-price {
+-  margin-right: 0;
+-  margin-left: 12px;
++/* Error screen actions: an island each, inside the page's gutters. Islands of their own have no row separator. */
++.pm-error-actions {
++  display: grid;
++  gap: var(--space-12);
++  margin: var(--space-16) var(--gutter) 0;
+ }
+ 
+-.lang_rtl .pm-cell-chevron {
+-  margin-right: 8px;
+-  margin-left: 0;
+-  transform: scaleX(-1);
++.pm-error-actions .cell + .cell::before {
++  display: none;
+ }
+ 
+-.lang_rtl .pm-plan {
+-  text-align: right;
++/* A purchase page shorter than the screen still docks its pay bar at the bottom: the block is a column as tall as
++   the viewport under the screen's 16 px top padding, and the bar takes the far end. */
++.subscription--paywall {
++  display: flex;
++  flex-direction: column;
++  min-height: calc(var(--tg-viewport-stable-height, 100vh) - var(--tg-safe-area-inset-top, 0px) - var(--tg-content-safe-area-inset-top, 0px) - var(--space-16));
+ }
+ 
+-[hidden] {
+-  display: none !important;
++.subscription--paywall > .cta-bar {
++  margin-top: auto;
+ }
+ 
+-@keyframes pm-spin {
+-  to { transform: rotate(360deg); }
++/* Results. Where the client has no native button, premiumbot.js ends a result with the page's own bar. The screen is
++   a column as tall as the viewport under its 16 px top padding, so the stage takes what that bar leaves and the page
++   does not scroll by the bar's height. */
++.result-screen {
++  display: flex;
++  flex-direction: column;
++  min-height: calc(var(--tg-viewport-stable-height, 100vh) - var(--tg-safe-area-inset-top, 0px) - var(--tg-content-safe-area-inset-top, 0px) - var(--space-16));
+ }
+ 
+-@keyframes pm-hero-in {
+-  from { opacity: 0; transform: translateY(10px) scale(0.92); }
+-  to { opacity: 1; transform: translateY(0) scale(1); }
++@supports (min-height: round(down, 100vh, 4px)) {
++  .result-screen {
++    min-height: calc(round(down, var(--tg-viewport-stable-height, 100vh) - var(--tg-safe-area-inset-top, 0px) - var(--tg-content-safe-area-inset-top, 0px), 4px) - var(--space-16));
++  }
+ }
+ 
+-@keyframes pm-content-in {
+-  from { opacity: 0; transform: translateY(7px); }
+-  to { opacity: 1; transform: translateY(0); }
++.result-screen > .fx-stage {
++  flex: 1 0 auto;
++  min-height: 0;
+ }
+ 
+-@media (max-width: 520px) {
+-  .pm-app {
+-    padding-right: 12px;
+-    padding-left: 12px;
+-  }
+-
+-  .pm-hero {
+-    padding: 24px 18px 22px;
+-    border-radius: 24px;
+-  }
+-
+-  .pm-title {
+-    font-size: 27px;
+-  }
+-
+-  .pm-cell {
+-    min-height: 64px;
+-  }
+-
+-  .pm-plan-price {
+-    font-size: 16px;
+-  }
++/* Hero artwork: the server-rendered Lottie marks. Telegram's colour art plays as it is, with no disc behind it
++   (design §11.7), as large as the stage's mark (fx.css --fx-mark); the server sets no size on the element. */
++.hero-media > .lottie,
++.hero.fx-field > .lottie {
++  width: var(--fx-mark, 120px);
++  height: var(--fx-mark, 120px);
++  margin-inline: auto;
+ }
+ 
+-@media (min-width: 700px) {
+-  .pm-app {
+-    padding-top: 24px;
+-  }
++.hero-media > .lottie canvas,
++.lottie > canvas {
++  display: block;
++  width: 100%;
++  height: 100%;
+ }
+ 
+-@media (prefers-reduced-motion: reduce) {
+-  .pm-hero-art, .pm-content, .pm-message {
+-    animation: none;
+-  }
+-
+-  .pm-cell, .pm-plan, .pm-chip, .pm-primary, .pm-secondary {
+-    transition: none;
+-  }
+-
+-  .pm-cell:active, .pm-plan:active, .pm-chip:active, .pm-primary:active, .pm-secondary:active {
+-    transform: none;
+-  }
++/* The lone winners row states facts the user must read: its value takes the readable grey, not the hint. */
++.pm-gw-fixed .cell-value {
++  color: var(--secondary-text);
+ }
+diff --git a/y-/premiumbot.js b/y-/premiumbot.js
+@@ -4,219 +4,973 @@ window.PremiumApp = (function() {
+ 
+   var POLL_INTERVAL = 1500;
+   var POLL_TIMEOUT = 120000;
++  var INVOICE_TIMEOUT = 600000;
++  // How long a client other than Android may stay silent on a chat request before the bot is offered in the page.
++  var PICKER_QUIET = 4000;
++  var INVOICE_GRACE = 2000;
++  var PRICE_STEPS = ['', 'price-sides', 'price-type', 'price-lines'];
++  // Layout rounds to 1/64 px: an overhang below this is a fit.
++  var FIT_SLACK = 0.01;
++  // The page prints these on .screen as data-t-<name> in its own language; the English stands in until it does.
++  var TEXTS = {
++    'pay-failed': 'Payment didn’t go through. Try again or use another card.',
++    'pay-open': 'Couldn’t start the payment. Try again.',
++    'picker-failed': 'Couldn’t open the list. Try again.',
++    'bot-title': 'Continue in {bot}',
++    'bot-text': 'Send {command} to {bot} to use this flow in the existing bot chat.',
++    'bot-open': 'Open {bot}'
++  };
+   var picker = null;
+   var pickerSequence = 0;
+-  var mainAction = false;
++  var silentPicker = false;
++  var invoice = null;
++  var unanswered = {};
++  var pageToken = 0;
++  var visits = 0;
++  var mainButtonHandler = null;
++  var resultBar = null;
++  var ctaCopy = null;
++  var pageColors = null;
++  var colorFrame = 0;
++  var toastTimer = 0;
++  var liveTimer = 0;
++  var pressed = null;
++  var cardsObserver = null;
++  var bound = [];
+ 
+   function webApp() {
+     return window.Telegram && window.Telegram.WebApp;
+   }
+ 
+-  function showMessage(text, isError) {
+-    var element = document.getElementById('pm-message');
++  function on(element, eventName, handler, capture) {
+     if (!element) {
+       return;
+     }
+-    element.textContent = text;
+-    element.className = isError ? 'pm-message pm-message-error' : 'pm-message';
+-    element.hidden = false;
++    element.addEventListener(eventName, handler, !!capture);
++    bound.push([element, eventName, handler, !!capture]);
++  }
++
++  function bind(selector, eventName, handler) {
++    var elements = document.querySelectorAll(selector);
++    for (var i = 0; i < elements.length; i++) {
++      on(elements[i], eventName, handler);
++    }
++  }
++
++  function unbindAll() {
++    for (var i = 0; i < bound.length; i++) {
++      bound[i][0].removeEventListener(bound[i][1], bound[i][2], bound[i][3]);
++    }
++    bound = [];
++  }
++
++  function scriptText(name, values) {
++    var screen = document.querySelector('.screen');
++    var result = (screen && screen.getAttribute('data-t-' + name)) || TEXTS[name];
++    for (var key in values) {
++      result = result.split('{' + key + '}').join(values[key]);
++    }
++    return result;
++  }
++
++  // ===== Theme and platform classes on <html> =====
++
++  function applyBridgeClasses() {
++    var app = webApp();
++    var root = document.documentElement;
++    if (!app) {
++      return;
++    }
++    var dark = app.colorScheme === 'dark';
++    root.classList.toggle('theme-dark', dark);
++    root.classList.toggle('theme-light', !dark);
++    // The light field's dark variant: the accent adds light instead of a white bloom (fx.css .fx-stage--dark).
++    var stages = document.querySelectorAll('.fx-light__stage, .fx-stage');
++    for (var i = 0; i < stages.length; i++) {
++      stages[i].classList.toggle('fx-stage--dark', dark);
++    }
++    var platform = app.platform || '';
++    root.classList.remove('platform-ios', 'platform-android', 'platform-desktop');
++    if (platform === 'ios') {
++      root.classList.add('platform-ios');
++    } else if (platform === 'android' || platform === 'android_x') {
++      root.classList.add('platform-android');
++    } else if (platform) {
++      root.classList.add('platform-desktop');
++    }
++    matchPageColors();
++  }
++
++  // ===== Native header, background and bottom bar in the page's colours =====
++
++  function toHex(color) {
++    var parts = /^rgba?\(\s*([\d.]+)[\s,]+([\d.]+)[\s,]+([\d.]+)/.exec(color);
++    var scale = 1;
++    if (!parts) {
++      // WebKit computes a color-mix() to color(srgb r g b), each from 0 to 1.
++      parts = /^color\(srgb\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)/.exec(color);
++      scale = 255;
++    }
++    if (!parts) {
++      return '';
++    }
++    var hex = '#';
++    for (var i = 1; i <= 3; i++) {
++      var value = Math.max(0, Math.min(255, Math.round(parseFloat(parts[i]) * scale)));
++      hex += (value < 16 ? '0' : '') + value.toString(16);
++    }
++    return hex;
++  }
++
++  // The colour a custom property holds where `element` sits, as #rrggbb; '' where the engine computes it to nothing.
++  function cssColor(element, property) {
++    var probe = document.createElement('i');
++    probe.style.color = 'var(' + property + ')';
++    element.appendChild(probe);
++    var color = getComputedStyle(probe).color;
++    var inherited = getComputedStyle(element).color;
++    element.removeChild(probe);
++    return color === inherited ? '' : toHex(color);
++  }
++
++  function mixHex(from, to, amount) {
++    var hex = '#';
++    for (var i = 1; i < 7; i += 2) {
++      var start = parseInt(from.substr(i, 2), 16);
++      var value = Math.round(start + (parseInt(to.substr(i, 2), 16) - start) * amount);
++      hex += (value < 16 ? '0' : '') + value.toString(16);
++    }
++    return hex;
++  }
++
++  function matchPageColors() {
++    var app = webApp();
++    var screen = document.querySelector('.screen');
++    if (!app || !screen) {
++      return;
++    }
++    // A screen that opens on a stage starts in the stage's top colour and runs down to the page's.
++    var stage = document.querySelector('.fx-light__stage, .fx-stage');
++    var page = cssColor(stage || screen, '--page');
++    if (!page) {
++      return;
++    }
++    pageColors = {
++      page: page,
++      top: (stage && cssColor(stage, '--fx-top')) || page,
++      stage: stage,
++      header: ''
++    };
++    try {
++      app.setBackgroundColor(page);
++      if (app.setBottomBarColor && app.isVersionAtLeast('7.10')) {
++        app.setBottomBarColor(page);
++      }
++    } catch (error) {}
++    matchHeaderColor();
++  }
++
++  // The header keeps the colour of the row under it while the stage scrolls away.
++  function matchHeaderColor() {
++    var app = webApp();
++    colorFrame = 0;
++    if (!app || !pageColors || !app.setHeaderColor) {
++      return;
++    }
++    var height = pageColors.stage ? pageColors.stage.offsetHeight : 0;
++    var passed = height > 0 ? Math.max(0, Math.min(1, (window.pageYOffset || 0) / height)) : 1;
++    var color = mixHex(pageColors.top, pageColors.page, passed);
++    if (color === pageColors.header) {
++      return;
++    }
++    pageColors.header = color;
++    try {
++      // Before 6.9 the header takes a theme key only.
++      app.setHeaderColor(app.isVersionAtLeast('6.9') ? color : 'bg_color');
++    } catch (error) {}
++  }
++
++  function onPageScroll() {
++    if (!colorFrame) {
++      colorFrame = requestAnimationFrame(matchHeaderColor);
++    }
++  }
++
++  // ===== Toasts and the banner =====
++
++  function showMessage(message, isError) {
++    var region = document.querySelector('.toast-region');
+     var live = document.getElementById('pm-live');
++    clearMessage();
++    if (region) {
++      var toast = document.createElement('div');
++      toast.className = 'toast';
++      toast.textContent = message;
++      region.appendChild(toast);
++      toastTimer = setTimeout(function() {
++        toast.classList.add('is-leaving');
++        toastTimer = setTimeout(function() {
++          if (toast.parentNode) {
++            toast.parentNode.removeChild(toast);
++          }
++        }, 220);
++      }, 3400);
++    }
+     if (live) {
+-      live.textContent = text;
++      // A live region stays silent when its text does not change: it was cleared above and is set a beat later.
++      liveTimer = setTimeout(function() {
++        live.textContent = message;
++      }, 50);
++    }
++    if (isError) {
++      hapticNotify('error');
+     }
+   }
+ 
+   function clearMessage() {
+-    var element = document.getElementById('pm-message');
+-    if (element) {
+-      element.hidden = true;
+-      element.textContent = '';
++    var region = document.querySelector('.toast-region');
++    var live = document.getElementById('pm-live');
++    clearTimeout(toastTimer);
++    clearTimeout(liveTimer);
++    if (region) {
++      while (region.firstChild) {
++        region.removeChild(region.firstChild);
++      }
++    }
++    if (live) {
++      live.textContent = '';
++    }
++  }
++
++  // Icons are masks whose address the page prints inline: another icon's address gives this one's.
++  function iconUrl(name) {
++    var sample = document.querySelector('.icon[data-icon][style*="--icon"]');
++    var value = sample ? sample.style.getPropertyValue('--icon') : '';
++    return value ? value.replace(/[^\/'"()]+\.svg/, name + '.svg') : 'url("/img/premiumbot/' + name + '.svg")';
++  }
++
++  // An error that stays until the next attempt. A banner never sits above a stage: it tops the sheet over the
++  // stage, or follows a stage that has no sheet. An empty message clears it.
++  function showBanner(message) {
++    var slot = document.querySelector('.screen-banner');
++    if (!slot) {
++      return false;
++    }
++    while (slot.firstChild) {
++      slot.removeChild(slot.firstChild);
++    }
++    if (!message) {
++      return true;
++    }
++    var stage = slot.parentNode.querySelector('.fx-stage');
++    var sheet = slot.parentNode.querySelector('.fx-stage ~ .fx-sheet');
++    if (sheet) {
++      sheet.insertBefore(slot, sheet.firstChild);
++    } else if (stage) {
++      stage.parentNode.insertBefore(slot, stage.nextSibling);
++    }
++    var banner = document.createElement('div');
++    banner.className = 'banner banner--error island';
++    banner.setAttribute('role', 'alert');
++    var mark = document.createElement('span');
++    mark.className = 'banner-mark';
++    var icon = document.createElement('span');
++    icon.className = 'icon banner-icon';
++    icon.setAttribute('data-icon', 'ui-warning');
++    icon.setAttribute('aria-hidden', 'true');
++    icon.style.setProperty('--icon', iconUrl('ui-warning'));
++    var body = document.createElement('span');
++    body.className = 'banner-body';
++    var line = document.createElement('span');
++    line.className = 'banner-text grid-snap';
++    line.textContent = message;
++    mark.appendChild(icon);
++    body.appendChild(line);
++    banner.appendChild(mark);
++    banner.appendChild(body);
++    slot.appendChild(banner);
++    // Into view: to the very top when it shows from there, so the stage stays in sight.
++    var box = banner.getBoundingClientRect();
++    var top = box.top + window.pageYOffset;
++    var target = top + box.height <= window.innerHeight ? 0 : Math.max(0, top - 16);
++    if (target === 0 ? window.pageYOffset > 0 : box.top < 0 || box.bottom > window.innerHeight) {
++      window.scrollTo({top: target, behavior: reducedMotion() ? 'auto' : 'smooth'});
++    }
++    return true;
++  }
++
++  // ===== Haptics =====
++
++  function haptic(method, value) {
++    var app = webApp();
++    if (app && app.HapticFeedback && app.isVersionAtLeast('6.1')) {
++      try {
++        app.HapticFeedback[method](value);
++      } catch (error) {}
++    }
++  }
++
++  function hapticSelection() {
++    haptic('selectionChanged');
++  }
++
++  function hapticNotify(type) {
++    haptic('notificationOccurred', type);
++  }
++
++  // Every tap is felt once: light for rows, buttons and links, medium for the pay button. A choice ticks when it
++  // changes, so its label is left to the change handlers.
++  function onTapHaptic(event) {
++    var target = event.target && event.target.closest ? event.target.closest('[data-haptic], button, a[href], .is-tappable') : null;
++    if (!target || target.tagName === 'LABEL' ||
++        target.getAttribute('aria-disabled') === 'true' || target.getAttribute('aria-busy') === 'true') {
++      return;
++    }
++    var kind = target.getAttribute('data-haptic') || (target.classList.contains('js-cta') ? 'medium' : 'light');
++    if (kind === 'selection') {
++      hapticSelection();
++    } else if (kind !== 'none') {
++      haptic('impactOccurred', kind);
+     }
+   }
+ 
++  // ===== Links that leave the app go through Telegram =====
++
++  function onLinkClick(event) {
++    var app = webApp();
++    var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
++    if (!app || !link || event.defaultPrevented || link.host === window.location.host || !/^https?:$/.test(link.protocol)) {
++      return;
++    }
++    try {
++      if (/^(t|telegram)\.me$/.test(link.hostname)) {
++        app.openTelegramLink(link.href);
++      } else {
++        app.openLink(link.href);
++      }
++      event.preventDefault();
++    } catch (error) {}
++  }
++
++  // ===== Native MainButton =====
++
++  function mainButtonAvailable() {
++    var app = webApp();
++    return !!(app && app.MainButton && app.isVersionAtLeast && app.isVersionAtLeast('6.0'));
++  }
++
++  function hideMainButton() {
++    var app = webApp();
++    if (app && app.MainButton) {
++      if (mainButtonHandler) {
++        app.MainButton.offClick(mainButtonHandler);
++      }
++      app.MainButton.hide();
++    }
++    mainButtonHandler = null;
++    document.documentElement.classList.remove('has-main-button');
++    if (resultBar && resultBar.parentNode) {
++      resultBar.parentNode.removeChild(resultBar);
++    }
++    resultBar = null;
++  }
++
++  function ctaButton() {
++    return document.getElementById('pm-cta');
++  }
++
++  function ctaCurrentUrl() {
++    var button = ctaButton();
++    return button ? button.getAttribute('data-invoice-url') : '';
++  }
++
++  function ctaLabel(button) {
++    return button.querySelector('.cta-label') || button;
++  }
++
++  // The label shows its whole text. One the button would cut gives way to the short text, where the page has one.
++  function ctaFit() {
++    var button = ctaButton();
++    if (!button || !ctaCopy) {
++      return;
++    }
++    var label = ctaLabel(button);
++    label.textContent = ctaCopy.text;
++    if (ctaCopy.short && label.scrollWidth > label.clientWidth) {
++      label.textContent = ctaCopy.short;
++    }
++  }
++
++  function ctaUpdate(text, url, shortText) {
++    var button = ctaButton();
++    if (!button) {
++      return;
++    }
++    if (text) {
++      ctaCopy = {text: text, short: shortText || ''};
++      ctaFit();
++    }
++    if (url) {
++      button.setAttribute('data-invoice-url', url);
++    }
++    button.setAttribute('aria-disabled', ctaCurrentUrl() ? 'false' : 'true');
++  }
++
++  function ctaInit() {
++    var button = ctaButton();
++    if (!button) {
++      return false;
++    }
++    button.setAttribute('aria-disabled', ctaCurrentUrl() ? 'false' : 'true');
++    // The pill's glow breathes and its arrow knocks while the page is lit.
++    button.classList.add('is-lit');
++    return true;
++  }
++
++  function resultButtonInit() {
++    // Playgrounds pin the fake result route here; production takes location.
++    var pathname = window.PMA_RESULT_PATH || window.location.pathname;
++    if (pathname.indexOf('/premiumbot/result/') !== 0) {
++      return;
++    }
++    var result = document.querySelector('.result-screen');
++    var label = (result && result.getAttribute('data-done-text')) || 'Done';
++    var done = function() {
++      Aj.location('/premiumbot');
++    };
++    if (mainButtonAvailable()) {
++      mainButtonHandler = done;
++      webApp().MainButton.setParams({
++        text: label,
++        is_visible: true,
++        is_active: true,
++        // The screen's own tone, as its in-page buttons take it.
++        color: (result && cssColor(result, '--tone-solid')) || '#7356f6',
++        text_color: '#ffffff'
++      });
++      webApp().MainButton.onClick(done);
++      document.documentElement.classList.add('has-main-button');
++    } else if (result) {
++      // A client without the native button gets the same action as the page's own bar.
++      resultBar = document.createElement('div');
++      resultBar.className = 'cta-bar';
++      var button = document.createElement('button');
++      button.type = 'button';
++      button.className = 'cta-button fx-press';
++      var face = document.createElement('span');
++      face.className = 'cta-label';
++      face.textContent = label;
++      button.appendChild(face);
++      button.addEventListener('click', done, false);
++      resultBar.appendChild(button);
++      result.appendChild(resultBar);
++    }
++  }
++
++  // ===== Invoices =====
++
+   function setButtonBusy(button, busy) {
+     if (!button) {
+       return;
+     }
+-    button.disabled = !!busy;
+-    if (busy) {
+-      button.classList.add('is-loading');
+-    } else {
+-      button.classList.remove('is-loading');
++    // Busy, not disabled: the button keeps its look and its focus, and assistive tech hears why it does not answer.
++    button.setAttribute('aria-busy', busy ? 'true' : 'false');
++    button.classList.toggle('is-busy', !!busy);
++    var trail = button.classList.contains('cell') ? button.querySelector('.cell-trail') : null;
++    if (!trail) {
++      return;
++    }
++    // In a row the spinner takes the place of what the row ends with.
++    var spinner = trail.querySelector('.cell-busy');
++    if (!spinner && busy) {
++      spinner = document.createElement('span');
++      spinner.className = 'cell-busy';
++      spinner.setAttribute('aria-hidden', 'true');
++      trail.appendChild(spinner);
++    }
++    if (spinner) {
++      spinner.hidden = !busy;
++    }
++    var rest = trail.querySelectorAll('.cell-value, .cell-chevron');
++    for (var i = 0; i < rest.length; i++) {
++      rest[i].hidden = !!busy;
+     }
+   }
+ 
+-  function openInvoice(url) {
++  function invoiceButton(url) {
++    var buttons = document.querySelectorAll('.js-invoice');
++    for (var i = 0; i < buttons.length; i++) {
++      if (buttons[i].getAttribute('data-invoice-url') === url) {
++        return buttons[i];
++      }
++    }
++    return null;
++  }
++
++  function closingConfirmation(enabled) {
++    var app = webApp();
++    if (app && app.enableClosingConfirmation && app.isVersionAtLeast('6.2')) {
++      try {
++        if (enabled) {
++          app.enableClosingConfirmation();
++        } else {
++          app.disableClosingConfirmation();
++        }
++      } catch (error) {}
++    }
++  }
++
++  function releaseInvoice() {
++    if (!invoice) {
++      return;
++    }
++    clearTimeout(invoice.timer);
++    document.removeEventListener('pointerdown', noteInvoiceTap, true);
++    setButtonBusy(invoice.button, false);
++    closingConfirmation(false);
++    invoice = null;
++  }
++
++  // The client has not answered and still holds the invoice open: it would refuse to open the same one again, so
++  // the next try for it goes by its link.
++  function giveUpInvoice() {
++    if (invoice) {
++      unanswered[invoice.url] = true;
++      releaseInvoice();
++    }
++  }
++
++  // iOS sends no answer for an invoice it cannot load. Its checkout covers the page while it shows, so a tap on the
++  // page after the grace time means that no checkout is up.
++  function noteInvoiceTap() {
++    if (invoice && Date.now() - invoice.openedAt >= INVOICE_GRACE) {
++      giveUpInvoice();
++    }
++  }
++
++  function openInvoice(url, resultFlow, button) {
+     var app = webApp();
+     if (!app || !url) {
+       return;
+     }
+-    if (!app.isVersionAtLeast('6.1')) {
++    if (!app.isVersionAtLeast('6.1') || unanswered[url]) {
+       app.openTelegramLink(url);
+       return;
+     }
+-    var buttons = document.querySelectorAll('.js-invoice');
+-    var button = null;
+-    for (var i = 0; i < buttons.length; i++) {
+-      if (buttons[i].getAttribute('data-invoice-url') === url) {
+-        button = buttons[i];
+-        break;
++    if (invoice) {
++      if (invoice.url === url) {
++        return;
+       }
++      giveUpInvoice();
+     }
+-    setButtonBusy(button, true);
++    var current = {
++      url: url,
++      button: button || invoiceButton(url),
++      openedAt: Date.now(),
++      page: pageToken,
++      timer: setTimeout(giveUpInvoice, INVOICE_TIMEOUT)
++    };
++    invoice = current;
++    setButtonBusy(current.button, true);
+     clearMessage();
++    showBanner('');
++    closingConfirmation(true);
++    if (app.platform === 'ios') {
++      document.addEventListener('pointerdown', noteInvoiceTap, true);
++    }
+     try {
+       app.openInvoice(url, function(status) {
+-        setButtonBusy(button, false);
+-        if (status === 'paid') {
+-          Aj.location('/premiumbot/result/paid');
+-          return;
++        delete unanswered[url];
++        if (invoice === current) {
++          releaseInvoice();
+         }
+-        if (status === 'pending') {
+-          showMessage('Payment is pending. Your selection is kept; please check again shortly.', false);
++        // The answer can come after the page that asked has gone.
++        if (current.page !== pageToken) {
+           return;
+         }
+-        if (status === 'failed') {
+-          showMessage('Payment failed. You can retry with the same option.', true);
+-          return;
++        // A status this script does not know may hide a payment, as 'pending' does: only the server can tell.
++        if (status !== 'paid' && status !== 'failed' && status !== 'cancelled') {
++          status = 'pending';
++        }
++        if (status === 'paid') {
++          hapticNotify('success');
++          Aj.location('/premiumbot/result/paid/' + (resultFlow || 'premium'));
++        } else if (status === 'pending') {
++          Aj.location('/premiumbot/result/pending/' + (resultFlow || 'premium'));
++        } else if (status === 'failed') {
++          hapticNotify('error');
++          if (!showBanner(scriptText('pay-failed'))) {
++            showMessage(scriptText('pay-failed'), false);
++          }
+         }
+-        showMessage('Payment was cancelled. Your selection is unchanged.', false);
+       });
+     } catch (error) {
+-      setButtonBusy(button, false);
+-      showMessage('Unable to open this invoice. Please try again.', true);
++      releaseInvoice();
++      showMessage(scriptText('pay-open'), true);
+     }
+   }
+ 
+-  function fallbackToBot(flow, button) {
+-    var app = webApp();
+-    if (!app) {
+-      return;
++  // ===== Plan and gift-card selection (radio -> CTA) =====
++
++  function planApply(input) {
++    var url = input.getAttribute('data-invoice-url');
++    var text = input.getAttribute('data-cta-text');
++    if (url && text) {
++      ctaUpdate(text, url, input.getAttribute('data-cta-short'));
++    }
++  }
++
++  // A reload or a step back can restore another radio than the one the server checked.
++  function planSync() {
++    var input = document.querySelector('.js-plan-option:checked');
++    if (input) {
++      planApply(input);
+     }
+-    var username = window.Aj && Aj.state.botUsername ? Aj.state.botUsername : 'PremiumBot';
+-    var baseUrl = 'https://t.me/' + username;
+-    if (flow === 'gift') {
+-      app.openTelegramLink(baseUrl + '?start=gift');
++  }
++
++  // ===== Gift cards: prices, savings and the Best Value tab stay inside their cards =====
++
++  // How far `child` runs past the sides of `card` less `inset`; 0 or less is inside.
++  function overhang(child, card, inset) {
++    var outer = card.getBoundingClientRect();
++    var inner = child.getBoundingClientRect();
++    return Math.max(outer.left + inset - inner.left, inner.right - outer.right + inset);
++  }
++
++  // The symbol and the amount in the price's own order; the whole price when it has no symbol to set apart.
++  function priceParts(price) {
++    var match = /^(\D*)(\d(?:.*\d)?)(\D*)$/.exec(price);
++    var before = match ? match[1].trim() : '';
++    var after = match ? match[3].trim() : '';
++    if (before && !after) {
++      return [before, match[2]];
++    }
++    if (after && !before) {
++      return [match[2], after];
++    }
++    return [price];
++  }
++
++  // On two lines the symbol takes a line of its own, so the amount never breaks.
++  function priceLines(pill, split) {
++    var price = pill.getAttribute('data-price');
++    if (price === null) {
++      price = pill.textContent;
++      pill.setAttribute('data-price', price);
++    }
++    var parts = split ? priceParts(price) : [price];
++    pill.textContent = parts.length === 2 ? '' : price;
++    for (var i = 0; parts.length === 2 && i < 2; i++) {
++      var line = document.createElement('span');
++      line.className = 'gift-card-price-line';
++      line.textContent = parts[i];
++      pill.appendChild(line);
++      if (!i) {
++        // Not drawn in the column; assistive tech still reads the price as one.
++        pill.appendChild(document.createTextNode(' '));
++      }
++    }
++  }
++
++  function fitGiftRow(row) {
++    var cards = row.querySelectorAll('.gift-card');
++    if (!cards.length || !cards[0].getBoundingClientRect().width) {
+       return;
+     }
+-    var commands = {
+-      stars_gift: '/stars',
+-      premium_giveaway: '/giveaway',
+-      stars_giveaway: '/stars_giveaway'
+-    };
+-    var command = commands[flow] || '/status';
+-    var openBot = function() {
+-      app.openTelegramLink(baseUrl);
+-    };
+-    if (app.isVersionAtLeast('6.2')) {
+-      app.showPopup({
+-        title: 'Continue in @' + username,
+-        message: 'Send ' + command + ' to @' + username + ' to use this flow in the existing bot chat.',
+-        buttons: [
+-          {id: 'open', type: 'default', text: 'Open @' + username},
+-          {id: 'cancel', type: 'cancel'}
+-        ]
+-      }, function(buttonId) {
+-        if (buttonId === 'open') {
+-          openBot();
++    var pills = [];
++    var i;
++    for (i = 0; i < cards.length; i++) {
++      var tab = cards[i].querySelector('.plan-tab');
++      var tabLabel = tab ? tab.querySelector('.plan-tab-label') : null;
++      if (tabLabel) {
++        // Measured with the label shown; a label that would overhang stays for assistive tech alone.
++        tabLabel.classList.remove('sr-only');
++        tabLabel.classList.toggle('sr-only', overhang(tab, cards[i], 0) > FIT_SLACK);
++      }
++      var saving = cards[i].querySelector('.gift-card-saving');
++      var amount = saving ? saving.querySelector('.value-amount') : null;
++      if (amount) {
++        saving.classList.remove('is-wide');
++        saving.classList.toggle('is-wide', overhang(amount, saving, 0) > FIT_SLACK);
++      }
++      var pill = cards[i].querySelector('.gift-card-price');
++      if (pill) {
++        pills.push([pill, cards[i]]);
++      }
++    }
++    // The whole row takes each step, so the pills stay even: narrower sides, smaller type, then two lines.
++    var split = row.classList.contains('price-lines');
++    for (var step = 0; step < PRICE_STEPS.length; step++) {
++      for (i = 1; i < PRICE_STEPS.length; i++) {
++        row.classList.toggle(PRICE_STEPS[i], i === step);
++      }
++      var fits = true;
++      for (i = 0; i < pills.length; i++) {
++        if ((step === PRICE_STEPS.length - 1) !== split) {
++          priceLines(pills[i][0], !split);
+         }
++      }
++      split = step === PRICE_STEPS.length - 1;
++      for (i = 0; i < pills.length; i++) {
++        // A price keeps 4 px inside its card's sides.
++        fits = fits && overhang(pills[i][0], pills[i][1], 4) <= FIT_SLACK;
++      }
++      if (fits) {
++        return;
++      }
++    }
++  }
++
++  function fitGiftCards() {
++    var rows = document.querySelectorAll('.gift-cards');
++    for (var i = 0; i < rows.length; i++) {
++      fitGiftRow(rows[i]);
++    }
++  }
++
++  function onResize() {
++    fitGiftCards();
++    ctaFit();
++  }
++
++  // ===== Giveaway matrix (duration or amount, then winners -> option) =====
++
++  function giveawayMatrix() {
++    return document.querySelector('.js-gw-matrix');
++  }
++
++  function giveawayOptions() {
++    var matrix = giveawayMatrix();
++    if (!matrix) {
++      return [];
++    }
++    var nodes = matrix.querySelectorAll('.js-gw-option');
++    var records = [];
++    for (var i = 0; i < nodes.length; i++) {
++      records.push({
++        months: nodes[i].getAttribute('data-months'),
++        stars: nodes[i].getAttribute('data-stars'),
++        users: nodes[i].getAttribute('data-users'),
++        boosts: nodes[i].getAttribute('data-boosts'),
++        price: nodes[i].getAttribute('data-price'),
++        ctaText: nodes[i].getAttribute('data-cta-text'),
++        footerText: nodes[i].getAttribute('data-footer-text'),
++        url: nodes[i].getAttribute('data-invoice-url')
+       });
+-    } else {
+-      var container = button ? button.closest('.pm-picker') : null;
+-      var status = container ? container.querySelector('.pm-picker-status') : null;
+-      if (status) {
+-        status.textContent = 'Send ' + command + ' to @' + username + ' to use this flow in the existing bot chat.';
+-        status.appendChild(document.createElement('br'));
+-        var link = document.createElement('a');
+-        link.href = baseUrl;
+-        link.className = 'pm-secondary pm-link';
+-        link.textContent = 'Open @' + username;
+-        link.addEventListener('click', function(event) {
+-          event.preventDefault();
+-          openBot();
+-        }, false);
+-        status.appendChild(link);
+-      } else {
+-        openBot();
++    }
++    return records;
++  }
++
++  function giveawayChecked(name) {
++    var input = document.querySelector('.js-gw-' + name + ':checked');
++    return input ? input.value : '';
++  }
++
++  // The records of one duration (Premium) or one amount (Stars), by winners count.
++  function giveawayUsersFor(records, flow, dur) {
++    var users = {};
++    for (var i = 0; i < records.length; i++) {
++      var durValue = flow === 'premium' ? records[i].months : records[i].stars;
++      if (durValue === dur) {
++        users[records[i].users] = records[i];
+       }
+     }
++    return users;
+   }
+ 
+-  function pickerText(text, isError) {
+-    if (!picker) {
++  // The winners count a duration or an amount takes: the current one where it offers it, else the one the server
++  // checked, else its first.
++  function giveawayUsersChoice(offered, inputs, current) {
++    var choice = '';
++    for (var i = 0; i < inputs.length; i++) {
++      var value = inputs[i].value;
++      if (offered[value]) {
++        if (value === current) {
++          return value;
++        }
++        if (!choice || inputs[i].defaultChecked) {
++          choice = value;
++        }
++      }
++    }
++    return choice;
++  }
++
++  function giveawayFill(template, record) {
++    var text = template;
++    if (record) {
++      text = text.split('{users}').join(record.users)
++        .split('{boosts}').join(record.boosts)
++        .split('{price}').join(record.price)
++        .split('{stars}').join(record.stars);
++    }
++    return text;
++  }
++
++  // Thousands grouped the way the server grouped the amounts on the page: "1,000" or "1 000".
++  function giveawayNumber(value, inputs) {
++    var group = '';
++    for (var i = 0; i < inputs.length && !group; i++) {
++      var label = inputs[i].closest('label');
++      var title = label ? label.querySelector('.cell-title') : null;
++      var match = title ? /\d(\D)\d{3}(?!\d)/.exec(title.textContent) : null;
++      group = match ? match[1] : '';
++    }
++    return String(value).replace(/\B(?=(\d{3})+(?!\d))/g, group);
++  }
++
++  function giveawayWrite(selector, text) {
++    var nodes = document.querySelectorAll(selector);
++    for (var i = 0; i < nodes.length; i++) {
++      nodes[i].textContent = text;
++    }
++  }
++
++  function giveawayUpdate() {
++    var matrix = giveawayMatrix();
++    if (!matrix) {
+       return;
+     }
+-    var container = picker.button ? picker.button.closest('.pm-picker') : null;
+-    var status = container ? container.querySelector('.pm-picker-status') : null;
+-    if (status) {
+-      status.textContent = text;
+-      status.classList.toggle('is-error', !!isError);
++    var flow = matrix.getAttribute('data-flow') || 'premium';
++    var records = giveawayOptions();
++    var durInputs = document.querySelectorAll('.js-gw-dur');
++    var userInputs = document.querySelectorAll('.js-gw-users');
++    var i;
++    if (!giveawayChecked('dur') && durInputs.length) {
++      durInputs[0].checked = true;
+     }
+-    if (isError) {
+-      showMessage(text, true);
++    // The duration or the amount leads: winners are offered for it alone, so a winners tap never changes it.
++    var offered = giveawayUsersFor(records, flow, giveawayChecked('dur'));
++    var users = giveawayUsersChoice(offered, userInputs, giveawayChecked('users'));
++    var choices = 0;
++    for (i = 0; i < userInputs.length; i++) {
++      var has = !!offered[userInputs[i].value];
++      var chip = userInputs[i].closest('label');
++      if (chip) {
++        chip.hidden = !has;
++      }
++      userInputs[i].disabled = !has;
++      userInputs[i].checked = userInputs[i].value === users;
++      choices += has ? 1 : 0;
++    }
++    // One count is no choice: the island states it as a plain row in place of the chips.
++    var single = choices < 2;
++    var chipRow = userInputs.length ? userInputs[0].closest('.chips') : null;
++    if (chipRow) {
++      chipRow.style.display = single ? 'none' : '';
++    }
++    for (i = 0; i < durInputs.length; i++) {
++      var value = durInputs[i].value;
++      // A row shows what choosing it gives: the current winners where it offers them, else its own.
++      var rowOffered = giveawayUsersFor(records, flow, value);
++      var record = rowOffered[giveawayUsersChoice(rowOffered, userInputs, users)];
++      giveawayWrite('.js-gw-dur-price[data-dur="' + value + '"]', record ? record.price : '');
++      giveawayWrite('.js-gw-dur-boosts[data-dur="' + value + '"]', record ? giveawayFill(matrix.getAttribute('data-tpl-boosts') || '', record) : '');
++    }
++    var picked = offered[users];
++    var footer = document.querySelector('.js-gw-footer');
++    if (footer) {
++      var line = picked ? picked.footerText || giveawayFill(matrix.getAttribute('data-tpl-footer') || '', picked) : '';
++      var each = picked ? matrix.getAttribute('data-tpl-each') : '';
++      var share = each ? Math.floor(picked.stars / picked.users) : 0;
++      var shareText = share > 0 ? each.split('{stars}').join(giveawayNumber(share, durInputs)) : '';
++      giveawayFixedRow(chipRow ? chipRow.parentNode : null, single ? line : '', shareText);
++      footer.textContent = single ? '' : line + (shareText ? ' · ' + shareText : '');
++      footer.hidden = single;
++    }
++    if (picked) {
++      ctaUpdate(giveawayFill(matrix.getAttribute('data-tpl-cta') || '', picked) || picked.ctaText, picked.url);
++      return;
++    }
++    // No option for this pair: the button must not keep the last one's invoice.
++    var button = ctaButton();
++    if (button) {
++      button.setAttribute('data-invoice-url', '');
++      button.setAttribute('aria-disabled', 'true');
+     }
+   }
+ 
++  // The lone winners count as a row of facts: the count, and each winner's share when the prize is Stars.
++  function giveawayFixedRow(island, title, value) {
++    if (!island) {
++      return;
++    }
++    var row = island.querySelector('.pm-gw-fixed');
++    if (!title) {
++      if (row) {
++        island.removeChild(row);
++      }
++      return;
++    }
++    if (!row) {
++      row = document.createElement('div');
++      row.className = 'cell cell--value pm-gw-fixed';
++      row.innerHTML = '<span class="cell-main"><span class="cell-title"></span></span>'
++        + '<span class="cell-trail"><span class="cell-value"></span></span>';
++      island.appendChild(row);
++    }
++    row.querySelector('.cell-title').textContent = title;
++    row.querySelector('.cell-value').textContent = value;
++  }
++
++  // ===== Peer picker (native request through the existing web methods) =====
++
++  // Each step of a pick, the request, the native picker and the polling, gets this long.
++  function pickerWatch(handler) {
++    clearTimeout(picker.watch);
++    picker.watch = setTimeout(handler, POLL_TIMEOUT);
++  }
++
+   function stopPicker() {
+     if (!picker) {
+       return;
+     }
+     picker.cancelled = true;
+-    if (picker.timer) {
+-      clearTimeout(picker.timer);
+-    }
++    clearTimeout(picker.timer);
++    clearTimeout(picker.watch);
++    clearTimeout(picker.quiet);
+     setButtonBusy(picker.button, false);
+     picker = null;
+   }
+ 
+-  function finishPickerWithError(text) {
++  function failPicker() {
+     if (!picker) {
+       return;
+     }
+-    pickerText(text, true);
+     stopPicker();
++    showMessage(scriptText('picker-failed'), true);
+   }
+ 
+-  function schedulePoll(delay) {
+-    if (!picker || picker.cancelled) {
+-      return;
++  function schedulePoll() {
++    if (picker && !picker.cancelled) {
++      picker.timer = setTimeout(pollPeer, POLL_INTERVAL);
+     }
+-    picker.timer = setTimeout(pollPeer, delay || POLL_INTERVAL);
+   }
+ 
+   function pollPeer() {
+-    if (!picker || picker.cancelled || picker.inFlight) {
+-      return;
+-    }
+-    if (Date.now() - picker.startedAt >= POLL_TIMEOUT) {
+-      finishPickerWithError('Recipient selection timed out. Please try again.');
++    if (!picker || picker.cancelled) {
+       return;
+     }
+     var current = picker;
+-    picker.inFlight = true;
+     Aj.apiRequest('getPeerRequest', {
+       flow: current.flow,
+-      webapp_req_id: current.requestId
++      request_id: current.peerRequestId
+     }, function(result) {
+       if (!picker || picker.serial !== current.serial || picker.cancelled) {
+         return;
+       }
+-      picker.inFlight = false;
+       if (result.error === 'PEER_REQUEST_EXPIRED') {
+-        finishPickerWithError('Recipient selection expired. Please start again.');
+-        return;
+-      }
+-      if (result.error) {
+-        finishPickerWithError('Unable to read the selection. Please try again.');
++        failPicker();
+         return;
+       }
+-      if (result.status === 'ready' && result.url) {
++      if (!result.error && result.status === 'ready' && result.url) {
+         var url = result.url;
+         stopPicker();
+         Aj.location(url);
+         return;
+       }
+-      schedulePoll(POLL_INTERVAL);
++      // Any other error may pass with the next check; the watch ends the wait.
++      schedulePoll();
+     });
+   }
+ 
+@@ -225,22 +979,48 @@ window.PremiumApp = (function() {
+       return;
+     }
+     var current = picker;
++    // A client that does not implement the request never answers it: the row is freed and the bot offered. An
++    // answer that still comes, after a long pick, is taken.
++    pickerWatch(function() {
++      silentPicker = true;
++      setButtonBusy(current.button, false);
++      fallbackToBot(current.flow, current.button);
++    });
++    if (webApp().platform !== 'android') {
++      // Only Android is known to answer. Elsewhere a picker may be open over the page by now, so nothing may open
++      // over it: after a short silence the bot is offered in the page, under the row.
++      current.quiet = setTimeout(function() {
++        if (picker !== current || current.cancelled) {
++          return;
++        }
++        if (offerBotInPage(current.flow, current.button)) {
++          silentPicker = true;
++          clearTimeout(current.watch);
++          setButtonBusy(current.button, false);
++        }
++      }, PICKER_QUIET);
++    }
+     try {
+-      webApp().requestChat(current.requestId, function(sent) {
++      webApp().requestChat(current.webappRequestId, function(sent) {
++        silentPicker = false;
++        clearTimeout(current.quiet);
++        withdrawBotInPage(current.button);
+         if (!picker || picker.serial !== current.serial || picker.cancelled) {
+           return;
+         }
+         if (!sent) {
+-          pickerText('Selection was cancelled.', false);
++          // A dismissed picker is the user's own cancel: nothing to say.
+           stopPicker();
+           return;
+         }
+-        pickerText('Waiting for Telegram to share the selection…', false);
+-        schedulePoll(POLL_INTERVAL);
++        setButtonBusy(current.button, true);
++        // The time to share the choice starts now, not when the picker opened.
++        pickerWatch(failPicker);
++        schedulePoll();
+       });
+     } catch (error) {
+-      fallbackToBot(current.flow, current.button);
+       stopPicker();
++      fallbackToBot(current.flow, current.button);
+     }
+   }
+ 
+@@ -249,7 +1029,8 @@ window.PremiumApp = (function() {
+     if (!app) {
+       return;
+     }
+-    if (!app.isVersionAtLeast('9.6')) {
++    // A client that stayed silent on this page is not asked twice.
++    if (!app.isVersionAtLeast('9.6') || silentPicker) {
+       fallbackToBot(flow, button);
+       return;
+     }
+@@ -259,127 +1040,369 @@ window.PremiumApp = (function() {
+       flow: flow,
+       chatType: chatType || '',
+       button: button,
+-      requestId: '',
+-      startedAt: Date.now(),
++      webappRequestId: '',
++      peerRequestId: 0,
+       serial: ++pickerSequence,
+-      timer: null,
+-      inFlight: false,
++      timer: 0,
++      watch: 0,
++      quiet: 0,
+       cancelled: false
+     };
+     var current = picker;
+     setButtonBusy(button, true);
+-    pickerText('Preparing the Telegram picker…', false);
++    pickerWatch(failPicker);
+     Aj.apiRequest('requestPeer', {
+       flow: flow,
+       chat_type: current.chatType
+     }, function(result) {
+       if (!picker || picker.serial !== current.serial || picker.cancelled) {
+         return;
+       }
+-      if (result.error || !result.webapp_req_id) {
+-        finishPickerWithError('Unable to prepare the Telegram picker. Please try again.');
++      if (result.error || !result.webapp_req_id || !result.request_id) {
++        failPicker();
+         return;
+       }
+-      picker.requestId = result.webapp_req_id;
+-      picker.startedAt = Date.now();
++      picker.webappRequestId = result.webapp_req_id;
++      picker.peerRequestId = result.request_id;
+       requestNativePeer();
+     });
+   }
+ 
+-  function filterPlans(button) {
+-    var group = button.parentNode;
+-    var filters = group.querySelectorAll('.js-plan-filter');
+-    for (var i = 0; i < filters.length; i++) {
+-      filters[i].classList.toggle('is-active', filters[i] === button);
+-    }
+-    var constraints = {};
+-    var rows = document.querySelectorAll('.pm-filters');
+-    for (var r = 0; r < rows.length; r++) {
+-      var active = rows[r].querySelector('.js-plan-filter.is-active');
+-      if (active) {
+-        var field = active.getAttribute('data-filter-field');
+-        var value = active.getAttribute('data-filter-value');
+-        if (value) {
+-          constraints[field] = value;
+-        }
+-      }
++  // Where the bot continues a flow: its start link for gifts, a command to send for the others.
++  function botTarget(flow) {
++    var username = window.Aj && Aj.state && Aj.state.botUsername ? Aj.state.botUsername : 'PremiumBot';
++    var commands = {
++      stars_gift: '/stars',
++      premium_giveaway: '/giveaway',
++      stars_giveaway: '/stars_giveaway'
++    };
++    var command = flow === 'gift' ? '' : commands[flow] || '/status';
++    return {
++      url: 'https://t.me/' + username + (command ? '' : '?start=gift'),
++      command: command,
++      values: {bot: '@' + username, command: command}
++    };
++  }
++
++  // The bot's flow as a line and a link under the row. False where the page has no place for it.
++  function offerBotInPage(flow, button) {
++    var app = webApp();
++    var container = button ? button.closest('.pm-picker') : null;
++    var legacy = container ? container.querySelector('.pm-picker-legacy') : null;
++    if (!app || !legacy) {
++      return false;
++    }
++    var target = botTarget(flow);
++    legacy.hidden = false;
++    var status = container.querySelector('.pm-picker-status');
++    if (status) {
++      status.textContent = target.command ? scriptText('bot-text', target.values) : '';
++    }
++    // One link, however many taps.
++    if (legacy.firstChild) {
++      return true;
++    }
++    var link = document.createElement('a');
++    link.href = target.url;
++    link.className = 'cell cell--action is-tappable fx-press island';
++    var main = document.createElement('span');
++    main.className = 'cell-main';
++    var title = document.createElement('span');
++    title.className = 'cell-title';
++    title.textContent = scriptText('bot-open', target.values);
++    main.appendChild(title);
++    link.appendChild(main);
++    link.addEventListener('click', function(event) {
++      event.preventDefault();
++      app.openTelegramLink(target.url);
++    }, false);
++    legacy.appendChild(link);
++    return true;
++  }
++
++  function withdrawBotInPage(button) {
++    var container = button ? button.closest('.pm-picker') : null;
++    var legacy = container ? container.querySelector('.pm-picker-legacy') : null;
++    if (!legacy || legacy.hidden) {
++      return;
++    }
++    legacy.hidden = true;
++    var status = container.querySelector('.pm-picker-status');
++    if (status) {
++      status.textContent = '';
++    }
++  }
++
++  function fallbackToBot(flow, button) {
++    var app = webApp();
++    if (!app) {
++      return;
+     }
+-    var plans = document.querySelectorAll('.pm-plan');
+-    for (var j = 0; j < plans.length; j++) {
+-      var show = true;
+-      for (var fieldName in constraints) {
+-        if (Object.prototype.hasOwnProperty.call(constraints, fieldName) &&
+-            plans[j].getAttribute('data-' + fieldName) !== constraints[fieldName]) {
+-          show = false;
++    var target = botTarget(flow);
++    var openBot = function() {
++      app.openTelegramLink(target.url);
++    };
++    if (!target.command) {
++      openBot();
++      return;
++    }
++    if (app.isVersionAtLeast('6.2')) {
++      try {
++        app.showPopup({
++          title: scriptText('bot-title', target.values),
++          message: scriptText('bot-text', target.values),
++          buttons: [
++            {id: 'open', type: 'default', text: scriptText('bot-open', target.values)},
++            {id: 'cancel', type: 'cancel'}
++          ]
++        }, function(buttonId) {
++          if (buttonId === 'open') {
++            openBot();
++          }
++        });
++      } catch (error) {
++        // A popup that is up already is the answer; one the client refuses leaves the bot itself.
++        if (error.message !== 'WebAppPopupOpened') {
++          openBot();
+         }
+       }
+-      plans[j].hidden = !show;
++      return;
++    }
++    if (!offerBotInPage(flow, button)) {
++      openBot();
+     }
+   }
+ 
+-  function mainButtonHandler() {
+-    if (mainAction === 'home') {
+-      Aj.location('/premiumbot');
++  // ===== Show-more packs =====
++
++  function reducedMotion() {
++    return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
++  }
++
++  // New content rises in a beat apart; its natural style is the final state.
++  function rise(element, index) {
++    if (!element.animate) {
++      return;
+     }
++    var calm = reducedMotion();
++    element.animate(calm ? [{opacity: 0}, {opacity: 1}] : [{opacity: 0, transform: 'translateY(8px)'}, {opacity: 1, transform: 'none'}], {
++      duration: calm ? 200 : 320,
++      delay: calm ? 0 : Math.min(index, 7) * 30,
++      easing: 'cubic-bezier(.2, .8, .2, 1)',
++      fill: 'backwards'
++    });
+   }
+ 
+-  function bind(selector, eventName, handler) {
+-    var elements = document.querySelectorAll(selector);
+-    for (var i = 0; i < elements.length; i++) {
+-      elements[i].addEventListener(eventName, handler, false);
++  function showMorePacks(button) {
++    var extras = document.querySelectorAll('.js-pack-extra');
++    for (var i = 0; i < extras.length; i++) {
++      extras[i].hidden = false;
++      rise(extras[i], i);
++    }
++    button.setAttribute('aria-expanded', 'true');
++    button.hidden = true;
++    // The button goes, so the focus moves on to the first pack it revealed.
++    if (extras.length) {
++      extras[0].focus({preventScroll: true});
+     }
+   }
+ 
++  // ===== Press effect =====
++
++  function releasePress() {
++    if (pressed) {
++      pressed.classList.remove('is-pressed');
++      pressed = null;
++    }
++  }
++
++  function onPress(event) {
++    var type = event.type;
++    if (type === 'pointerdown' || type === 'keydown') {
++      var down = type === 'pointerdown' ? event.button === 0 : !event.repeat && (event.key === ' ' || event.key === 'Enter');
++      var target = down && event.target && event.target.closest ? event.target.closest('.fx-press') : null;
++      if (target && !target.disabled && target.getAttribute('aria-disabled') !== 'true') {
++        releasePress();
++        pressed = target;
++        target.classList.add('is-pressed');
++      }
++      return;
++    }
++    // The pointer leaving a child, or a child losing the focus, is not the pressed element letting go.
++    if ((type !== 'pointerleave' && type !== 'blur') || event.target === pressed) {
++      releasePress();
++    }
++  }
++
++  // ===== Dates: the server prints them in UTC, the device shows its own day =====
++
++  function localizeDates() {
++    var app = webApp();
++    var user = app && app.initDataUnsafe ? app.initDataUnsafe.user : null;
++    var lang = document.documentElement.lang || (user && user.language_code);
++    if (!lang || !window.Intl || !Intl.DateTimeFormat) {
++      return;
++    }
++    var nodes = document.querySelectorAll('time[datetime]');
++    for (var i = 0; i < nodes.length; i++) {
++      var date = new Date(nodes[i].getAttribute('datetime'));
++      if (!isNaN(date.getTime())) {
++        try {
++          // No-break spaces keep a date on one line.
++          nodes[i].textContent = new Intl.DateTimeFormat(lang, {day: 'numeric', month: 'long', year: 'numeric'}).format(date).replace(/ /g, ' ');
++        } catch (error) {}
++      }
++    }
++  }
++
++  // ===== Page lifecycle =====
++
+   function cleanup() {
+-    stopPicker();
+-    mainAction = false;
+     var app = webApp();
+-    if (app && app.MainButton) {
+-      app.MainButton.offClick(mainButtonHandler);
+-      app.MainButton.hide();
++    pageToken++;
++    stopPicker();
++    giveUpInvoice();
++    hideMainButton();
++    unbindAll();
++    clearMessage();
++    releasePress();
++    if (cardsObserver) {
++      cardsObserver.disconnect();
++      cardsObserver = null;
++    }
++    if (colorFrame) {
++      cancelAnimationFrame(colorFrame);
++      colorFrame = 0;
++    }
++    ctaCopy = null;
++    pageColors = null;
++    if (app && app.offEvent) {
++      try {
++        app.offEvent('themeChanged', applyBridgeClasses);
++      } catch (error) {}
+     }
+     if (window.PremiumLottie) {
+       window.PremiumLottie.destroy();
+     }
++    if (window.Premium3D) {
++      window.Premium3D.destroy();
++    }
++    if (window.PremiumFx) {
++      window.PremiumFx.destroy();
++    }
+   }
+ 
+   function init() {
+     cleanup();
++    applyBridgeClasses();
+     var app = webApp();
+-    if (app) {
+-      app.setHeaderColor('bg_color');
+-      app.setBackgroundColor('bg_color');
++    var i;
++    if (app && app.onEvent) {
++      // themeChanged is user-triggered while the app stays open.
++      try {
++        app.onEvent('themeChanged', applyBridgeClasses);
++      } catch (error) {}
++    }
++    var pressEvents = ['pointerdown', 'pointerup', 'pointercancel', 'pointerleave', 'keydown', 'keyup', 'blur'];
++    for (i = 0; i < pressEvents.length; i++) {
++      on(document, pressEvents[i], onPress, true);
+     }
++    // Ahead of the tapped element's own handler: a button that turns busy on its tap is still felt.
++    on(document, 'click', onTapHaptic, true);
++    on(document, 'click', onLinkClick);
++    on(window, 'scroll', onPageScroll);
++    on(window, 'resize', onResize);
++    on(window, 'pageshow', planSync);
+     bind('.js-invoice', 'click', function() {
+-      openInvoice(this.getAttribute('data-invoice-url'));
++      if (this.getAttribute('aria-disabled') === 'true' || this.getAttribute('aria-busy') === 'true') {
++        return;
++      }
++      var flow = this.getAttribute('data-result-flow') || inferResultFlow();
++      openInvoice(this.getAttribute('data-invoice-url'), flow, this);
+     });
+     bind('.js-request-peer', 'click', function() {
+-      startPicker(this.getAttribute('data-peer-flow'), this.getAttribute('data-peer-chat-type'), this);
++      if (this.getAttribute('aria-busy') !== 'true') {
++        startPicker(this.getAttribute('data-peer-flow'), this.getAttribute('data-peer-chat-type'), this);
++      }
+     });
+     bind('.js-telegram-link', 'click', function() {
+       var appInstance = webApp();
+       if (appInstance) {
+         appInstance.openTelegramLink(this.getAttribute('data-telegram-url'));
+       }
+     });
+-    bind('.js-plan-filter', 'click', function() {
+-      filterPlans(this);
++    bind('.js-plan-option', 'change', function() {
++      planApply(this);
++      hapticSelection();
++    });
++    bind('.js-gw-dur', 'change', function() {
++      giveawayUpdate();
++      hapticSelection();
+     });
+-    if (window.location.pathname.indexOf('/premiumbot/result/') === 0 && app && app.MainButton) {
+-      mainAction = 'home';
+-      app.MainButton.setParams({text: 'BACK TO PREMIUM', is_visible: true});
+-      app.MainButton.onClick(mainButtonHandler);
++    bind('.js-gw-users', 'change', function() {
++      giveawayUpdate();
++      hapticSelection();
++    });
++    bind('.js-show-more', 'click', function() {
++      showMorePacks(this);
++    });
++    if (!ctaInit()) {
++      resultButtonInit();
+     }
+-    var title = document.querySelector('.pm-title');
+-    if (title) {
+-      title.focus();
++    planSync();
++    giveawayUpdate();
++    fitGiftCards();
++    var rows = document.querySelectorAll('.gift-cards');
++    if (rows.length && window.ResizeObserver) {
++      cardsObserver = new ResizeObserver(fitGiftCards);
++      for (i = 0; i < rows.length; i++) {
++        cardsObserver.observe(rows[i]);
++      }
++    }
++    localizeDates();
++    // After a navigation the title takes the focus; the first page leaves it where the client put it.
++    var title = document.querySelector('.hero-title, .screen-title');
++    visits++;
++    if (title && visits > 1) {
++      title.focus({preventScroll: true});
+     }
+     if (window.PremiumLottie) {
+       window.PremiumLottie.mount(document);
+     }
++    if (window.Premium3D) {
++      window.Premium3D.mount(document);
++    }
++    if (window.PremiumFx) {
++      // In the same task as the page, so the light and the fields are there for its first frame.
++      window.PremiumFx.mount(document);
++    }
+     Aj.onUnload(cleanup);
+   }
+ 
++  function inferResultFlow() {
++    var screen = document.querySelector('.screen[data-route]');
++    var route = screen ? screen.getAttribute('data-route') : '';
++    if (route === 'stars') {
++      return 'stars';
++    }
++    if (route === 'stars/gift') {
++      return 'stars_gift';
++    }
++    if (route === 'giveaway/premium') {
++      return 'premium_giveaway';
++    }
++    if (route === 'giveaway/stars') {
++      return 'stars_giveaway';
++    }
++    if (route === 'gift') {
++      return 'gift';
++    }
++    return 'premium';
++  }
++
++  // Theme and platform classes are wanted for the first paint, which can come before init.
++  applyBridgeClasses();
++
+   return {
+     init: init,
+     openInvoice: openInvoice,

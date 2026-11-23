@@ -1,0 +1,32 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:32c2b94b9b2a00ddaab6b3b63a38ae3bc4e327db:web:test",
+  "files": [
+    {
+      "additions": 83,
+      "deletions": 36,
+      "filename": "y-/premiumbot-lottie.js",
+      "status": "modified"
+    },
+    {
+      "additions": 162,
+      "deletions": 463,
+      "filename": "y-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1204,
+      "deletions": 181,
+      "filename": "y-/premiumbot.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-23T23:22:54Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "32c2b94b9b2a00ddaab6b3b63a38ae3bc4e327db",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/32c2b94b9b2a00ddaab6b3b63a38ae3bc4e327db"
+  }
+}
