@@ -1,0 +1,50 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:8295acd8dcd9b2c90d8bc6386cf1ce47670434a7:web:test",
+  "files": [
+    {
+      "additions": 33,
+      "deletions": 5,
+      "filename": "i-/bugtracker-app.css",
+      "status": "modified"
+    },
+    {
+      "additions": 14,
+      "deletions": 1,
+      "filename": "i-/bugtracker-dark.css",
+      "status": "modified"
+    },
+    {
+      "additions": 48,
+      "deletions": 5,
+      "filename": "i-/bugtracker.css",
+      "status": "modified"
+    },
+    {
+      "additions": 10,
+      "deletions": 5,
+      "filename": "i-/my-telegram.css",
+      "status": "modified"
+    },
+    {
+      "additions": 60,
+      "deletions": 2,
+      "filename": "i-/my-telegram.js",
+      "status": "modified"
+    },
+    {
+      "additions": 3,
+      "deletions": 3,
+      "filename": "i-/translations.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-23T19:11:52Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "8295acd8dcd9b2c90d8bc6386cf1ce47670434a7",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/8295acd8dcd9b2c90d8bc6386cf1ce47670434a7"
+  }
+}
