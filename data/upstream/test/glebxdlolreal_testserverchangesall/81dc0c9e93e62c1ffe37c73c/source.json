@@ -1,0 +1,128 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:a88e20bc525727e31a46d64f9491409746932d17:web:test",
+  "files": [
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/gift-ribbon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1220,
+      "deletions": 0,
+      "filename": "a-/premiumbot-3d.js",
+      "status": "added"
+    },
+    {
+      "additions": 219,
+      "deletions": 0,
+      "filename": "a-/premiumbot-base.css",
+      "status": "added"
+    },
+    {
+      "additions": 1795,
+      "deletions": 0,
+      "filename": "a-/premiumbot-components.css",
+      "status": "added"
+    },
+    {
+      "additions": 1413,
+      "deletions": 0,
+      "filename": "a-/premiumbot-fx.css",
+      "status": "added"
+    },
+    {
+      "additions": 2104,
+      "deletions": 0,
+      "filename": "a-/premiumbot-fx.js",
+      "status": "added"
+    },
+    {
+      "additions": 83,
+      "deletions": 36,
+      "filename": "a-/premiumbot-lottie.js",
+      "status": "modified"
+    },
+    {
+      "additions": 467,
+      "deletions": 0,
+      "filename": "a-/premiumbot-screens-commerce.css",
+      "status": "added"
+    },
+    {
+      "additions": 599,
+      "deletions": 0,
+      "filename": "a-/premiumbot-screens-subscription.css",
+      "status": "added"
+    },
+    {
+      "additions": 730,
+      "deletions": 0,
+      "filename": "a-/premiumbot-tokens.css",
+      "status": "added"
+    },
+    {
+      "additions": 162,
+      "deletions": 463,
+      "filename": "a-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1204,
+      "deletions": 181,
+      "filename": "a-/premiumbot.js",
+      "status": "modified"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/star-bloom.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/star-large.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/star-part.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/star-small.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/ui-check.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/ui-sparkle.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/ui-star.svg",
+      "status": "added"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-24T15:10:02Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "a88e20bc525727e31a46d64f9491409746932d17",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/a88e20bc525727e31a46d64f9491409746932d17"
+  }
+}
