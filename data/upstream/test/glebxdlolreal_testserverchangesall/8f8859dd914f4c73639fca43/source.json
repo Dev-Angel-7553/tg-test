@@ -1,0 +1,32 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:a970f7466344108a919460d0178ce61fcd7ee0ee:web:test",
+  "files": [
+    {
+      "additions": 8,
+      "deletions": 0,
+      "filename": "y-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 3,
+      "deletions": 3,
+      "filename": "y-/premiumbot.html",
+      "status": "modified"
+    },
+    {
+      "additions": 62,
+      "deletions": 8,
+      "filename": "y-/premiumbot.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-24T22:46:03Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "a970f7466344108a919460d0178ce61fcd7ee0ee",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/a970f7466344108a919460d0178ce61fcd7ee0ee"
+  }
+}
