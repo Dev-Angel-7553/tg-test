@@ -1,0 +1,20 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:238a960a0ec92c45cafb81c0afcd5badd0f852b3:web:test",
+  "files": [
+    {
+      "additions": 20,
+      "deletions": 123,
+      "filename": "i-/premiumbot.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-24T23:13:48Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "238a960a0ec92c45cafb81c0afcd5badd0f852b3",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/238a960a0ec92c45cafb81c0afcd5badd0f852b3"
+  }
+}
