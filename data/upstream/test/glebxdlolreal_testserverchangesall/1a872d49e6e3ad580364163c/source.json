@@ -1,0 +1,332 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:7d304999af672e314f9826f4b41ac4e92f272fa9:web:test",
+  "files": [
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "a-/cd_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/comments_web.svg",
+      "status": "added"
+    },
+    {
+      "additions": 108,
+      "deletions": 0,
+      "filename": "a-/font-roboto-mono.css",
+      "status": "added"
+    },
+    {
+      "additions": 538,
+      "deletions": 0,
+      "filename": "a-/promote-dark.css",
+      "status": "added"
+    },
+    {
+      "additions": 326,
+      "deletions": 0,
+      "filename": "a-/promote-theme.js",
+      "status": "added"
+    },
+    {
+      "additions": 1018,
+      "deletions": 0,
+      "filename": "a-/tchart.css",
+      "status": "added"
+    },
+    {
+      "additions": 13,
+      "deletions": 0,
+      "filename": "a-/website_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 2367,
+      "deletions": 0,
+      "filename": "a-/widget-frame.css",
+      "status": "added"
+    },
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "b-/cd_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 108,
+      "deletions": 0,
+      "filename": "b-/font-roboto-mono.css",
+      "status": "added"
+    },
+    {
+      "additions": 538,
+      "deletions": 0,
+      "filename": "b-/promote-dark.css",
+      "status": "added"
+    },
+    {
+      "additions": 326,
+      "deletions": 0,
+      "filename": "b-/promote-theme.js",
+      "status": "added"
+    },
+    {
+      "additions": 1018,
+      "deletions": 0,
+      "filename": "b-/tchart.css",
+      "status": "added"
+    },
+    {
+      "additions": 13,
+      "deletions": 0,
+      "filename": "b-/website_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 2367,
+      "deletions": 0,
+      "filename": "b-/widget-frame.css",
+      "status": "added"
+    },
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "i-/cd_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/comments_web.svg",
+      "status": "added"
+    },
+    {
+      "additions": 108,
+      "deletions": 0,
+      "filename": "i-/font-roboto-mono.css",
+      "status": "added"
+    },
+    {
+      "additions": 1220,
+      "deletions": 0,
+      "filename": "i-/premiumbot-3d.js",
+      "status": "added"
+    },
+    {
+      "additions": 219,
+      "deletions": 0,
+      "filename": "i-/premiumbot-base.css",
+      "status": "added"
+    },
+    {
+      "additions": 1795,
+      "deletions": 0,
+      "filename": "i-/premiumbot-components.css",
+      "status": "added"
+    },
+    {
+      "additions": 1413,
+      "deletions": 0,
+      "filename": "i-/premiumbot-fx.css",
+      "status": "added"
+    },
+    {
+      "additions": 2104,
+      "deletions": 0,
+      "filename": "i-/premiumbot-fx.js",
+      "status": "added"
+    },
+    {
+      "additions": 467,
+      "deletions": 0,
+      "filename": "i-/premiumbot-screens-commerce.css",
+      "status": "added"
+    },
+    {
+      "additions": 599,
+      "deletions": 0,
+      "filename": "i-/premiumbot-screens-subscription.css",
+      "status": "added"
+    },
+    {
+      "additions": 730,
+      "deletions": 0,
+      "filename": "i-/premiumbot-tokens.css",
+      "status": "added"
+    },
+    {
+      "additions": 538,
+      "deletions": 0,
+      "filename": "i-/promote-dark.css",
+      "status": "added"
+    },
+    {
+      "additions": 326,
+      "deletions": 0,
+      "filename": "i-/promote-theme.js",
+      "status": "added"
+    },
+    {
+      "additions": 1018,
+      "deletions": 0,
+      "filename": "i-/tchart.css",
+      "status": "added"
+    },
+    {
+      "additions": 13,
+      "deletions": 0,
+      "filename": "i-/website_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "i-/widget-frame.css",
+      "status": "added"
+    },
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "l-/cd_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 108,
+      "deletions": 0,
+      "filename": "l-/font-roboto-mono.css",
+      "status": "added"
+    },
+    {
+      "additions": 538,
+      "deletions": 0,
+      "filename": "l-/promote-dark.css",
+      "status": "added"
+    },
+    {
+      "additions": 326,
+      "deletions": 0,
+      "filename": "l-/promote-theme.js",
+      "status": "added"
+    },
+    {
+      "additions": 1018,
+      "deletions": 0,
+      "filename": "l-/tchart.css",
+      "status": "added"
+    },
+    {
+      "additions": 13,
+      "deletions": 0,
+      "filename": "l-/website_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 2367,
+      "deletions": 0,
+      "filename": "l-/widget-frame.css",
+      "status": "added"
+    },
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "y-/cd_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 108,
+      "deletions": 0,
+      "filename": "y-/font-roboto-mono.css",
+      "status": "added"
+    },
+    {
+      "additions": 1220,
+      "deletions": 0,
+      "filename": "y-/premiumbot-3d.js",
+      "status": "added"
+    },
+    {
+      "additions": 219,
+      "deletions": 0,
+      "filename": "y-/premiumbot-base.css",
+      "status": "added"
+    },
+    {
+      "additions": 1795,
+      "deletions": 0,
+      "filename": "y-/premiumbot-components.css",
+      "status": "added"
+    },
+    {
+      "additions": 1413,
+      "deletions": 0,
+      "filename": "y-/premiumbot-fx.css",
+      "status": "added"
+    },
+    {
+      "additions": 2104,
+      "deletions": 0,
+      "filename": "y-/premiumbot-fx.js",
+      "status": "added"
+    },
+    {
+      "additions": 467,
+      "deletions": 0,
+      "filename": "y-/premiumbot-screens-commerce.css",
+      "status": "added"
+    },
+    {
+      "additions": 599,
+      "deletions": 0,
+      "filename": "y-/premiumbot-screens-subscription.css",
+      "status": "added"
+    },
+    {
+      "additions": 730,
+      "deletions": 0,
+      "filename": "y-/premiumbot-tokens.css",
+      "status": "added"
+    },
+    {
+      "additions": 538,
+      "deletions": 0,
+      "filename": "y-/promote-dark.css",
+      "status": "added"
+    },
+    {
+      "additions": 326,
+      "deletions": 0,
+      "filename": "y-/promote-theme.js",
+      "status": "added"
+    },
+    {
+      "additions": 1018,
+      "deletions": 0,
+      "filename": "y-/tchart.css",
+      "status": "added"
+    },
+    {
+      "additions": 13,
+      "deletions": 0,
+      "filename": "y-/website_icon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 2367,
+      "deletions": 0,
+      "filename": "y-/widget-frame.css",
+      "status": "added"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-24T00:01:02Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "7d304999af672e314f9826f4b41ac4e92f272fa9",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/7d304999af672e314f9826f4b41ac4e92f272fa9"
+  }
+}
