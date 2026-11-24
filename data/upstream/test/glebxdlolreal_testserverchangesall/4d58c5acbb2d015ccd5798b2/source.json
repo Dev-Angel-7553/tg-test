@@ -1,0 +1,80 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:49cd9ddc3c362b3e54315ad15ebc62a7c2e007f2:web:test",
+  "files": [
+    {
+      "additions": 91,
+      "deletions": 27,
+      "filename": "i-/premiumbot-3d.js",
+      "status": "modified"
+    },
+    {
+      "additions": 5,
+      "deletions": 68,
+      "filename": "i-/premiumbot-base.css",
+      "status": "modified"
+    },
+    {
+      "additions": 412,
+      "deletions": 921,
+      "filename": "i-/premiumbot-components.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1147,
+      "deletions": 970,
+      "filename": "i-/premiumbot-fx.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1049,
+      "deletions": 959,
+      "filename": "i-/premiumbot-fx.js",
+      "status": "modified"
+    },
+    {
+      "additions": 459,
+      "deletions": 295,
+      "filename": "i-/premiumbot-screens-commerce.css",
+      "status": "modified"
+    },
+    {
+      "additions": 172,
+      "deletions": 400,
+      "filename": "i-/premiumbot-screens-subscription.css",
+      "status": "modified"
+    },
+    {
+      "additions": 129,
+      "deletions": 520,
+      "filename": "i-/premiumbot-tokens.css",
+      "status": "modified"
+    },
+    {
+      "additions": 742,
+      "deletions": 39,
+      "filename": "i-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 11,
+      "deletions": 11,
+      "filename": "i-/premiumbot.html",
+      "status": "modified"
+    },
+    {
+      "additions": 338,
+      "deletions": 24,
+      "filename": "i-/premiumbot.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-24T20:27:17Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "49cd9ddc3c362b3e54315ad15ebc62a7c2e007f2",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/49cd9ddc3c362b3e54315ad15ebc62a7c2e007f2"
+  }
+}
