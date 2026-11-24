@@ -1,0 +1,152 @@
+{
+  "category": "other",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:407edca4378691ec745c02a6338b3720cdcf0c13:other:test",
+  "files": [
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "a-/premiumbot-tlottie.nosimd.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "a-/premiumbot-tlottie.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "a-/rlottie-wasm.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/tonconnect-manifest.json",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "b-/grain.png",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "b-/premiumbot-tlottie.nosimd.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "b-/premiumbot-tlottie.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "b-/rlottie-wasm.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "b-/tile-backdrop.png",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "i-/grain.png",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "i-/premiumbot-tlottie.nosimd.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "i-/premiumbot-tlottie.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "i-/rlottie-wasm.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "i-/tile-backdrop.png",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/tonconnect-manifest.json",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "l-/premiumbot-tlottie.nosimd.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "l-/premiumbot-tlottie.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "l-/rlottie-wasm.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "y-/grain.png",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "y-/premiumbot-tlottie.nosimd.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "y-/premiumbot-tlottie.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "y-/rlottie-wasm.wasm",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "y-/tile-backdrop.png",
+      "status": "added"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-24T05:01:09Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "407edca4378691ec745c02a6338b3720cdcf0c13",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/407edca4378691ec745c02a6338b3720cdcf0c13"
+  }
+}

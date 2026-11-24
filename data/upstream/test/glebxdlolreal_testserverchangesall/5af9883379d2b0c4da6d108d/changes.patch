@@ -1,0 +1,71 @@
+diff --git a/a-/premiumbot-tlottie.nosimd.wasm b/a-/premiumbot-tlottie.nosimd.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/a-/premiumbot-tlottie.wasm b/a-/premiumbot-tlottie.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/a-/rlottie-wasm.wasm b/a-/rlottie-wasm.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/a-/tonconnect-manifest.json b/a-/tonconnect-manifest.json
+@@ -0,0 +1 @@
++{"url":"https:\/\/a-tfragment.stel.com","name":"Fragment","iconUrl":"https:\/\/a-tfragment.stel.com\/img\/fragment_tonconnect_icon.png","termsOfUseUrl":"https:\/\/a-tfragment.stel.com\/terms","privacyPolicyUrl":"https:\/\/a-tfragment.stel.com\/privacy"}
+\ No newline at end of file
+diff --git a/b-/grain.png b/b-/grain.png
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/b-/premiumbot-tlottie.nosimd.wasm b/b-/premiumbot-tlottie.nosimd.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/b-/premiumbot-tlottie.wasm b/b-/premiumbot-tlottie.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/b-/rlottie-wasm.wasm b/b-/rlottie-wasm.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/b-/tile-backdrop.png b/b-/tile-backdrop.png
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/i-/grain.png b/i-/grain.png
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/i-/premiumbot-tlottie.nosimd.wasm b/i-/premiumbot-tlottie.nosimd.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/i-/premiumbot-tlottie.wasm b/i-/premiumbot-tlottie.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/i-/rlottie-wasm.wasm b/i-/rlottie-wasm.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/i-/tile-backdrop.png b/i-/tile-backdrop.png
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/i-/tonconnect-manifest.json b/i-/tonconnect-manifest.json
+@@ -0,0 +1 @@
++{"url":"https:\/\/i-tfragment.stel.com","name":"Fragment","iconUrl":"https:\/\/i-tfragment.stel.com\/img\/fragment_tonconnect_icon.png","termsOfUseUrl":"https:\/\/i-tfragment.stel.com\/terms","privacyPolicyUrl":"https:\/\/i-tfragment.stel.com\/privacy"}
+\ No newline at end of file
+diff --git a/l-/premiumbot-tlottie.nosimd.wasm b/l-/premiumbot-tlottie.nosimd.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/l-/premiumbot-tlottie.wasm b/l-/premiumbot-tlottie.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/l-/rlottie-wasm.wasm b/l-/rlottie-wasm.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/y-/grain.png b/y-/grain.png
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/y-/premiumbot-tlottie.nosimd.wasm b/y-/premiumbot-tlottie.nosimd.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/y-/premiumbot-tlottie.wasm b/y-/premiumbot-tlottie.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/y-/rlottie-wasm.wasm b/y-/rlottie-wasm.wasm
+# Patch unavailable from source; see source.json for status.
+
+diff --git a/y-/tile-backdrop.png b/y-/tile-backdrop.png
+# Patch unavailable from source; see source.json for status.
+
