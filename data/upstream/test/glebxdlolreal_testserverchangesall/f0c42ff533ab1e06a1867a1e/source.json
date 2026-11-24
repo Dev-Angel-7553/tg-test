@@ -1,0 +1,698 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:407edca4378691ec745c02a6338b3720cdcf0c13:web:test",
+  "files": [
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/SiteIconAndroid.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/SiteIconApple.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/TelemintLogoSprite1.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/TelemintLogoSprite2.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/TelemintLogoSprite3.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/Widget_Comments.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/Widget_Login.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/Widget_Post.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/Widget_Share.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/app_icon_android.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/app_icon_desktop.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/app_icon_ios.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/app_icon_macos.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/app_icon_weba.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/app_icon_webk.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/app_icon_webz.svg",
+      "status": "added"
+    },
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "a-/log-file.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "a-/ui-premium.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/SiteIconAndroid.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/SiteIconApple.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/TelemintLogoSprite1.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/TelemintLogoSprite2.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/TelemintLogoSprite3.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/Widget_Comments.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/Widget_Login.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/Widget_Post.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/Widget_Share.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/app_icon_android.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/app_icon_desktop.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/app_icon_ios.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/app_icon_macos.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/app_icon_weba.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/app_icon_webk.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/app_icon_webz.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/gift-ribbon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "b-/log-file.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/star-bloom.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/star-large.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/star-part.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/star-small.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/ui-check.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/ui-premium.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/ui-sparkle.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "b-/ui-star.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/SiteIconAndroid.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/SiteIconApple.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/TelemintLogoSprite1.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/TelemintLogoSprite2.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/TelemintLogoSprite3.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/Widget_Comments.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/Widget_Login.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/Widget_Post.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/Widget_Share.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/app_icon_android.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/app_icon_desktop.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/app_icon_ios.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/app_icon_macos.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/app_icon_weba.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/app_icon_webk.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/app_icon_webz.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/gift-ribbon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "i-/log-file.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/star-bloom.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/star-large.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/star-part.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/star-small.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/ui-check.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/ui-premium.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/ui-sparkle.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "i-/ui-star.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/SiteIconAndroid.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/SiteIconApple.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/TelemintLogoSprite1.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/TelemintLogoSprite2.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/TelemintLogoSprite3.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/Widget_Comments.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/Widget_Login.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/Widget_Post.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/Widget_Share.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/app_icon_android.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/app_icon_desktop.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/app_icon_ios.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/app_icon_macos.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/app_icon_weba.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/app_icon_webk.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/app_icon_webz.svg",
+      "status": "added"
+    },
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "l-/log-file.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "l-/ui-premium.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/SiteIconAndroid.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/SiteIconApple.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/TelemintLogoSprite1.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/TelemintLogoSprite2.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/TelemintLogoSprite3.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/Widget_Comments.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/Widget_Login.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/Widget_Post.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/Widget_Share.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/app_icon_android.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/app_icon_desktop.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/app_icon_ios.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/app_icon_macos.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/app_icon_weba.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/app_icon_webk.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/app_icon_webz.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/gift-ribbon.svg",
+      "status": "added"
+    },
+    {
+      "additions": 3,
+      "deletions": 0,
+      "filename": "y-/log-file.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/star-bloom.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/star-large.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/star-part.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/star-small.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/ui-check.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/ui-premium.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/ui-sparkle.svg",
+      "status": "added"
+    },
+    {
+      "additions": 1,
+      "deletions": 0,
+      "filename": "y-/ui-star.svg",
+      "status": "added"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-24T05:01:09Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "407edca4378691ec745c02a6338b3720cdcf0c13",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/407edca4378691ec745c02a6338b3720cdcf0c13"
+  }
+}
