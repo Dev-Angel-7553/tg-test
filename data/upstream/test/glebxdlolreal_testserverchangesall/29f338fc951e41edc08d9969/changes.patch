@@ -1,0 +1,32 @@
+diff --git a/help.getAppConfig.json b/help.getAppConfig.json
+@@ -1755,6 +1755,14 @@
+           "value": 800.0
+         }
+       },
++      {
++        "_": "types.JsonObjectValue",
++        "key": "stars_resale_ton_topup_enabled",
++        "value": {
++          "_": "types.JsonBool",
++          "value": true
++        }
++      },
+       {
+         "_": "types.JsonObjectValue",
+         "key": "channel_autotranslation_level_min",
+@@ -1896,7 +1904,7 @@
+         "key": "ton_usd_rate",
+         "value": {
+           "_": "types.JsonNumber",
+-          "value": 0.9782652755114479
++          "value": 0.9620466080100343
+         }
+       },
+       {
+@@ -2967,5 +2975,5 @@
+       }
+     ]
+   },
+-  "hash": 1816943863
++  "hash": -1021054771
+ }
