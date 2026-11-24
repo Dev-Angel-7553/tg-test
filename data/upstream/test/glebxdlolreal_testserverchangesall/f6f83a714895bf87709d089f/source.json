@@ -1,0 +1,26 @@
+{
+  "category": "other",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:40417ecb30b0d186a65231106d3d7bd98c5b94c4:other:test",
+  "files": [
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "l-/grain.png",
+      "status": "added"
+    },
+    {
+      "additions": 0,
+      "deletions": 0,
+      "filename": "l-/tile-backdrop.png",
+      "status": "added"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-24T09:34:02Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "40417ecb30b0d186a65231106d3d7bd98c5b94c4",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/40417ecb30b0d186a65231106d3d7bd98c5b94c4"
+  }
+}
