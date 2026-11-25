@@ -1,0 +1,26 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:7229d08fb9fa4b3daa21ba629e927f0d9e2887b0:web:test",
+  "files": [
+    {
+      "additions": 32,
+      "deletions": 2,
+      "filename": "l-/auction.js",
+      "status": "modified"
+    },
+    {
+      "additions": 11,
+      "deletions": 11,
+      "filename": "l-/premiumbot.html",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-25T14:32:44Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "7229d08fb9fa4b3daa21ba629e927f0d9e2887b0",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/7229d08fb9fa4b3daa21ba629e927f0d9e2887b0"
+  }
+}
