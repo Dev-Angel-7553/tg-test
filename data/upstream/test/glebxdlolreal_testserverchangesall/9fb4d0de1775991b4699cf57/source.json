@@ -1,0 +1,20 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:16d18efaf2eb4b48d47678e89e71427833fb816a:web:test",
+  "files": [
+    {
+      "additions": 32,
+      "deletions": 2,
+      "filename": "i-/auction.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-25T16:37:12Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "16d18efaf2eb4b48d47678e89e71427833fb816a",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/16d18efaf2eb4b48d47678e89e71427833fb816a"
+  }
+}
