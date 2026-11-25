@@ -1,0 +1,74 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:99b9f8b86f39f7fcbef2ef616371db84718d7556:web:test",
+  "files": [
+    {
+      "additions": 91,
+      "deletions": 27,
+      "filename": "b-/premiumbot-3d.js",
+      "status": "modified"
+    },
+    {
+      "additions": 5,
+      "deletions": 68,
+      "filename": "b-/premiumbot-base.css",
+      "status": "modified"
+    },
+    {
+      "additions": 412,
+      "deletions": 921,
+      "filename": "b-/premiumbot-components.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1147,
+      "deletions": 970,
+      "filename": "b-/premiumbot-fx.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1049,
+      "deletions": 959,
+      "filename": "b-/premiumbot-fx.js",
+      "status": "modified"
+    },
+    {
+      "additions": 459,
+      "deletions": 295,
+      "filename": "b-/premiumbot-screens-commerce.css",
+      "status": "modified"
+    },
+    {
+      "additions": 172,
+      "deletions": 400,
+      "filename": "b-/premiumbot-screens-subscription.css",
+      "status": "modified"
+    },
+    {
+      "additions": 129,
+      "deletions": 520,
+      "filename": "b-/premiumbot-tokens.css",
+      "status": "modified"
+    },
+    {
+      "additions": 750,
+      "deletions": 39,
+      "filename": "b-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 415,
+      "deletions": 150,
+      "filename": "b-/premiumbot.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-25T02:31:11Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "99b9f8b86f39f7fcbef2ef616371db84718d7556",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/99b9f8b86f39f7fcbef2ef616371db84718d7556"
+  }
+}
