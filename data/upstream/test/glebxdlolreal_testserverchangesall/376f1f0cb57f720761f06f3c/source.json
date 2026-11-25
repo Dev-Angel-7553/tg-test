@@ -1,0 +1,20 @@
+{
+  "category": "server",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:9aea7acf666e495ce8e64abe2e29c1a9f9b7bd14:server:test",
+  "files": [
+    {
+      "additions": 10,
+      "deletions": 2,
+      "filename": "help.getAppConfig.json",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-25T19:30:26Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "9aea7acf666e495ce8e64abe2e29c1a9f9b7bd14",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/9aea7acf666e495ce8e64abe2e29c1a9f9b7bd14"
+  }
+}
