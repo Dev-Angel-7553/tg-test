@@ -1,0 +1,98 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:c53005f01982cd97f809481abc5ec00980a37319:web:test",
+  "files": [
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "l-/botfather.html",
+      "status": "modified"
+    },
+    {
+      "additions": 186,
+      "deletions": 54,
+      "filename": "l-/premiumbot-3d.js",
+      "status": "modified"
+    },
+    {
+      "additions": 22,
+      "deletions": 0,
+      "filename": "l-/premiumbot-base.css",
+      "status": "modified"
+    },
+    {
+      "additions": 33,
+      "deletions": 9,
+      "filename": "l-/premiumbot-components.css",
+      "status": "modified"
+    },
+    {
+      "additions": 200,
+      "deletions": 134,
+      "filename": "l-/premiumbot-fx.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1376,
+      "deletions": 205,
+      "filename": "l-/premiumbot-fx.js",
+      "status": "modified"
+    },
+    {
+      "additions": 52,
+      "deletions": 11,
+      "filename": "l-/premiumbot-lottie.js",
+      "status": "modified"
+    },
+    {
+      "additions": 14,
+      "deletions": 25,
+      "filename": "l-/premiumbot-screens-commerce.css",
+      "status": "modified"
+    },
+    {
+      "additions": 7,
+      "deletions": 4,
+      "filename": "l-/premiumbot-tokens.css",
+      "status": "modified"
+    },
+    {
+      "additions": 385,
+      "deletions": 69,
+      "filename": "l-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 12,
+      "deletions": 12,
+      "filename": "l-/premiumbot.html",
+      "status": "modified"
+    },
+    {
+      "additions": 865,
+      "deletions": 44,
+      "filename": "l-/premiumbot.js",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "l-/stickers.html",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "l-/webapp-common.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-26T13:20:22Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "c53005f01982cd97f809481abc5ec00980a37319",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/c53005f01982cd97f809481abc5ec00980a37319"
+  }
+}
