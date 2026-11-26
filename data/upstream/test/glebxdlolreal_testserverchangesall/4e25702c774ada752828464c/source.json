@@ -1,0 +1,80 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:b5e12a755f90d9966402dfd590bd9221c4716d1b:web:test",
+  "files": [
+    {
+      "additions": 186,
+      "deletions": 54,
+      "filename": "b-/premiumbot-3d.js",
+      "status": "modified"
+    },
+    {
+      "additions": 22,
+      "deletions": 0,
+      "filename": "b-/premiumbot-base.css",
+      "status": "modified"
+    },
+    {
+      "additions": 33,
+      "deletions": 9,
+      "filename": "b-/premiumbot-components.css",
+      "status": "modified"
+    },
+    {
+      "additions": 200,
+      "deletions": 134,
+      "filename": "b-/premiumbot-fx.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1376,
+      "deletions": 205,
+      "filename": "b-/premiumbot-fx.js",
+      "status": "modified"
+    },
+    {
+      "additions": 52,
+      "deletions": 11,
+      "filename": "b-/premiumbot-lottie.js",
+      "status": "modified"
+    },
+    {
+      "additions": 14,
+      "deletions": 25,
+      "filename": "b-/premiumbot-screens-commerce.css",
+      "status": "modified"
+    },
+    {
+      "additions": 7,
+      "deletions": 4,
+      "filename": "b-/premiumbot-tokens.css",
+      "status": "modified"
+    },
+    {
+      "additions": 385,
+      "deletions": 69,
+      "filename": "b-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 865,
+      "deletions": 44,
+      "filename": "b-/premiumbot.js",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "b-/webapp-common.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-26T14:49:19Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "b5e12a755f90d9966402dfd590bd9221c4716d1b",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/b5e12a755f90d9966402dfd590bd9221c4716d1b"
+  }
+}
