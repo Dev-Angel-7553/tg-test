@@ -1,0 +1,104 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:dc3e90c962f5b496ea2cc9370dcf9557be8d66c4:web:test",
+  "files": [
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "i-/botfather.html",
+      "status": "modified"
+    },
+    {
+      "additions": 80,
+      "deletions": 276,
+      "filename": "i-/premiumbot-3d.js",
+      "status": "modified"
+    },
+    {
+      "additions": 68,
+      "deletions": 27,
+      "filename": "i-/premiumbot-base.css",
+      "status": "modified"
+    },
+    {
+      "additions": 921,
+      "deletions": 436,
+      "filename": "i-/premiumbot-components.css",
+      "status": "modified"
+    },
+    {
+      "additions": 966,
+      "deletions": 1209,
+      "filename": "i-/premiumbot-fx.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1105,
+      "deletions": 2366,
+      "filename": "i-/premiumbot-fx.js",
+      "status": "modified"
+    },
+    {
+      "additions": 11,
+      "deletions": 52,
+      "filename": "i-/premiumbot-lottie.js",
+      "status": "modified"
+    },
+    {
+      "additions": 296,
+      "deletions": 449,
+      "filename": "i-/premiumbot-screens-commerce.css",
+      "status": "modified"
+    },
+    {
+      "additions": 400,
+      "deletions": 172,
+      "filename": "i-/premiumbot-screens-subscription.css",
+      "status": "modified"
+    },
+    {
+      "additions": 520,
+      "deletions": 132,
+      "filename": "i-/premiumbot-tokens.css",
+      "status": "modified"
+    },
+    {
+      "additions": 40,
+      "deletions": 1067,
+      "filename": "i-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 13,
+      "deletions": 13,
+      "filename": "i-/premiumbot.html",
+      "status": "modified"
+    },
+    {
+      "additions": 158,
+      "deletions": 1244,
+      "filename": "i-/premiumbot.js",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "i-/stickers.html",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "i-/webapp-common.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-26T16:45:10Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "dc3e90c962f5b496ea2cc9370dcf9557be8d66c4",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/dc3e90c962f5b496ea2cc9370dcf9557be8d66c4"
+  }
+}
