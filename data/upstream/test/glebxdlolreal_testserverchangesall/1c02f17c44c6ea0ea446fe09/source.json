@@ -1,0 +1,80 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:57f449f80057ab5682fbf29f10d86b166b43603f:web:test",
+  "files": [
+    {
+      "additions": 186,
+      "deletions": 54,
+      "filename": "a-/premiumbot-3d.js",
+      "status": "modified"
+    },
+    {
+      "additions": 22,
+      "deletions": 0,
+      "filename": "a-/premiumbot-base.css",
+      "status": "modified"
+    },
+    {
+      "additions": 33,
+      "deletions": 9,
+      "filename": "a-/premiumbot-components.css",
+      "status": "modified"
+    },
+    {
+      "additions": 200,
+      "deletions": 134,
+      "filename": "a-/premiumbot-fx.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1376,
+      "deletions": 205,
+      "filename": "a-/premiumbot-fx.js",
+      "status": "modified"
+    },
+    {
+      "additions": 52,
+      "deletions": 11,
+      "filename": "a-/premiumbot-lottie.js",
+      "status": "modified"
+    },
+    {
+      "additions": 14,
+      "deletions": 25,
+      "filename": "a-/premiumbot-screens-commerce.css",
+      "status": "modified"
+    },
+    {
+      "additions": 7,
+      "deletions": 4,
+      "filename": "a-/premiumbot-tokens.css",
+      "status": "modified"
+    },
+    {
+      "additions": 385,
+      "deletions": 69,
+      "filename": "a-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 865,
+      "deletions": 44,
+      "filename": "a-/premiumbot.js",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "a-/webapp-common.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-26T12:45:51Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "57f449f80057ab5682fbf29f10d86b166b43603f",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/57f449f80057ab5682fbf29f10d86b166b43603f"
+  }
+}
