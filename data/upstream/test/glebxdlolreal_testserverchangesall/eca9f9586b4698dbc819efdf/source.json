@@ -1,0 +1,86 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:43882d19545a33dbe3f3ebbe06bbc6c2f98eeb13:web:test",
+  "files": [
+    {
+      "additions": 2,
+      "deletions": 32,
+      "filename": "i-/auction.js",
+      "status": "modified"
+    },
+    {
+      "additions": 186,
+      "deletions": 54,
+      "filename": "i-/premiumbot-3d.js",
+      "status": "modified"
+    },
+    {
+      "additions": 22,
+      "deletions": 0,
+      "filename": "i-/premiumbot-base.css",
+      "status": "modified"
+    },
+    {
+      "additions": 33,
+      "deletions": 9,
+      "filename": "i-/premiumbot-components.css",
+      "status": "modified"
+    },
+    {
+      "additions": 200,
+      "deletions": 134,
+      "filename": "i-/premiumbot-fx.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1376,
+      "deletions": 205,
+      "filename": "i-/premiumbot-fx.js",
+      "status": "modified"
+    },
+    {
+      "additions": 52,
+      "deletions": 11,
+      "filename": "i-/premiumbot-lottie.js",
+      "status": "modified"
+    },
+    {
+      "additions": 14,
+      "deletions": 25,
+      "filename": "i-/premiumbot-screens-commerce.css",
+      "status": "modified"
+    },
+    {
+      "additions": 7,
+      "deletions": 4,
+      "filename": "i-/premiumbot-tokens.css",
+      "status": "modified"
+    },
+    {
+      "additions": 385,
+      "deletions": 69,
+      "filename": "i-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 865,
+      "deletions": 44,
+      "filename": "i-/premiumbot.js",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "i-/webapp-common.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-26T11:13:47Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "43882d19545a33dbe3f3ebbe06bbc6c2f98eeb13",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/43882d19545a33dbe3f3ebbe06bbc6c2f98eeb13"
+  }
+}
