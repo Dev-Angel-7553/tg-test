@@ -1,0 +1,92 @@
+{
+  "category": "web",
+  "environment": "test",
+  "event_id": "glebxdlolreal/testserverchangesall:88f17bb507004629e17d7f69b071c71dff602370:web:test",
+  "files": [
+    {
+      "additions": 32,
+      "deletions": 2,
+      "filename": "i-/auction.js",
+      "status": "modified"
+    },
+    {
+      "additions": 276,
+      "deletions": 80,
+      "filename": "i-/premiumbot-3d.js",
+      "status": "modified"
+    },
+    {
+      "additions": 27,
+      "deletions": 68,
+      "filename": "i-/premiumbot-base.css",
+      "status": "modified"
+    },
+    {
+      "additions": 435,
+      "deletions": 920,
+      "filename": "i-/premiumbot-components.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1209,
+      "deletions": 966,
+      "filename": "i-/premiumbot-fx.css",
+      "status": "modified"
+    },
+    {
+      "additions": 2369,
+      "deletions": 1108,
+      "filename": "i-/premiumbot-fx.js",
+      "status": "modified"
+    },
+    {
+      "additions": 52,
+      "deletions": 11,
+      "filename": "i-/premiumbot-lottie.js",
+      "status": "modified"
+    },
+    {
+      "additions": 449,
+      "deletions": 296,
+      "filename": "i-/premiumbot-screens-commerce.css",
+      "status": "modified"
+    },
+    {
+      "additions": 172,
+      "deletions": 400,
+      "filename": "i-/premiumbot-screens-subscription.css",
+      "status": "modified"
+    },
+    {
+      "additions": 132,
+      "deletions": 520,
+      "filename": "i-/premiumbot-tokens.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1067,
+      "deletions": 40,
+      "filename": "i-/premiumbot.css",
+      "status": "modified"
+    },
+    {
+      "additions": 1244,
+      "deletions": 158,
+      "filename": "i-/premiumbot.js",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "deletions": 2,
+      "filename": "i-/webapp-common.js",
+      "status": "modified"
+    }
+  ],
+  "scope": "Selected source diffs archived by TG Signal; not a full repository mirror or original authorship claim.",
+  "upstream": {
+    "date": "2026-11-27T16:10:40Z",
+    "repo": "glebxdlolreal/testserverchangesall",
+    "sha": "88f17bb507004629e17d7f69b071c71dff602370",
+    "url": "https://github.com/glebxdlolreal/testserverchangesall/commit/88f17bb507004629e17d7f69b071c71dff602370"
+  }
+}
